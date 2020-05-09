@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import 'variables';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: $background;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    border: none;
+    background-color: #fff;
+    height: 3em;
+    padding: 0 .7em;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    margin: 1.3em 0;
+}
+
+.btn{
+    padding: .8em;
+    background-color: $orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: ease background-color .3s;
+
+    &:hover{
+
+
+        cursor: pointer;
+        background-color: darken($orange, 15%);
+    }
+}
+.nav{
+    padding: 0 13%;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px -10px 20px 10px rgba(168,168,168,1);
+    -moz-box-shadow: 0px -10px 20px 10px rgba(168,168,168,1);
+    box-shadow: 0px -10px 20px 10px rgba(168,168,168,1);
+
+    .menu{
+        text-transform: capitalize;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+
+        .logo{
+            width: 8em;
+
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+
+        }//end logo
+
+        .options{
+            ul{
+                li{
+                    display: inline;
+                    margin: 0 1em;
+                }
+            }
+        }// end options
+    }// end menu
+}//end nav
+
+.main{
+
+    .hero-banner{
+        width: 100%;
+        height: 70vh;
+        background: url(../img/bgs/hero-banner-blog.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #fff;
+        text-align: center;
+
+        h2{
+            text-transform: uppercase;
+            font-size: 4rem;
+            position: relative;
+            text-shadow:  0px 2px 1px rgba(168,168,168,1);
+
+            &::before{
+                content: "";
+                position: absolute;
+                display: inline-block;
+                width: 70%;
+                height: 4px;
+                background-color: $purple;
+                bottom: 0;
+                left: .4em;
+            }
+        }
+
+    }//end hero-banner
+
+    .news{
+        padding: 1em;
+        position: relative;
+
+        h1{
+
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 70%;
+                margin: .3em 1em;
+                height: 1px;
+                background-color: black;
+            }
+        }
+
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            margin: 0 auto;
+            gap: 2em;
+    
+            .news-card{
+                max-width: 100%;
+                z-index: 50;
+    
+                .card-img{
+                    width: 100%;
+                    
+                    img{
+                        width: 100%;
+                        object-fit: contain;
+                        border-radius: 10px;
+                    }
+                }//end card-img
+    
+                .card-content{
+                    max-width: 90%;
+                    padding: .7em;
+                    border-radius: 10px;
+                    margin: 0 auto;
+                    background-color: #fff;
+                    position: relative;
+                    top: -1rem;
+                    background-color: $purple;
+                    
+    
+                    &::after{
+                        content: attr(card-content);
+                        display: inline-block;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #fff;
+                        position: absolute;
+                        z-index: 0;
+                        top: 0;
+                        left: .4em;
+                        border-radius: 10px;
+    
+                    }
+                }//end card-content
+    
+            }//end news-card
+        }// wrapper
+    }//end news
+}//end main
+
+.footer{
+    background-color: $purple;
+    padding: 3em 13%;
+    color: #fff;
+    
+    .wrapper{
+        width: 100%;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+        gap: 2em;
+
+        .contact-us{
+            li{
+                margin-bottom: 1.4em;
+            }
+        }
+
+        .news-offers{
+            form{
+                .btn{
+                    margin: 1.5em 0 1.5em auto;
+                    position: relative;
+                }
+            }
+        }// news-offers
+
+        .social-networks{
+            .box{
+                display: inline-block;
+                padding: 1.3em;
+                border-radius: 3px;
+                background-color: #fff;
+                margin: 1em .3em;
+                position: relative;
+                transition: ease .3s all;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+                
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.2em;
+                    color: $purple; 
+                }
+            }//end box
+        }// end social-network
+    }//end wrapper
+}//end footer
