@@ -57,9 +57,29 @@ h6 {
   background-color: #cb5b0f;
 }
 
+.btn-outline {
+  padding: .5em 1em;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 300;
+  background-color: transparent;
+  -webkit-transition: .3s background-color ease;
+  transition: .3s background-color ease;
+}
+
+.btn-outline:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ce1d47;
+}
+
 .nav {
   position: relative;
-  padding: 0 13%;
+  padding: 0 4em;
   margin: 0 auto;
   -webkit-box-shadow: 0px -10px 20px 10px #a8a8a8;
   box-shadow: 0px -10px 20px 10px #a8a8a8;
@@ -94,6 +114,35 @@ h6 {
 .nav .menu .options ul li {
   display: inline;
   margin: 0 1em;
+}
+
+.nav .menu .options ul li a {
+  color: #70706e;
+  position: relative;
+}
+
+.nav .menu .options ul li a::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 0;
+  height: .4em;
+  left: -2px;
+  bottom: -5px;
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  -webkit-transition: ease .3s all;
+  transition: ease .3s all;
+}
+
+.nav .menu .options ul li:hover a::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: .4em;
+  left: -2px;
+  bottom: -5px;
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
 }
 
 .main .hero-banner {
@@ -266,6 +315,285 @@ h6 {
 .main .contactus .wrapper .banner-3 {
   background-color: #ce1d47;
   height: 100vh;
+}
+
+.main .main-hero-banner {
+  width: 100%;
+  height: 100%;
+}
+
+.main .main-hero-banner .banner {
+  padding: 20em;
+  width: 100%;
+  height: 100%;
+  background: url(../img/bgs/main-hero-banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.main .main-hero-banner .services {
+  padding: 1em 2.3em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ce1d47;
+}
+
+.main .main-hero-banner .services .support,
+.main .main-hero-banner .services .best-price,
+.main .main-hero-banner .services .best-selection,
+.main .main-hero-banner .services .secure-payments {
+  color: #fff;
+}
+
+.main .main-hero-banner .services .support h3,
+.main .main-hero-banner .services .best-price h3,
+.main .main-hero-banner .services .best-selection h3,
+.main .main-hero-banner .services .secure-payments h3 {
+  font-size: 1.4em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.main .featured-tours {
+  position: relative;
+}
+
+.main .featured-tours .flyer {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/bgs/tours-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1em 3em;
+}
+
+.main .featured-tours .flyer h2 {
+  max-width: 55%;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.main .featured-tours .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 300px;
+      grid-template-columns: auto 300px;
+}
+
+@media (max-width: 768px) {
+  .main .featured-tours .wrapper {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+.main .featured-tours .wrapper .description {
+  background-color: #fff;
+  padding: 1em;
+}
+
+.main .featured-tours .wrapper .description h3 {
+  font-weight: bold;
+  margin: 3px 0;
+}
+
+.main .featured-tours .wrapper .description h3::before {
+  content: "";
+  width: .1em;
+  height: .85em;
+  display: inline-block;
+  margin-right: .3em;
+  background-color: #ce1d47;
+}
+
+.main .featured-tours .wrapper .price {
+  background-color: #ce1d47;
+  max-width: 300px;
+  color: #fff;
+  padding: .5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .featured-tours .wrapper .price .info {
+  width: 50%;
+  height: 100%;
+}
+
+.main .featured-tours .wrapper .price .info span {
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+.main .featured-tours .wrapper .price .info span:nth-child(2) {
+  font-size: 3.4em;
+}
+
+.main .featured-tours .wrapper .price .btn-outline {
+  font-size: 1em;
+  margin: 1.6em auto;
+}
+
+.main .we-mark h2 {
+  position: relative;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.main .we-mark .wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .we-mark .wrapper .image {
+  width: 120%;
+  height: 70%;
+  background-color: mediumslateblue;
+}
+
+.main .we-mark .wrapper .image img {
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.main .we-mark .wrapper .content {
+  max-width: 500px;
+  padding: 7em 2em 2em 7em;
+  background: #dddbdb;
+  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #dddbdb), to(white));
+  background: linear-gradient(90deg, #dddbdb 65%, white 100%);
+  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-box-shadow: 0px 0px 7px 2px #b0a9b0;
+  box-shadow: 0px 0px 7px 2px #b0a9b0;
+}
+
+.main .we-mark .wrapper .content span {
+  color: #ce1d47;
+}
+
+.main .promotions {
+  padding: 4em;
+}
+
+.main .promotions .title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.main .promotions .title::before {
+  content: "";
+  width: .1em;
+  height: .75em;
+  display: inline-block;
+  margin-right: .3em;
+  background-color: #ce1d47;
+}
+
+.main .promotions .wrapper {
+  display: -ms-grid;
+  display: grid;
+  gap: 3em;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  margin: 0 auto;
+}
+
+.main .promotions .wrapper .promo-card {
+  max-width: 400px;
+  padding: 1em;
+  background-color: #fff;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 0px 7px 2px #b0a9b0;
+  box-shadow: 0px 0px 7px 2px #b0a9b0;
+}
+
+.main .promotions .wrapper .promo-card .image {
+  width: 100%;
+}
+
+.main .promotions .wrapper .promo-card .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main .promotions .wrapper .promo-card .buttons {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main .promotions .wrapper .promo-card .buttons .btn-outline {
+  border: 1px solid #ce1d47;
+  color: #ce1d47;
+  -webkit-transition: .3s ease all;
+  transition: .3s ease all;
+}
+
+.main .promotions .wrapper .promo-card .buttons .btn-outline:hover {
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  color: #fff;
+}
+
+.main .booking {
+  padding: 2em;
+  background-color: #fff;
+}
+
+.main .booking .book-now {
+  max-width: 800px;
+  padding: 1em;
+  color: #fff !important;
+  background-color: #d52553;
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  margin: 0 auto;
+  -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+          clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+  text-align: center;
+}
+
+.main .booking .book-now h2 {
+  font-size: 3rem;
+  margin: .3em 0;
+}
+
+.main .booking .book-now .btn-outline {
+  margin: 1.3em auto;
 }
 
 .footer {
