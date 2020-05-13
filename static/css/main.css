@@ -348,7 +348,7 @@ h6 {
 .main .contactus .wrapper .banner-1 {
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 52.5em;
   background-image: url(../img/Contacto/Recurso_1.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -356,6 +356,8 @@ h6 {
   color: #fff;
   text-align: center;
   padding-top: 7em;
+  background-size: cover;
+  z-index: 10;
 }
 
 .main .contactus .wrapper .banner-1 h2 {
@@ -375,26 +377,27 @@ h6 {
 }
 
 .main .contactus .wrapper .banner-2 {
-  position: absolute;
-  height: 110vh;
+  position: relative;
+  height: 60em;
   width: 100%;
   background-image: url(../img/Contacto/Recurso_2.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top;
-  z-index: 10;
-  top: 450px;
+  background-size: cover;
+  background-position: center;
+  z-index: 20;
+  margin: -21em 0;
 }
 
 .main .contactus .wrapper .banner-3 {
-  height: 134vh;
+  height: 70em;
   width: 100%;
   position: relative;
   background-image: url(../img/Contacto/Recurso_3.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: bottom;
-  margin-top: 9em;
+  background-size: cover;
+  z-index: 30;
 }
 
 .main .main-hero-banner {
