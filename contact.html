@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/main.css">
-    <!-- <script src="https://kit.fontawesome.com/f2e1cd452b.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/f2e1cd452b.js" crossorigin="anonymous"></script>
     <title>Clear Bus Tour</title>
 </head>
 <body>
@@ -15,8 +15,9 @@
                     <!-- <a href="/#"> -->
                         <img src="./static/img/logos/main_logo.png" alt="Clear Bus Tours"/>
                     <!-- </a> -->
+                    <i class="fas fa-bars" id="btn-menu"></i>
                 </div>
-                <div class="options">
+                <div class="options" id="options-menu">
                     <ul>
                         <li> <a href="index.html"> home </a> </li>
                         <li> <a href="tours.html"> tours </a> </li>
@@ -41,14 +42,66 @@
                     </div>
                 </div>
                 <div class="banner-2">
+                    <div class="content">
 
+                        <div class="title">
+                            <h3>SCHEDULE <span>OF ATTENTION</span></h3>
+                            <span>Monday to Saturday</span>
+                             | 
+                            <span>9:00 a.m - 5:30 p.m</span>
+                        </div>
+                        <div class="data">
+                            <p>
+                                <i class="fas fa-mobile-alt"></i>
+                                01-760-6734 | (+51) 980-601-886
+                            </p>
+                            <p>
+                                <i class="far fa-envelope"></i>
+                                info@clearbustours.com
+                            </p>
+                            <p>
+                                <i class="fas fa-map-marker-alt"></i>
+                                Av. Jos'e Larco 1150 oficina 37. Miraflores - Lima
+                            </p>
+                        </div>
+
+                    </div>
                 </div>
+
                 <div class="banner-3">
-        
+                    <div class="grid">
+
+                        <div class="phone">
+                            <div class="info">
+                                <h3>follow <span>us</span></h3>
+                                <p>On social media for our latests news</p>
+                                <i class="fab fa-facebook-square"></i>
+                                <i class="fab fa-instagram-square"></i>
+                                <i class="fab fa-youtube-square"></i>
+                            </div>
+                            <img src="./static/img/Contacto/Recurso_4.png" alt="SN">
+                        </div>
+
+                        <div class="send-message">
+                            <div class="title">
+                                <h3><span>SEND US A </span>MESSAGE</h3>
+                                <p>You can send us a message using the form bellow.</p>
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="Complite Name" name="" id="">
+                                <input type="text" placeholder="Phone Number" name="" id="">
+                                <input type="text" placeholder="E-mail" name="" id="">
+                                <textarea name="" placeholder="Message" id="" cols="30" rows="10"></textarea>
+                                <button class=btn-outline>Submit</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+
+    <script src="./static/js/main.js"></script>
 
 </body>
 </html>

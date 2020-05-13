@@ -93,12 +93,17 @@ h6{
     .menu{
         text-transform: capitalize;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-between;
         align-items: center;
 
         .logo{
             width: 8em;
+
+            i{
+                display: none;
+
+            }
 
             img{
                 width: 100%;
@@ -150,6 +155,53 @@ h6{
                 } // end li
             }//end ul
         }// end options
+
+        @media (max-width: 780px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .logo{
+                position: relative;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                i{
+                    display: inline-block;
+                    font-size: 1.4em;
+                    cursor: pointer;
+                }
+
+                img{
+                    width: 8em;
+                }
+                
+            }//end logo
+        
+            .options{
+                display: none;
+                transition: .3s all ease;
+                
+                ul{
+                    li{
+                        display: block;
+                        margin: 2em 0;
+                        text-align: center;
+                    }
+                }
+
+            }//end options
+
+            .options.active{
+                display: block;
+            }//end options
+        }//end media
+
     }// end menu
 }//end nav
 
@@ -362,21 +414,35 @@ h6{
                 background-size: cover;
                 z-index: 10;
 
-                h2{
-                    position: relative;
+                .content{
+                    width: 50%;
+                    margin: 0 auto;
+                    margin-top: 11%;
 
-                    &::after{
-                        content: "";
-                        width: 5em;
-                        height: 2px;
-                        background-color: #fff;
-                        position: absolute;
-                        bottom: 0;
-                        left: 50%;
-                        transform: translate(-50%);
+                    h2{
+                        position: relative;
+                        font-size: 4rem;
+                        text-shadow:  0px 2px 1px rgba(168,168,168,1);
+                        margin-bottom: 1em;
+    
+                        &::after{
+                            content: "";
+                            width: 5em;
+                            height: 2px;
+                            background-color: #fff;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translate(-50%);
+                            
+                        }
+
                         
+                    }//end h2
+                    p{
+                        font-size: 1.4em;
                     }
-                }
+                }//end content
 
             }// end banner-1
 
@@ -390,11 +456,52 @@ h6{
                 background-position: center;
                 z-index: 20;
                 margin: -21em 0;
+                
+                .content{
+                    display: inline-block;
+                    width: 60%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+                    padding: 10%;
+                    margin-left: auto;
+
+                    .title{
+                        
+                        h3{
+                            color: $purple;
+                            margin: 0;
+                            font-weight: 700;
+
+                            span{
+                                font-weight: 300;
+                            }
+
+                        }
+
+
+                    }//end title
+
+                    .data{
+                        margin-top: 3em ;
+                        p{
+                            font-weight: 300;
+
+                            i{
+                                margin-right: 1em;
+                                font-size: 1em;
+                            }//end i 
+                        }//end p
+                    }//end data
+
+                }//end content
 
             }// end banner-2
 
             .banner-3{
-                height: 70em;
+                height: calc(70em + 100%) ;
                 width: 100%;
                 position: relative;
                 background-image: url(../img/Contacto/Recurso_3.png);
@@ -403,6 +510,105 @@ h6{
                 background-position: bottom;
                 background-size: cover;
                 z-index: 30;
+                padding: 0 1em;
+
+                .grid{
+                    display: grid;
+                    gap: 1em;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                    grid-template-rows: auto;
+
+                    .phone{
+                        width: 100%;
+                        position: relative;
+                        padding: 0 1em 5em 1em ;
+
+                        .info{
+                            text-align: center;
+                            padding-left: 16%;
+                            
+                            h3{
+                                color: $purple;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                margin-bottom: .6em;
+                                span{
+                                    font-weight: 300;
+                                }
+                            }
+
+                            p{
+                                font-weight: 300;
+                            }
+
+                            i{
+                                margin: .4em;
+                                font-size: 2em;
+                                color: $purple;
+                                transition: .3s all ease;
+
+                                &:hover{
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }//end info
+
+                        img{
+                            position: relative;
+                            width: 90%;
+                            object-fit: contain;
+                        }
+                    }//end phone
+
+                    .send-message{
+                        text-align: right;
+                        padding: 1em;
+                        align-self: center;
+                        color: #fff;
+                        position: relative;
+                        
+                        .title{
+                            padding-right: 1em;
+                            margin-right: 1em;
+                            margin-bottom: 1em;
+
+                            h3{
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                margin-bottom: .2em;
+
+                                span{
+                                    font-weight: 300;
+                                }
+                            }
+                            
+                            // &::after{
+                            //     content: "";
+                            //     position: absolute;
+                            //     right: 0;
+                            //     width: 2px;
+                            //     top: 0;
+                            //     bottom: 0;
+                            //     background-color: #fff;
+                            // }
+
+                        }//end title
+
+                        textarea{
+                            padding: .5em;
+                            width: 100%;
+                            border: none;
+
+                        }//end textarea
+
+                        input,
+                        textarea{
+                            margin: 1em 0;
+                            text-align: right;
+                        }
+
+                    }//end send-message
+                }//end grid
             }// end banner-3
 
         }//end wrapper
@@ -413,9 +619,9 @@ h6{
         height: 100%;
         
         .banner{
-            padding: 20em;
+            // padding: 20em;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             background: url(../img/bgs/main-hero-banner.jpg);
             background-position: center;
             background-repeat: no-repeat;
@@ -566,7 +772,7 @@ h6{
 
         .wrapper{
             display: grid;
-            grid-template-columns: auto auto;
+            grid-template-columns: repeat(auto-fit, minmax(250px, auto));
             // margin: 0 auto;
             align-items: center;
             justify-content: center;
@@ -574,16 +780,18 @@ h6{
             .image{
                 width: 120%;
                 height: 75%;
+                position: relative;
+                right: -3em;
 
                 img{
                     height: 100%;
                     object-fit: contain;
-                    display: block;
-
                 }
             }//end image
 
             .content{
+                position: relative;
+                left: -3em;
                 max-width: 500px;
                 padding: 5em 2em 2em 7em;
                 background: rgb(221,219,219);

@@ -91,11 +91,11 @@ h6 {
   text-transform: capitalize;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-grid-columns: (auto)[2];
+      grid-template-columns: repeat(2, auto);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -103,6 +103,10 @@ h6 {
 
 .nav .menu .logo {
   width: 8em;
+}
+
+.nav .menu .logo i {
+  display: none;
 }
 
 .nav .menu .logo img {
@@ -143,6 +147,58 @@ h6 {
   left: -2px;
   bottom: -5px;
   background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+}
+
+@media (max-width: 780px) {
+  .nav .menu {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+  }
+  .nav .menu .logo {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .nav .menu .logo i {
+    display: inline-block;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  .nav .menu .logo img {
+    width: 8em;
+  }
+  .nav .menu .options {
+    display: none;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+  }
+  .nav .menu .options ul li {
+    display: block;
+    margin: 2em 0;
+    text-align: center;
+  }
+  .nav .menu .options.active {
+    display: block;
+  }
 }
 
 .main .hero-banner {
@@ -360,11 +416,20 @@ h6 {
   z-index: 10;
 }
 
-.main .contactus .wrapper .banner-1 h2 {
-  position: relative;
+.main .contactus .wrapper .banner-1 .content {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 11%;
 }
 
-.main .contactus .wrapper .banner-1 h2::after {
+.main .contactus .wrapper .banner-1 .content h2 {
+  position: relative;
+  font-size: 4rem;
+  text-shadow: 0px 2px 1px #a8a8a8;
+  margin-bottom: 1em;
+}
+
+.main .contactus .wrapper .banner-1 .content h2::after {
   content: "";
   width: 5em;
   height: 2px;
@@ -374,6 +439,10 @@ h6 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+.main .contactus .wrapper .banner-1 .content p {
+  font-size: 1.4em;
 }
 
 .main .contactus .wrapper .banner-2 {
@@ -388,8 +457,52 @@ h6 {
   margin: -21em 0;
 }
 
+.main .contactus .wrapper .banner-2 .content {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10%;
+  margin-left: auto;
+}
+
+.main .contactus .wrapper .banner-2 .content .title h3 {
+  color: #ce1d47;
+  margin: 0;
+  font-weight: 700;
+}
+
+.main .contactus .wrapper .banner-2 .content .title h3 span {
+  font-weight: 300;
+}
+
+.main .contactus .wrapper .banner-2 .content .data {
+  margin-top: 3em;
+}
+
+.main .contactus .wrapper .banner-2 .content .data p {
+  font-weight: 300;
+}
+
+.main .contactus .wrapper .banner-2 .content .data p i {
+  margin-right: 1em;
+  font-size: 1em;
+}
+
 .main .contactus .wrapper .banner-3 {
-  height: 70em;
+  height: calc(70em + 100%);
   width: 100%;
   position: relative;
   background-image: url(../img/Contacto/Recurso_3.png);
@@ -398,6 +511,101 @@ h6 {
   background-position: bottom;
   background-size: cover;
   z-index: 30;
+  padding: 0 1em;
+}
+
+.main .contactus .wrapper .banner-3 .grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone {
+  width: 100%;
+  position: relative;
+  padding: 0 1em 5em 1em;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info {
+  text-align: center;
+  padding-left: 16%;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info h3 {
+  color: #ce1d47;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: .6em;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info h3 span {
+  font-weight: 300;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info p {
+  font-weight: 300;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info i {
+  margin: .4em;
+  font-size: 2em;
+  color: #ce1d47;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone .info i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main .contactus .wrapper .banner-3 .grid .phone img {
+  position: relative;
+  width: 90%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message {
+  text-align: right;
+  padding: 1em;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #fff;
+  position: relative;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .title {
+  padding-right: 1em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .title h3 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: .2em;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .title h3 span {
+  font-weight: 300;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message textarea {
+  padding: .5em;
+  width: 100%;
+  border: none;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message input,
+.main .contactus .wrapper .banner-3 .grid .send-message textarea {
+  margin: 1em 0;
+  text-align: right;
 }
 
 .main .main-hero-banner {
@@ -406,9 +614,8 @@ h6 {
 }
 
 .main .main-hero-banner .banner {
-  padding: 20em;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: url(../img/bgs/main-hero-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -563,8 +770,8 @@ h6 {
 .main .we-mark .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  -ms-grid-columns: (minmax(250px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -576,16 +783,19 @@ h6 {
 .main .we-mark .wrapper .image {
   width: 120%;
   height: 75%;
+  position: relative;
+  right: -3em;
 }
 
 .main .we-mark .wrapper .image img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
-  display: block;
 }
 
 .main .we-mark .wrapper .content {
+  position: relative;
+  left: -3em;
   max-width: 500px;
   padding: 5em 2em 2em 7em;
   background: #dddbdb;
