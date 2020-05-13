@@ -62,7 +62,7 @@ h6{
 }
 
 .btn-outline{
-    padding: .5em 1em;
+    padding: .3em 1em;
     display: inline-block;
     border: none;
     border-radius: 10px;
@@ -158,7 +158,7 @@ h6{
     .hero-banner{
         width: 100%;
         height: 70vh;
-        background: url(../img/bgs/hero-banner-blog.jpg);
+        background: url(../img/Blog/Recurso_1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -190,10 +190,16 @@ h6{
     }//end hero-banner
 
     .news{
-        padding: 1em;
+        padding: 1em 2em;
         position: relative;
+        background-image: url(../img/Blog/Recurso_2.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100% 35%;
 
-        h1{
+        h2{
+            color: #ffffff;
+            font-size: 2.3em;
 
             &::after{
                 content: "";
@@ -201,7 +207,7 @@ h6{
                 width: 70%;
                 margin: .3em 1em;
                 height: 1px;
-                background-color: black;
+                background-color: #fff;
             }
         }
 
@@ -227,7 +233,7 @@ h6{
     
                 .card-content{
                     max-width: 90%;
-                    padding: .7em;
+                    padding: 1em;
                     border-radius: 10px;
                     margin: 0 auto;
                     background-color: #fff;
@@ -249,6 +255,33 @@ h6{
                         border-radius: 10px;
     
                     }
+
+                    .date,
+                    .more,
+                    .title,
+                    .content{
+                        z-index: 10;
+                        position: relative;
+                    }
+                    
+                    .more,
+                    .content{
+                        font-size: .8rem;
+                        margin-bottom: 1em;
+                    }
+
+                    .date{
+                        color: $purple;
+                        font-size: .9rem;
+                        font-weight: 300;
+                        border-radius: 5px;
+                        padding: .4em 1em;
+                        background-color: $lightRose;
+                    }//end date
+
+                    .more{
+                        color: $purple;                        
+                    }//end more
                 }//end card-content
     
             }//end news-card
@@ -287,7 +320,25 @@ h6{
                     object-fit: contain;
                 }
     
-            }
+            }//end image
+
+            .content{
+                .date{
+                    color: $purple;
+                    font-size: .9rem;
+                    font-weight: 300;
+                    border-radius: 5px;
+                    padding: .4em 1em;
+                    background-color: $lightRose;
+                    display: inline;
+                }//end date
+
+                h2{
+                    display: inline-block;
+                    margin-bottom: 1em;
+                    margin-left: 1.5em;
+                }
+            }//edn content
             
         }// end container
     }//end blog-entries
@@ -302,24 +353,53 @@ h6{
                 top: 0;
                 width: 100%;
                 height: 100vh;
-                background-image: url(../img/bgs/contact-us.jpg);
-                background-position: center;
+                background-image: url(../img/Contacto/Recurso_1.png);
+                background-position: top;
                 background-repeat: no-repeat;
-                background-size: cover;
+                background-size: 100% ;
+                color: #fff;
+                text-align: center;
+                padding-top: 7em;
+
+                h2{
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        width: 5em;
+                        height: 2px;
+                        background-color: #fff;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%);
+                        
+                    }
+                }
+
             }// end banner-1
 
             .banner-2{
-                height: 100vh;
+                position: absolute;
+                height: 110vh;
                 width: 100%;
-                background-image: url(../img/bgs/grey-bg.jpg);
+                background-image: url(../img/Contacto/Recurso_2.png);
                 background-repeat: no-repeat;
                 background-size: contain;
-                background-position: left;
+                background-position: top;
+                z-index: 10;
+                top: 450px;
             }// end banner-1
 
             .banner-3{
-                background-color: $purple;
-                height: 100vh;
+                height: 134vh;
+                width: 100%;
+                position: relative;
+                background-image: url(../img/Contacto/Recurso_3.png);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: bottom;
+                margin-top: 9em;
             }// end banner-1
 
         }//end wrapper
@@ -363,20 +443,40 @@ h6{
     }//end ain-hero-banner
 
     .featured-tours{
-        position: relative;
+        // position: relative;
         .flyer{
             width: 100%;
             height: 100vh;
-            background-image: url(../img/bgs/tours-1.png);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
             padding: 1em 3em;
+            position: relative;
+
+            &:nth-child(1){
+                background-image: url(../img/HOME/Recurso_7.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
             
+            &:nth-child(3){
+                background-image: url(../img/HOME/Recurso_8.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            &:nth-child(5){
+                background-image: url(../img/HOME/Recurso_9.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
             h2{
+                position: absolute;
                 max-width: 55%;
                 font-size: 2rem;
                 color: #fff;
+                z-index: 10;
             }
         }//end flayer
 
@@ -443,38 +543,46 @@ h6{
     }//end featured-tours
 
     .we-mark{
+        margin: 0 auto;
 
         h2{
             position: relative;
             text-align: center;
             font-size: 2.5em;
 
+            &::after{
+                content: "";
+                display: block;
+                width: 4em;
+                height: 4px;
+                background-color: $purple;
+                margin: 0 auto;
+            }
+
         }
 
         .wrapper{
             display: grid;
             grid-template-columns: auto auto;
-            margin: 0 auto;
+            // margin: 0 auto;
             align-items: center;
             justify-content: center;
 
             .image{
                 width: 120%;
-                height: 70%;
-                background-color: mediumslateblue;
+                height: 75%;
 
                 img{
                     height: 100%;
                     object-fit: contain;
                     display: block;
-                    margin: 0 auto;
 
                 }
             }//end image
 
             .content{
                 max-width: 500px;
-                padding: 7em 2em 2em 7em;
+                padding: 5em 2em 2em 7em;
                 background: rgb(221,219,219);
                 background: linear-gradient(90deg, rgba(221,219,219,1) 65%, rgba(255,255,255,1) 100%);
                 clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
@@ -561,17 +669,90 @@ h6{
         }//end wrapper
     }//end promotions
 
+    .clients-review{
+        padding: 2em 1em;
+        margin: 1em 0;
+
+
+        .header{
+            position: relative;
+            margin-left: 1em;
+
+            h2{
+                font-size: 2.3rem;
+                font-weight: 700;
+                background: $gradient;
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-transform: uppercase;
+                margin: 0;
+                margin-left: 1em;
+                
+            
+                span{
+                    font-weight: 400;
+                }
+            }
+
+            p{
+                margin-left: 2.2em;
+            }
+
+            &::before{
+                content: "";
+                width: 3px;
+                height: 4em;
+                background-color: red;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }//end before
+
+
+        }//edn header
+        .carousel{
+
+            .container{
+                width: 100%;
+                padding: 3em;
+                .photo{
+                    background-image: url(../img/HOME/Recurso_18.png);
+                    max-width: 9em;
+                    max-height: 9em;
+                    // background-color: red;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    display: flex;
+                    justify-content: center;
+                    align-self: center;
+
+                    img{
+                        width: 100%;
+                        margin: .1em;
+                        object-fit: contain;
+                    }
+
+                }//end photo
+                .description{
+                    background-color: steelblue;
+                }//end description
+            }//end container
+        }//end carousel
+    }// end clients-review
+
     .booking{
         padding: 2em;
         background-color: #fff;
 
         .book-now{
-            max-width: 800px;
+            max-width: 700px;
             padding: 1em;
             color: #fff !important;
             background-color: $gradientBackground;
             background: $gradient;
-            margin: 0 auto;
+            margin: 0 auto 14em auto;
             clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
             text-align: center;
 
@@ -585,12 +766,321 @@ h6{
             }
         }//end book-now
     }//end booking
+
+    .tours{
+        .our-tours{
+            padding: 1em;
+            background-image: url(../img/Tours/Recurso_5.png);
+            background-repeat: no-repeat;
+            background-position: bottom;
+            background-size: 100% 30%;
+
+            .title{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 3em;
+
+                h2{
+                    color: $purple;
+                    text-transform: uppercase;
+                    font-size: 40px;
+                    margin: 0;
+                    text-align: right;
+
+                    span{
+                        letter-spacing: .7em;
+                        font-weight: 300;
+                        display: block;
+                        font-size: 22px;
+                        margin: 0;
+                        position: relative;
+                        bottom: -13px;
+                        right: -11px;
+                    }//end span
+                }//end h2
+
+                .decoration{
+                    display: inline-block;
+                    padding: .4em 1em;
+                    background-color: #676364;
+                    width: 13em;
+                    color: #fff;
+                    font-size: 12px;
+                    text-transform: capitalize;
+                    position: relative;
+                    margin-left: 2em;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 2px;
+                        top: -10px;
+                        bottom: -10px;
+                        left: 0;
+                        background-color: #676364;
+                    }
+                    
+                }//end decoration
+            }//end title
+    
+            .wrapper{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: .1em;
+                margin-bottom: 8em;
+    
+    
+                .tour-card{
+                    background-color: $purple;
+                    
+                    .title{
+                        width: 100%;
+                        height: 27em;
+                        color: #fff;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        background-image: url(../img/Tours/Recurso_1.png);
+                        background-position: center;
+                        background-size: cover;
+    
+                    }//end title
+    
+                    .decription{
+                        padding: 3em;
+                        color: #fff;
+                        font-size: .8em;
+                        text-align: center;
+                    }//end description
+    
+                    .btn-outline{
+                        margin: 1.6em auto 0 auto;
+                    }
+                }//end tour-card
+    
+            }//end wrapper
+        }//end our-tours
+
+        .tours-info{
+            margin-bottom: 3em;
+    
+            .custom-title{
+                background-color: $purple;
+                font-weight: 700;
+                color: #ffffff;
+                padding: 1em;
+                font-size: 2.5em;
+                width: 30%;
+                text-align: center;
+                margin: 0 auto;
+                position: relative;
+                top: -1.5em;
+    
+                span{
+                    font-weight: 300;
+                }
+            }
+    
+            .container{
+                background-color: #fff;
+                position: relative;
+    
+                .city{
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+                    margin-left: auto;
+                    position: relative;
+                    // top: -3em;
+    
+                    .data{
+                        max-width: 550px;
+                        padding: 2em 2em 2em 3em;
+    
+                        h2{
+                            color: $purple;
+                            text-transform: capitalize;
+                            
+                            i{
+                                margin-right: 1em;
+                            }
+                        }
+    
+                        .info-container{
+                            max-width: 48%;
+    
+                            .title{
+                                h3{
+                                    margin-bottom: 0;
+                                    font-weight: 300;
+                                    color: $purple;
+                                }
+                            }
+    
+                            .descrip{
+                                margin-left: 1em;
+                                padding-left: 1em;
+                                position: relative;
+    
+                                &::before{
+                                    content: "";
+                                    width: 2px;
+                                    display: block;
+                                    background-color: lighten( $text, 30%);
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                }//end before
+                            }//end descrip
+                        }//end info-container
+    
+                        .icons{
+                            padding: 2.3em  1.5em;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+    
+                            .icon{
+                                flex-shrink: 0;
+                                text-align: center;
+                            }//end icon
+                        }//edn icons
+    
+    
+                    }//end data
+    
+                    .video{
+                        position: relative;
+                        padding: 2em 0;
+    
+                        .container{
+                            background-color: $purple;
+                            height: 80%;
+                            position: relative;
+    
+                            iframe{
+                                position: absolute;
+                                width: calc(100% - 10px);
+                                height: 100%;
+                                bottom: 10px;
+                                left: 10px;
+                            }
+                        }//end container
+    
+                        .video-description{
+                            padding: .5em 1em;
+                            font-weight: 300;
+                            color: $purple;
+                            text-align: center;
+                            -webkit-box-shadow: 0px 3px 10px 0px rgba(150,150,150,1);
+                            -moz-box-shadow: 0px 3px 10px 0px rgba(150,150,150,1);
+                            box-shadow: 0px 3px 10px 0px rgba(150,150,150,1);
+                        }// end video-description
+                    
+                    }//end video
+                
+                }//city 
+            
+                .middle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding: 0 1em;
+    
+    
+                    .btn-outline{
+                        border-radius: 0;
+                        border: 1px solid $purple;
+                        color: $purple;
+    
+                        &:hover{
+                            cursor: pointer;
+                            background-color: $purple;
+                            color: #fff;
+                        }
+                    }
+    
+                    ul{
+                        position: relative;
+                        margin-left: 1.5em;
+    
+                        li{
+                            margin-left: 3em;
+                            font-size: 10px;
+                            &:first-child{
+                                color: red;
+                            }
+    
+                           
+                        }//en li
+    
+                        &::before{
+                            content: "";
+                            width: 2px;
+                            display: block;
+                            background-color: lighten( $text, 30%);
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                        }
+                    }//end ul
+                }//end middle
+    
+                .stops{
+                    padding: 1em;
+                    position: relative;
+                    margin-bottom: 3em;
+    
+                    h2{
+                        padding: 0 1.3em;
+                        width: 11em;
+                        font-weight: 300;
+                        color: $purple;
+                    }
+                    
+                    .wrapper{
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+                        gap: 1em;
+                        
+
+                        .sites-card{
+                            background-color: $purple;
+    
+                            .image{
+                                width: 100%;
+                                img{
+                                    width: 100%;
+                                    object-fit: contain;
+                                }
+                            }//end image
+                        }//end sites-card
+                        .description{
+                            
+                            color: #fff;
+                            padding: 1em ;
+                            text-align: center;
+    
+    
+                            h3{
+                                margin-top: 0;
+                            }
+    
+                        }//end description
+                    }//end wrapper
+                }//end stops
+            }//end container
+        }//end tours-info
+    }//end tours
 }//end main
 
 .footer{
     background-color: $purple;
     padding: 3em 13%;
-    color: #fff;
+    color: #fff !important;
     
     .wrapper{
         width: 100%;
@@ -598,6 +1088,13 @@ h6{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
         gap: 2em;
+
+        .policy{
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        }//end policy
 
         .contact-us{
             li{
