@@ -41,6 +41,42 @@ h6 {
   margin: 1.3em 0;
 }
 
+.custom-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 230px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 230px));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1em;
+  margin: 1em 0;
+}
+
+.custom-wrapper .sites-card {
+  background-color: #ce1d47;
+}
+
+.custom-wrapper .sites-card .image {
+  width: 100%;
+}
+
+.custom-wrapper .sites-card .image img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.custom-wrapper .description {
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+}
+
+.custom-wrapper .description h3 {
+  margin-top: 0;
+}
+
 .btn {
   padding: .8em;
   background-color: #f08237;

@@ -42,37 +42,37 @@ h6{
     margin: 1.3em 0;
 }
 
-// .custom-wrapper{
-//     display: grid;
-//     grid-template-columns: repeat(auto-fit, 230px);
-//     justify-content: center;
-//     gap: 1em;
-//     margin: 1em 0;
+.custom-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 230px ));
+    justify-content: center;
+    gap: 1em;
+    margin: 1em 0;
 
-//     .sites-card{
-//         background-color: $purple;
+    .sites-card{
+        background-color: $purple;
 
-//         .image{
-//             width: 100%;
-//             img{
-//                 width: 100%;
-//                 object-fit: contain;
-//             }
-//         }//end image
-//     }//end sites-card
-//     .description{
+        .image{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }//end image
+    }//end sites-card
+    .description{
         
-//         color: #fff;
-//         padding: 1em ;
-//         text-align: center;
+        color: #fff;
+        padding: 1em ;
+        text-align: center;
 
 
-//         h3{
-//             margin-top: 0;
-//         }
+        h3{
+            margin-top: 0;
+        }
 
-//     }//end description
-// }//end custom-wrapper
+    }//end description
+}//end custom-wrapper
 
 .btn{
     padding: .8em;
