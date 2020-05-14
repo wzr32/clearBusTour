@@ -727,11 +727,11 @@ h6 {
 }
 
 .main .featured-tours .flyer h2 {
-  margin-top: .4em;
-  margin-left: 1.5em;
+  margin-top: 1%;
+  margin-left: 5%;
   position: absolute;
   max-width: 65%;
-  font-size: 4rem;
+  font-size: 4.7vw;
   color: #fff;
   font-weight: 400;
   z-index: 100000;
@@ -777,7 +777,7 @@ h6 {
 
 .main .featured-tours .wrapper .price {
   background-color: #ce1d47;
-  max-width: 300px;
+  min-width: 300px;
   color: #fff;
   padding: .5em;
   display: -webkit-box;
@@ -826,19 +826,18 @@ h6 {
 .main .we-mark .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
 }
 
 .main .we-mark .wrapper .image {
-  width: 120%;
-  height: 75%;
+  height: 90%;
   position: relative;
   right: -25px;
 }
@@ -860,7 +859,7 @@ h6 {
   height: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 910px) {
   .main .we-mark .wrapper .image {
     display: none;
   }
@@ -869,13 +868,13 @@ h6 {
 .main .we-mark .wrapper .content {
   position: relative;
   left: -3em;
-  max-width: 500px;
-  padding: 5em 2em 2em 7em;
+  height: 100%;
+  padding: 7em 2em 7em 7em;
   background: #dddbdb;
   background: -webkit-gradient(linear, left top, right top, color-stop(65%, #dddbdb), to(white));
   background: linear-gradient(90deg, #dddbdb 65%, white 100%);
-  -webkit-clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
   -webkit-box-shadow: 0px 0px 7px 2px #b0a9b0;
   box-shadow: 0px 0px 7px 2px #b0a9b0;
 }
@@ -1061,13 +1060,13 @@ h6 {
 }
 
 .main .booking {
-  padding: 2em;
   background-color: #fff;
   position: relative;
 }
 
 .main .booking .collage {
   max-width: 100%;
+  min-height: 100vh;
   position: absolute;
   display: -ms-grid;
   display: grid;
@@ -1077,17 +1076,17 @@ h6 {
 
 .main .booking .collage .collage__item {
   width: 100%;
-  -o-object-fit: scale-down;
-     object-fit: scale-down;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .main .booking .book-now {
-  max-width: 700px;
+  max-width: 600px;
   padding: 1em;
   color: #fff !important;
   background-color: #d52553;
   background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
-  margin: 0 auto 14em auto;
+  margin: 0 auto calc(15%) auto;
   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
           clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   text-align: center;
