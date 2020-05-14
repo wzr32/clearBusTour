@@ -929,12 +929,23 @@ h6 {
   bottom: 0;
 }
 
-.main .clients-review .carousel .container {
-  width: 100%;
-  padding: 3em;
+.main .clients-review .carousel {
+  position: relative;
 }
 
-.main .clients-review .carousel .container .photo {
+.main .clients-review .carousel .container {
+  width: 90%;
+  padding: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.main .clients-review .carousel .container .carousel__photo {
   background-image: url(../img/HOME/Recurso_18.png);
   max-width: 9em;
   max-height: 9em;
@@ -951,15 +962,16 @@ h6 {
       align-self: center;
 }
 
-.main .clients-review .carousel .container .photo img {
+.main .clients-review .carousel .container .carousel__photo img {
   width: 100%;
   margin: .1em;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.main .clients-review .carousel .container .description {
-  background-color: steelblue;
+.main .clients-review .carousel .container .carousel__description {
+  width: 100%;
+  padding: 1em;
 }
 
 .main .booking {
@@ -1367,5 +1379,38 @@ h6 {
           transform: translate(-50%, -50%);
   font-size: 1.2em;
   color: #ce1d47;
+}
+
+.glide__arrows {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.glide__arrows .glide__arrow--right,
+.glide__arrows .glide__arrow--left {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.glide__arrows .glide__arrow--right i,
+.glide__arrows .glide__arrow--left i {
+  font-size: 4em;
+  color: #70706e;
+}
+
+.glide__arrows .glide__arrow--right {
+  right: 0;
+}
+
+.glide__arrows .glide__arrow--left {
+  left: 0;
 }
 /*# sourceMappingURL=main.css.map */
