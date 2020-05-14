@@ -10,6 +10,7 @@ html,
 body {
   background-color: #ececec;
   min-height: 100vh;
+  max-width: 1360px;
   width: 100%;
   font-family: 'Poppins', sans-serif;
   color: #70706e;
