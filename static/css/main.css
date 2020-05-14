@@ -1181,7 +1181,7 @@ h6 {
   background-color: #ce1d47;
 }
 
-.main .tours .our-tours .wrapper .tour-card .title {
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title {
   width: 100%;
   height: 27em;
   color: #fff;
@@ -1201,6 +1201,86 @@ h6 {
   background-image: url(../img/Tours/Recurso_1.png);
   background-position: center;
   background-size: cover;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p {
+  font-weight: 700;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(2) {
+  font-size: 2.5em;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(3) {
+  font-size: 3em;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title {
+  width: 100%;
+  height: 27em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/Tours/Recurso_2.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p {
+  font-weight: 700;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(2) {
+  font-size: 2.5em;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(3) {
+  font-size: 3em;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title {
+  width: 100%;
+  height: 27em;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/Tours/Recurso_3.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p {
+  font-weight: 700;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(2) {
+  font-size: 2.5em;
+}
+
+.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(3) {
+  font-size: 3em;
 }
 
 .main .tours .our-tours .wrapper .tour-card .decription {
@@ -1243,8 +1323,8 @@ h6 {
 .main .tours .tours-info .container .city {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+  -ms-grid-columns: (minmax(300px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
   margin-left: auto;
   position: relative;
 }
@@ -1321,7 +1401,7 @@ h6 {
 }
 
 .main .tours .tours-info .container .city .video .container iframe {
-  position: absolute;
+  position: relative;
   width: calc(100% - 10px);
   height: 100%;
   bottom: 10px;
