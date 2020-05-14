@@ -1041,11 +1041,13 @@ h6{
         position: relative;
         
         .collage{
-            max-width: 100%;
-            min-height: 100vh;
             position: absolute;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
 
             .collage__item{
                 width: 100%;

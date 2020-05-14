@@ -1065,13 +1065,15 @@ h6 {
 }
 
 .main .booking .collage {
-  max-width: 100%;
-  min-height: 100vh;
   position: absolute;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(25%, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .main .booking .collage .collage__item {
