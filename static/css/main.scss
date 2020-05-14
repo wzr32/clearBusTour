@@ -13,7 +13,7 @@ body{
     min-height: 100vh;
     width: 100%;
     font-family: 'Poppins', sans-serif;
-    // color: $text;
+    color: $text;
 }
 
 a{
@@ -39,7 +39,6 @@ h4,
 h5,
 h6{
     margin: 1.3em 0;
-    // color: $title;
 }
 
 .btn{
@@ -474,6 +473,7 @@ h6{
                             color: $purple;
                             margin: 0;
                             font-weight: 700;
+                            font-size: 2em;
 
                             span{
                                 font-weight: 300;
@@ -532,6 +532,8 @@ h6{
                                 text-transform: uppercase;
                                 font-weight: 700;
                                 margin-bottom: .6em;
+                                font-size: 2em;
+
                                 span{
                                     font-weight: 300;
                                 }
@@ -569,28 +571,30 @@ h6{
                         
                         .title{
                             padding-right: 1em;
-                            margin-right: 1em;
                             margin-bottom: 1em;
+
+                            &::after{
+                                content: "";
+                                position: absolute;
+                                right: 1em;
+                                width: 2px;
+                                top: 1.8em;
+                                height: 4.5em;
+                                background-color: #fff;
+                            }
 
                             h3{
                                 text-transform: uppercase;
                                 font-weight: 700;
-                                margin-bottom: .2em;
+                                margin: .2em 0;
+                                font-size: 2em;
 
                                 span{
                                     font-weight: 300;
                                 }
+                                
                             }
-                            
-                            // &::after{
-                            //     content: "";
-                            //     position: absolute;
-                            //     right: 0;
-                            //     width: 2px;
-                            //     top: 0;
-                            //     bottom: 0;
-                            //     background-color: #fff;
-                            // }
+                        
 
                         }//end title
 
@@ -646,34 +650,65 @@ h6{
                     margin-top: 0;
                     margin-bottom: 1em;
 
+                    img{
+                        position: relative;
+                        width: 1em;
+                        top: .2em;
+                        margin-right: .3em;
+                    }
                 }
             }//end group
         }// services
     }//end ain-hero-banner
 
     .featured-tours{
-        // position: relative;
+
+        .title{
+            font-size: 2.3rem;
+            font-weight: 700;
+            background: $gradient;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-transform: uppercase;
+            padding-left: 3em;
+
+            &::before{
+                content: "";
+                width: .1em;
+                height: .75em;
+                display: inline-block;
+                margin-right: .3em;
+                background-color: $purple;
+                
+            }
+
+        }//end title
+
+        position: relative;
         .flyer{
             width: 100%;
             height: 100vh;
             padding: 1em 3em;
             position: relative;
 
-            &:nth-child(1){
+            &:nth-child(2){
                 background-image: url(../img/HOME/Recurso_7.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+                position: relative;
+
             }
             
-            &:nth-child(3){
+            &:nth-child(4){
                 background-image: url(../img/HOME/Recurso_8.png);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
 
-            &:nth-child(5){
+            &:nth-child(6){
                 background-image: url(../img/HOME/Recurso_9.png);
                 background-position: center;
                 background-repeat: no-repeat;
@@ -681,11 +716,19 @@ h6{
             }
 
             h2{
+                margin-top: .4em;
+                margin-left: 1.5em;
                 position: absolute;
-                max-width: 55%;
-                font-size: 2rem;
+                max-width: 65%;
+                font-size: 4rem;
                 color: #fff;
-                z-index: 10;
+                font-weight: 400;
+                z-index: 100000;
+                text-shadow:  0px 4px 6px rgba(168,168,168,1);
+
+                i{
+                    margin: 0 .1em;
+                }
             }
         }//end flayer
 
@@ -773,7 +816,6 @@ h6{
         .wrapper{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, auto));
-            // margin: 0 auto;
             align-items: center;
             justify-content: center;
 
@@ -781,14 +823,35 @@ h6{
                 width: 120%;
                 height: 75%;
                 position: relative;
-                right: -3em;
+                right: -25px;
 
                 img{
                     height: 100%;
                     object-fit: contain;
                 }
-            }//end image
 
+                &::before{
+                    content: "";
+                    display: inline-block;
+                    background: url(../img/HOME/Recurso_11.png);
+                    background-repeat: no-repeat ;
+                    position: absolute;
+                    top: -2em;
+                    width: 4em;
+                    height: 100%;
+
+                    
+                    
+                }
+                
+            }//end image
+            
+            @media (max-width:768px) {
+                .image{
+                    display: none;
+                }
+            }
+            
             .content{
                 position: relative;
                 left: -3em;
@@ -955,6 +1018,17 @@ h6{
                 .carousel__description{
                     width: 100%;
                     padding: 1em;
+
+                    .description__footer{
+                        text-align: right;
+                        p{
+                            text-transform: capitalize;
+                            font-weight: 700;
+                        }
+                        span{
+                            font-weight: 300;
+                        }
+                    }//end description__footer
                 }//end description
             }//end container
         }//end carousel
@@ -963,6 +1037,20 @@ h6{
     .booking{
         padding: 2em;
         background-color: #fff;
+        position: relative;
+        
+        .collage{
+            max-width: 100%;
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+
+            .collage__item{
+                width: 100%;
+                object-fit: scale-down;
+
+            }//end collage__item
+        }//end collage
 
         .book-now{
             max-width: 700px;
@@ -973,6 +1061,8 @@ h6{
             margin: 0 auto 14em auto;
             clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
             text-align: center;
+            position: relative;
+            z-index: 10;
 
             h2{
                 font-size: 3rem;
@@ -1299,6 +1389,8 @@ h6{
     background-color: $purple;
     padding: 3em 13%;
     color: #fff !important;
+    position: relative;
+    z-index: 100;
     
     .wrapper{
         width: 100%;

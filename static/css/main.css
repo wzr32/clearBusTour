@@ -12,6 +12,7 @@ body {
   min-height: 100vh;
   width: 100%;
   font-family: 'Poppins', sans-serif;
+  color: #70706e;
 }
 
 a {
@@ -482,6 +483,7 @@ h6 {
   color: #ce1d47;
   margin: 0;
   font-weight: 700;
+  font-size: 2em;
 }
 
 .main .contactus .wrapper .banner-2 .content .title h3 span {
@@ -540,6 +542,7 @@ h6 {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: .6em;
+  font-size: 2em;
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info h3 span {
@@ -582,14 +585,24 @@ h6 {
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title {
   padding-right: 1em;
-  margin-right: 1em;
   margin-bottom: 1em;
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .title::after {
+  content: "";
+  position: absolute;
+  right: 1em;
+  width: 2px;
+  top: 1.8em;
+  height: 4.5em;
+  background-color: #fff;
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title h3 {
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: .2em;
+  margin: .2em 0;
+  font-size: 2em;
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title h3 span {
@@ -650,6 +663,40 @@ h6 {
   margin-bottom: 1em;
 }
 
+.main .main-hero-banner .services .support h3 img,
+.main .main-hero-banner .services .best-price h3 img,
+.main .main-hero-banner .services .best-selection h3 img,
+.main .main-hero-banner .services .secure-payments h3 img {
+  position: relative;
+  width: 1em;
+  top: .2em;
+  margin-right: .3em;
+}
+
+.main .featured-tours {
+  position: relative;
+}
+
+.main .featured-tours .title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  padding-left: 3em;
+}
+
+.main .featured-tours .title::before {
+  content: "";
+  width: .1em;
+  height: .75em;
+  display: inline-block;
+  margin-right: .3em;
+  background-color: #ce1d47;
+}
+
 .main .featured-tours .flyer {
   width: 100%;
   height: 100vh;
@@ -657,21 +704,22 @@ h6 {
   position: relative;
 }
 
-.main .featured-tours .flyer:nth-child(1) {
+.main .featured-tours .flyer:nth-child(2) {
   background-image: url(../img/HOME/Recurso_7.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.main .featured-tours .flyer:nth-child(3) {
+.main .featured-tours .flyer:nth-child(4) {
   background-image: url(../img/HOME/Recurso_8.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.main .featured-tours .flyer:nth-child(5) {
+.main .featured-tours .flyer:nth-child(6) {
   background-image: url(../img/HOME/Recurso_9.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -679,11 +727,19 @@ h6 {
 }
 
 .main .featured-tours .flyer h2 {
+  margin-top: .4em;
+  margin-left: 1.5em;
   position: absolute;
-  max-width: 55%;
-  font-size: 2rem;
+  max-width: 65%;
+  font-size: 4rem;
   color: #fff;
-  z-index: 10;
+  font-weight: 400;
+  z-index: 100000;
+  text-shadow: 0px 4px 6px #a8a8a8;
+}
+
+.main .featured-tours .flyer h2 i {
+  margin: 0 .1em;
 }
 
 .main .featured-tours .wrapper {
@@ -784,13 +840,30 @@ h6 {
   width: 120%;
   height: 75%;
   position: relative;
-  right: -3em;
+  right: -25px;
 }
 
 .main .we-mark .wrapper .image img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.main .we-mark .wrapper .image::before {
+  content: "";
+  display: inline-block;
+  background: url(../img/HOME/Recurso_11.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -2em;
+  width: 4em;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .main .we-mark .wrapper .image {
+    display: none;
+  }
 }
 
 .main .we-mark .wrapper .content {
@@ -974,9 +1047,38 @@ h6 {
   padding: 1em;
 }
 
+.main .clients-review .carousel .container .carousel__description .description__footer {
+  text-align: right;
+}
+
+.main .clients-review .carousel .container .carousel__description .description__footer p {
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+.main .clients-review .carousel .container .carousel__description .description__footer span {
+  font-weight: 300;
+}
+
 .main .booking {
   padding: 2em;
   background-color: #fff;
+  position: relative;
+}
+
+.main .booking .collage {
+  max-width: 100%;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25%, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+}
+
+.main .booking .collage .collage__item {
+  width: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
 }
 
 .main .booking .book-now {
@@ -989,6 +1091,8 @@ h6 {
   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
           clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   text-align: center;
+  position: relative;
+  z-index: 10;
 }
 
 .main .booking .book-now h2 {
@@ -1330,6 +1434,8 @@ h6 {
   background-color: #ce1d47;
   padding: 3em 13%;
   color: #fff !important;
+  position: relative;
+  z-index: 100;
 }
 
 .footer .wrapper {
