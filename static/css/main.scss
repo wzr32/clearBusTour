@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import 'variables';
 
+@font-face {
+    font-family: 'Myriad';
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF')
+}
+
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url('../fonts/Nexa\ Bold.otf')
+}
+
+@font-face {
+    font-family: 'Nexa Light';
+    src: url('../fonts/Nexa\ Light.otf')
+}
+
+@font-face {
+    font-family: 'Calibri Light';
+    src: url('../fonts/calibril-thin.ttf')
+}
+
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -13,7 +36,7 @@ body{
     min-height: 100vh;
     max-width: 1360px;
     width: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Myriad', sans-serif;
     color: $text;
 }
 
@@ -40,6 +63,14 @@ h4,
 h5,
 h6{
     margin: 1.3em 0;
+}
+
+h2{
+    font-family: 'Nexa Bold';
+}
+
+h3{
+    font-family: 'Nexa Light';
 }
 
 .custom-wrapper{
@@ -284,6 +315,7 @@ h6{
         h2{
             color: #ffffff;
             font-size: 2.3em;
+            // font-family: 'Nexa Bold';
 
             &::after{
                 content: "";
@@ -376,16 +408,20 @@ h6{
         padding: 3em 1em;
 
         h2{
-            &:first-child{
+            
+            &:nth-child(1){
+                font-size: 2.8em;
+                font-family: 'Nexa bold';
                 background-color: $background;
                 display: inline-block;
                 padding: 0 1em;
                 position: absolute;
-                top: 2.3em;
+                top: 20px;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 10;
             }
+
         }
 
         .container{
@@ -1140,7 +1176,7 @@ h6{
                         font-size: 22px;
                         margin: 0;
                         position: relative;
-                        bottom: -13px;
+                        bottom: -3px;
                         right: -11px;
                     }//end span
                 }//end h2
@@ -1177,7 +1213,7 @@ h6{
     
     
                 .tour-card{
-                    background-color: $purple;
+                    background-color: $lightpurple;
 
                     &:nth-of-type(1){
 
@@ -1294,7 +1330,7 @@ h6{
             margin-bottom: 3em;
     
             .custom-title{
-                background-color: $purple;
+                background-color: $lightpurple;
                 font-weight: 700;
                 color: #ffffff;
                 padding: 1em;
@@ -1383,7 +1419,7 @@ h6{
                         padding: 2em 0;
     
                         .container{
-                            background-color: $purple;
+                            background-color: $lightpurple;
                             height: 80%;
                             position: relative;
     
@@ -1421,12 +1457,12 @@ h6{
     
                     .btn-outline{
                         border-radius: 0;
-                        border: 1px solid $purple;
-                        color: $purple;
+                        border: 1px solid $lightpurple;
+                        color: $lightpurple;
     
                         &:hover{
                             cursor: pointer;
-                            background-color: $purple;
+                            background-color: $lightpurple;
                             color: #fff;
                         }
                     }
@@ -1462,12 +1498,13 @@ h6{
                     padding: 1em;
                     position: relative;
                     margin-bottom: 3em;
-    
+                    
+
                     h2{
                         padding: 0 1.3em;
                         width: 11em;
                         font-weight: 300;
-                        color: $purple;
+                        color: $lightpurple;
                     }
                     
                     .wrapper{
@@ -1477,7 +1514,7 @@ h6{
                         
 
                         .sites-card{
-                            background-color: $purple;
+                            background-color: $lightpurple;
     
                             .image{
                                 width: 100%;
@@ -1488,7 +1525,7 @@ h6{
                             }//end image
                         }//end sites-card
                         .description{
-                            
+                            font-family: 'Calibri Light';
                             color: #fff;
                             padding: 1em ;
                             text-align: center;
@@ -1568,8 +1605,6 @@ h6{
         }// end social-network
     }//end wrapper
 }//end footer
-
-
 
 .glide__arrows{
     position: absolute;
