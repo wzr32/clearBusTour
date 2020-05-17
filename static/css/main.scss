@@ -35,6 +35,7 @@ body{
     background-color: $background;
     min-height: 100vh;
     max-width: 1360px;
+    margin: 0 auto;
     width: 100%;
     font-family: 'Myriad', sans-serif;
     color: $text;
@@ -794,7 +795,7 @@ h3{
                 margin-left: 5%;
                 position: absolute;
                 max-width: 65%;
-                font-size: 4.7vw;
+                font-size: 4.7rem;
                 color: #fff;
                 font-weight: 400;
                 z-index: 100000;
@@ -803,7 +804,15 @@ h3{
                 i{
                     margin: 0 .1em;
                 }
+            
+            
+                @media (max-width:768px) {
+                    font-size: 3.5rem;
+                }
+
             }
+
+
         }//end flayer
 
         .wrapper{
@@ -1111,13 +1120,18 @@ h3{
 
     .booking{
         // padding: 2em;
-        background-color: #fff;
+        background-color: #676364;
         position: relative;
+        min-height: 80vh;
         
         .collage{
+            background: tomato;
             position: absolute;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+            width: 100%;
+            height: 90vh;
+            overflow: hidden;
+            grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
             top: 0;
             left: 0;
             right: 0;
@@ -1125,7 +1139,8 @@ h3{
 
             .collage__item{
                 width: 100%;
-                object-fit: contain;
+                height: 13em;
+                object-fit: cover;
 
             }//end collage__item
         }//end collage
@@ -1637,70 +1652,73 @@ h3{
         }// end social-network
     }//end wrapper
 
-    .networks{
-        position: fixed;
-        bottom: 0;
-        right: 1em;
-        background-color: mediumseagreen;
-        display: flex;
-        flex-direction: column;
-
-            .block{
-                padding: 1.8em;
-                display: inline-block;
-                background-color:$purple;
-                // clip-path: circle(40% at 50% 50%);
-                border-radius: 50%;
-                position: absolute;
-                bottom: 1em;
-                right: 1em;
-                transition: .4s all ease;
-                color: #fff;
-                -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
-                -moz-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
-                box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
-                cursor: pointer;
     
-                i{
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                    font-size: 2em;
-    
-                }
-    
-                .fa-times{
-                    display: none;
-                }
-    
-            }//end .messenger .whatsapp .button
-
-            .block.whatsapp.active{
-                bottom: 6em;
-                background-color: $whatsappGreen
-            }
-
-            .block.messenger.active{
-                bottom: 11em;
-                background-color: $messengerBlue;
-            }
-
-            .block.button.active{
-                background-color: $cancel;
-
-                .fa-times{
-                    display: inline-block;
-                }
-
-                .fa-comments{
-                    display: none;
-                }
-            }
-
-
-    }//end networks
 }//end footer
+
+.networks{
+    position: sticky;
+    bottom: 0;
+    right: 1em;
+    background-color: mediumseagreen;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+
+        .block{
+            padding: 1.8em;
+            display: inline-block;
+            background-color:$purple;
+            // clip-path: circle(40% at 50% 50%);
+            border-radius: 50%;
+            position: absolute;
+            bottom: 1em;
+            right: 1em;
+            transition: .4s all ease;
+            color: #fff;
+            -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+            -moz-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+            box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+            cursor: pointer;
+
+            i{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2em;
+
+            }
+
+            .fa-times{
+                display: none;
+            }
+
+        }//end .messenger .whatsapp .button
+
+        .block.whatsapp.active{
+            bottom: 6em;
+            background-color: $whatsappGreen
+        }
+
+        .block.messenger.active{
+            bottom: 11em;
+            background-color: $messengerBlue;
+        }
+
+        .block.button.active{
+            background-color: $cancel;
+
+            .fa-times{
+                display: inline-block;
+            }
+
+            .fa-comments{
+                display: none;
+            }
+        }
+
+
+}//end networks
 
 .glide__arrows{
     position: absolute;

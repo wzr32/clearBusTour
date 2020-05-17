@@ -31,6 +31,7 @@ body {
   background-color: #ececec;
   min-height: 100vh;
   max-width: 1360px;
+  margin: 0 auto;
   width: 100%;
   font-family: 'Myriad', sans-serif;
   color: #70706e;
@@ -803,7 +804,7 @@ h3 {
   margin-left: 5%;
   position: absolute;
   max-width: 65%;
-  font-size: 4.7vw;
+  font-size: 4.7rem;
   color: #fff;
   font-weight: 400;
   z-index: 100000;
@@ -812,6 +813,12 @@ h3 {
 
 .main .featured-tours .flyer h2 i {
   margin: 0 .1em;
+}
+
+@media (max-width: 768px) {
+  .main .featured-tours .flyer h2 {
+    font-size: 3.5rem;
+  }
 }
 
 .main .featured-tours .wrapper {
@@ -1132,16 +1139,21 @@ h3 {
 }
 
 .main .booking {
-  background-color: #fff;
+  background-color: #676364;
   position: relative;
+  min-height: 80vh;
 }
 
 .main .booking .collage {
+  background: tomato;
   position: absolute;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25%, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+  -ms-grid-columns: (minmax(17em, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
   top: 0;
   left: 0;
   right: 0;
@@ -1150,8 +1162,9 @@ h3 {
 
 .main .booking .collage .collage__item {
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  height: 13em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main .booking .book-now {
@@ -1666,8 +1679,9 @@ h3 {
   color: #ce1d47;
 }
 
-.footer .networks {
-  position: fixed;
+.networks {
+  position: -webkit-sticky;
+  position: sticky;
   bottom: 0;
   right: 1em;
   background-color: mediumseagreen;
@@ -1678,9 +1692,10 @@ h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 100;
 }
 
-.footer .networks .block {
+.networks .block {
   padding: 1.8em;
   display: inline-block;
   background-color: #ce1d47;
@@ -1696,7 +1711,7 @@ h3 {
   cursor: pointer;
 }
 
-.footer .networks .block i {
+.networks .block i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1705,29 +1720,29 @@ h3 {
   font-size: 2em;
 }
 
-.footer .networks .block .fa-times {
+.networks .block .fa-times {
   display: none;
 }
 
-.footer .networks .block.whatsapp.active {
+.networks .block.whatsapp.active {
   bottom: 6em;
   background-color: #5cb149;
 }
 
-.footer .networks .block.messenger.active {
+.networks .block.messenger.active {
   bottom: 11em;
   background-color: #3b76ba;
 }
 
-.footer .networks .block.button.active {
+.networks .block.button.active {
   background-color: #ec6454;
 }
 
-.footer .networks .block.button.active .fa-times {
+.networks .block.button.active .fa-times {
   display: inline-block;
 }
 
-.footer .networks .block.button.active .fa-comments {
+.networks .block.button.active .fa-comments {
   display: none;
 }
 
