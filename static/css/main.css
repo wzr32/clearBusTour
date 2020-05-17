@@ -1707,6 +1707,18 @@ h3 {
   background-color: #3b76ba;
 }
 
+.footer .networks .block.button.active {
+  background-color: #ec6454;
+}
+
+.footer .networks .block.button.active .fa-times {
+  display: inline-block;
+}
+
+.footer .networks .block.button.active .fa-comments {
+  display: none;
+}
+
 .glide__arrows {
   position: absolute;
   top: 0;

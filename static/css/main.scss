@@ -1663,14 +1663,6 @@ h3{
     
             }//end .messenger .whatsapp .button
 
-            // .block.whatsapp{
-            //     background-color: $whatsappGreen
-            // }
-
-            // .block.messenger{
-            //     background-color: $messengerBlue;
-            // }
-
             .block.whatsapp.active{
                 bottom: 6em;
                 background-color: $whatsappGreen
@@ -1679,6 +1671,18 @@ h3{
             .block.messenger.active{
                 bottom: 11em;
                 background-color: $messengerBlue;
+            }
+
+            .block.button.active{
+                background-color: $cancel;
+
+                .fa-times{
+                    display: inline-block;
+                }
+
+                .fa-comments{
+                    display: none;
+                }
             }
 
 
