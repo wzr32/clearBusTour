@@ -1562,7 +1562,20 @@ h3{
         grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
         gap: 2em;
 
+        .info{
+            margin-bottom: 3em;
+
+            h2{
+                margin-top: 1em;
+            }
+        }//end info
+
         .policy{
+
+            h2{
+                margin-top: 1em;
+            }
+
             a{
                 color: #fff;
                 text-decoration: underline;
@@ -1574,7 +1587,7 @@ h3{
                 
                 li{
                     display: flex;
-                    margin-bottom: 1.4em;
+                    margin-bottom: 3.4em;
                     
                     i{
                         margin-right: 1em;
@@ -1633,7 +1646,7 @@ h3{
         flex-direction: column;
 
             .block{
-                padding: 2.1em;
+                padding: 1.8em;
                 display: inline-block;
                 background-color:$purple;
                 // clip-path: circle(40% at 50% 50%);
@@ -1653,7 +1666,7 @@ h3{
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    font-size: 1.8em;
+                    font-size: 2em;
     
                 }
     

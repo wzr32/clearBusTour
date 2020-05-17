@@ -1601,6 +1601,18 @@ h3 {
   gap: 2em;
 }
 
+.footer .wrapper .info {
+  margin-bottom: 3em;
+}
+
+.footer .wrapper .info h2 {
+  margin-top: 1em;
+}
+
+.footer .wrapper .policy h2 {
+  margin-top: 1em;
+}
+
 .footer .wrapper .policy a {
   color: #fff;
   text-decoration: underline;
@@ -1610,7 +1622,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 1.4em;
+  margin-bottom: 3.4em;
 }
 
 .footer .wrapper .contact-us ul li i {
@@ -1669,7 +1681,7 @@ h3 {
 }
 
 .footer .networks .block {
-  padding: 2.1em;
+  padding: 1.8em;
   display: inline-block;
   background-color: #ce1d47;
   border-radius: 50%;
@@ -1690,7 +1702,7 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 .footer .networks .block .fa-times {
