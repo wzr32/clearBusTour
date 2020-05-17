@@ -1570,24 +1570,38 @@ h3{
         }//end policy
 
         .contact-us{
-            li{
-                margin-bottom: 1.4em;
-            }
-        }
+            ul{
+                
+                li{
+                    display: flex;
+                    margin-bottom: 1.4em;
+                    
+                    i{
+                        margin-right: 1em;
+                        flex-shrink: 0;
+                        display: blo;
+                    }
+                }//end li
+            }//end ul
+        }//end contact-us
 
         .news-offers{
             form{
                 .btn{
                     margin: 1.5em 0 1.5em auto;
                     position: relative;
-                }
-            }
+                    border-radius: 4px;
+                    padding-top: .5em;
+                    padding-bottom: .5em;
+
+                }//btn
+            }//end form
         }// news-offers
 
         .social-networks{
             .box{
                 display: inline-block;
-                padding: 1.3em;
+                padding: 1.1em;
                 border-radius: 3px;
                 background-color: #fff;
                 margin: 1em .3em;
@@ -1609,6 +1623,66 @@ h3{
             }//end box
         }// end social-network
     }//end wrapper
+
+    .networks{
+        position: fixed;
+        bottom: 0;
+        right: 1em;
+        background-color: mediumseagreen;
+        display: flex;
+        flex-direction: column;
+
+            .block{
+                padding: 2.1em;
+                display: inline-block;
+                background-color:$purple;
+                // clip-path: circle(40% at 50% 50%);
+                border-radius: 50%;
+                position: absolute;
+                bottom: 1em;
+                right: 1em;
+                transition: .4s all ease;
+                color: #fff;
+                -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+                -moz-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+                box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);
+                cursor: pointer;
+    
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.8em;
+    
+                }
+    
+                .fa-times{
+                    display: none;
+                }
+    
+            }//end .messenger .whatsapp .button
+
+            // .block.whatsapp{
+            //     background-color: $whatsappGreen
+            // }
+
+            // .block.messenger{
+            //     background-color: $messengerBlue;
+            // }
+
+            .block.whatsapp.active{
+                bottom: 6em;
+                background-color: $whatsappGreen
+            }
+
+            .block.messenger.active{
+                bottom: 11em;
+                background-color: $messengerBlue;
+            }
+
+
+    }//end networks
 }//end footer
 
 .glide__arrows{

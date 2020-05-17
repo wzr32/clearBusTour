@@ -1606,18 +1606,31 @@ h3 {
   text-decoration: underline;
 }
 
-.footer .wrapper .contact-us li {
+.footer .wrapper .contact-us ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 1.4em;
+}
+
+.footer .wrapper .contact-us ul li i {
+  margin-right: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: blo;
 }
 
 .footer .wrapper .news-offers form .btn {
   margin: 1.5em 0 1.5em auto;
   position: relative;
+  border-radius: 4px;
+  padding-top: .5em;
+  padding-bottom: .5em;
 }
 
 .footer .wrapper .social-networks .box {
   display: inline-block;
-  padding: 1.3em;
+  padding: 1.1em;
   border-radius: 3px;
   background-color: #fff;
   margin: 1em .3em;
@@ -1639,6 +1652,59 @@ h3 {
           transform: translate(-50%, -50%);
   font-size: 1.2em;
   color: #ce1d47;
+}
+
+.footer .networks {
+  position: fixed;
+  bottom: 0;
+  right: 1em;
+  background-color: mediumseagreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .networks .block {
+  padding: 2.1em;
+  display: inline-block;
+  background-color: #ce1d47;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+  color: #fff;
+  -webkit-box-shadow: 0px 0px 9px -2px #817e7e;
+  box-shadow: 0px 0px 9px -2px #817e7e;
+  cursor: pointer;
+}
+
+.footer .networks .block i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.8em;
+}
+
+.footer .networks .block .fa-times {
+  display: none;
+}
+
+.footer .networks .block.whatsapp.active {
+  bottom: 6em;
+  background-color: #5cb149;
+}
+
+.footer .networks .block.messenger.active {
+  bottom: 11em;
+  background-color: #3b76ba;
 }
 
 .glide__arrows {
