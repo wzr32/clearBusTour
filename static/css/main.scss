@@ -704,7 +704,7 @@ h3{
             background: url(../img/bgs/main-hero-banner.jpg);
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 100%;
+            background-size: cover;
         }//end banner
 
         .services{
@@ -929,12 +929,6 @@ h3{
                 
             }//end image
             
-            @media (max-width:910px) {
-                .image{
-                    display: none;
-                }
-            }
-            
             .content{
                 position: relative;
                 left: -3em;
@@ -952,6 +946,18 @@ h3{
                     color: $purple;
                 }
             }//end content
+
+            @media (max-width:910px) {
+                .image{
+                    display: none;
+                }
+
+                .content{
+                    left: 0;
+                    padding: 7em 2em 7em 2em;
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+                }
+            }
         }// end wrapper
     }//end we-mark
 
@@ -983,7 +989,7 @@ h3{
         .wrapper{
             display: grid;
             gap: 3em;
-            grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
             margin: 0 auto;
 
             .promo-card{

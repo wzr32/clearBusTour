@@ -704,7 +704,7 @@ h3 {
   background: url(../img/bgs/main-hero-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .main .main-hero-banner .services {
@@ -937,12 +937,6 @@ h3 {
   height: 100%;
 }
 
-@media (max-width: 910px) {
-  .main .we-mark .wrapper .image {
-    display: none;
-  }
-}
-
 .main .we-mark .wrapper .content {
   position: relative;
   left: -3em;
@@ -959,6 +953,18 @@ h3 {
 
 .main .we-mark .wrapper .content span {
   color: #ce1d47;
+}
+
+@media (max-width: 910px) {
+  .main .we-mark .wrapper .image {
+    display: none;
+  }
+  .main .we-mark .wrapper .content {
+    left: 0;
+    padding: 7em 2em 7em 2em;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
 
 .main .promotions {
@@ -988,8 +994,8 @@ h3 {
   display: -ms-grid;
   display: grid;
   gap: 3em;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
 }
 
