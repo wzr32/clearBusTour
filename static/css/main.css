@@ -565,7 +565,7 @@ h3 {
   background-size: cover;
   background-position: center;
   z-index: 20;
-  margin: -21em 0;
+  margin: -22em 0;
 }
 
 .main .contactus .wrapper .banner-2 .content {
@@ -587,6 +587,8 @@ h3 {
           flex-direction: column;
   padding: 10%;
   margin-left: auto;
+  position: relative;
+  top: -2.5em;
 }
 
 .main .contactus .wrapper .banner-2 .content .title h3 {
@@ -657,8 +659,8 @@ h3 {
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
 }
@@ -679,7 +681,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: .2em;
-  margin-top: -2em;
+  margin-top: -.3em;
   font-size: 2.3em;
   font-family: 'Nexa bold';
 }
@@ -718,9 +720,9 @@ h3 {
 .main .contactus .wrapper .banner-3 .grid .send-message {
   text-align: right;
   padding: 1em;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
   color: #fff;
   position: relative;
 }
@@ -1558,6 +1560,8 @@ h3 {
 .main .tours .tours-info .container {
   background-color: #fff;
   position: relative;
+  background-position: center;
+  background-size: 80%;
 }
 
 .main .tours .tours-info .container .city {
@@ -1654,6 +1658,7 @@ h3 {
   font-weight: 300;
   color: #ce1d47;
   text-align: center;
+  font-family: 'Nexa Light';
   -webkit-box-shadow: 0px 3px 10px 0px #969696;
   box-shadow: 0px 3px 10px 0px #969696;
 }
