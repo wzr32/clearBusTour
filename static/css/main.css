@@ -196,10 +196,6 @@ h3 {
 }
 
 .nav .menu .options ul li a:hover {
-  color: #ddaec0;
-}
-
-.nav .menu .options ul li a.active {
   color: #ce1d47;
 }
 
@@ -826,6 +822,7 @@ h3 {
   padding: .5em;
   width: 100%;
   border: none;
+  resize: none;
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message input,
@@ -965,7 +962,7 @@ h3 {
   color: #fff;
   font-weight: 400;
   z-index: 100000;
-  text-shadow: 0px 4px 6px #a8a8a8;
+  text-shadow: 0px 6px 11px -8px rgba(0, 0, 0, 0.9);
 }
 
 .main .featured-tours .flyer h2 i {
