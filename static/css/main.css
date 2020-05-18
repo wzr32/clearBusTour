@@ -154,7 +154,7 @@ h3 {
 }
 
 .nav .menu {
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (auto)[2];
@@ -191,28 +191,8 @@ h3 {
   position: relative;
 }
 
-.nav .menu .options ul li a::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 0;
-  height: .4em;
-  left: -2px;
-  bottom: -5px;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
-  -webkit-transition: ease .3s all;
-  transition: ease .3s all;
-}
-
-.nav .menu .options ul li:hover a::after {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 100%;
-  height: .4em;
-  left: -2px;
-  bottom: -5px;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+.nav .menu .options ul li a:hover {
+  color: #ce1d47;
 }
 
 @media (max-width: 780px) {
@@ -700,7 +680,7 @@ h3 {
 
 .main .main-hero-banner .banner {
   width: 100%;
-  height: 100vh;
+  height: 73vh;
   background: url(../img/bgs/main-hero-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
