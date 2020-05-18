@@ -21,9 +21,6 @@
     src: url('../fonts/calibril-thin.ttf')
 }
 
-
-
-
 *{
     padding: 0;
     margin: 0;
@@ -32,7 +29,7 @@
 
 html,
 body{
-    background-color: $background;
+    background-color: #fff;
     min-height: 100vh;
     // max-width: 1360px;
     margin: 0 auto;
@@ -116,6 +113,7 @@ h3{
     font-size: 1.2rem;
     font-weight: 400;
     transition: ease background-color .3s;
+    font-family: 'Nexa Light';
 
     &:hover{
 
@@ -136,6 +134,7 @@ h3{
     font-weight: 300;
     background-color: transparent;
     transition: .3s background-color ease;
+    font-family: 'Calibri Light';
 
     &:hover{
         cursor: pointer;
@@ -185,10 +184,11 @@ h3{
                     a{
                         color:$text;
                         position: relative;
+                        font-weight: bold;
                         
 
                         &:hover{
-                            color: $purple;
+                            color: $lightRose;
                         }//end li hover
 
     
@@ -272,6 +272,9 @@ h3{
             font-size: 4rem;
             position: relative;
             text-shadow:  0px 2px 1px rgba(168,168,168,1);
+            margin-bottom: .8em;
+            margin-top: 0;
+            font-family: 'Nexa bold';
 
             &::before{
                 content: "";
@@ -282,13 +285,20 @@ h3{
                 background-color: $purple;
                 bottom: 0;
                 left: .4em;
+                bottom: -.15em;
             }
-        }
+        }//end h2
+
+        p{
+            font-size: 1.3em;
+            font-family: 'Nexa light';
+        }//end p
 
     }//end hero-banner
 
     .news{
-        padding: 1em 2em;
+        margin: -1em auto;
+        padding: 4em 2em;
         position: relative;
         background-image: url(../img/Blog/Recurso_2.png);
         background-repeat: no-repeat;
@@ -298,13 +308,27 @@ h3{
         h2{
             color: #ffffff;
             font-size: 2.3em;
-            // font-family: 'Nexa Bold';
+            font-family: 'Nexa Bold';
+            position: relative;
+            margin-left: .5em;
+            margin-top: 0;
+
+            &::before{
+                content: "";
+                width: 5px;
+                background-color: #fff;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -.5em;
+            }
 
             &::after{
                 content: "";
                 display: inline-block;
-                width: 70%;
-                margin: .3em 1em;
+                position: absolute;
+                width: 90%;
+                margin: .45em 1em .3em;
                 height: 1px;
                 background-color: #fff;
             }
@@ -315,6 +339,7 @@ h3{
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             margin: 0 auto;
             gap: 2em;
+            margin-bottom: 15em;
     
             .news-card{
                 max-width: 100%;
@@ -339,6 +364,9 @@ h3{
                     position: relative;
                     top: -1rem;
                     background-color: $purple;
+                    -webkit-box-shadow: 5px 4px 10px -3px rgba(117,117,117,1);
+                    -moz-box-shadow: 5px 4px 10px -3px rgba(117,117,117,1);
+                    box-shadow: 5px 4px 10px -3px rgba(117,117,117,1);
                     
     
                     &::after{
@@ -350,7 +378,7 @@ h3{
                         position: absolute;
                         z-index: 0;
                         top: 0;
-                        left: .4em;
+                        left: .2em;
                         border-radius: 10px;
     
                     }
@@ -389,23 +417,26 @@ h3{
 
     .blog-entries{
         padding: 3em 1em;
+        margin-top: 3em;
+        position: relative;
 
         h2{
-            
             &:nth-child(1){
-                font-size: 2.8em;
-                font-family: 'Nexa bold';
-                background-color: $background;
-                display: inline-block;
-                padding: 0 1em;
                 position: absolute;
-                top: 20px;
+                font-size: 2.5em;
+                font-family: 'Nexa bold';
+                background-color: #ffffff;
+                color: $purple;
+                text-transform: uppercase;
+                display: inline-block;
+                padding: 0 1.6em;
+                position: absolute;
+                top: -.6em;
                 left: 50%;
                 transform: translateX(-50%);
                 z-index: 10;
-            }
-
-        }
+            }//end nth-child
+        }//end h2
 
         .container{
             padding: 2em;
@@ -417,7 +448,9 @@ h3{
             
             .image{
                 width: 100%;
-                margin-bottom: 2em;
+                margin-top: 2em;
+                margin-bottom: 1em;
+
                 img{
                     width: 100%;
                     object-fit: contain;
@@ -426,6 +459,9 @@ h3{
             }//end image
 
             .content{
+                position: relative;
+                padding-bottom: 3em;
+
                 .date{
                     color: $purple;
                     font-size: .9rem;
@@ -440,12 +476,24 @@ h3{
                     display: inline-block;
                     margin-bottom: 1em;
                     margin-left: 1.5em;
+                    color: #3e4450;
                 }
 
                 h3{
                     margin-bottom: .5em;
                     font-weight: bold;
+                    color: #3e4450;
                 }
+
+                .back{
+                    display: block;
+                    position: absolute;
+                    margin-left: auto;
+                    color: $purple;
+                    bottom: 0;
+                    right: 0;
+                }
+
             }//edn content
             
         }// end container
@@ -477,13 +525,13 @@ h3{
 
                     h2{
                         position: relative;
-                        font-size: 4rem;
+                        font-size: 5.2rem;
                         text-shadow:  0px 2px 1px rgba(168,168,168,1);
-                        margin-bottom: 1em;
+                        margin-bottom: .2em;
     
                         &::after{
                             content: "";
-                            width: 5em;
+                            width: 2em;
                             height: 2px;
                             background-color: #fff;
                             position: absolute;
@@ -497,6 +545,7 @@ h3{
                     }//end h2
                     p{
                         font-size: 1.4em;
+                        font-family: 'Nexa light';
                     }
                 }//end content
 
@@ -531,24 +580,47 @@ h3{
                             margin: 0;
                             font-weight: 700;
                             font-size: 2em;
+                            margin-bottom: .3em;
+                            font-family: 'Nexa bold';
+                            position: relative;
 
-                            span{
-                                font-weight: 300;
+                            &::before{
+                                content: "";
+                                position: absolute;
+                                display: block;
+                                width: 3px;
+                                background-color: $purple;
+                                top: 0;
+                                left: -.5em;
+                                bottom: -.8em;
                             }
 
+                        }
+
+                        span{
+                            font-weight: 300;
+                            font-family: 'Nexa light';
+                            color: #868686;
                         }
 
 
                     }//end title
 
                     .data{
-                        margin-top: 3em ;
+                        margin-top: 2em;
+                        display: flex;
+                        flex-direction: column;
+
                         p{
                             font-weight: 300;
+                            margin-bottom: 2em;
+                            margin-left: .6em;
+                            font-family: 'Nexa light';
 
                             i{
                                 margin-right: 1em;
-                                font-size: 1em;
+                                font-size: 1.7em;
+                                color: #c6c6c6;
                             }//end i 
                         }//end p
                     }//end data
@@ -588,21 +660,28 @@ h3{
                                 color: $purple;
                                 text-transform: uppercase;
                                 font-weight: 700;
-                                margin-bottom: .6em;
-                                font-size: 2em;
+                                margin-bottom: .2em;
+                                margin-top: -2em;
+                                font-size: 2.3em;
+                                font-family: 'Nexa bold';
+
 
                                 span{
                                     font-weight: 300;
+                                    font-family: 'Nexa light';
                                 }
                             }
 
                             p{
                                 font-weight: 300;
+                                font-family: 'Nexa light';
+                                margin-bottom: 1em;
+
                             }
 
                             i{
                                 margin: .4em;
-                                font-size: 2em;
+                                font-size: 3em;
                                 color: $purple;
                                 transition: .3s all ease;
 
@@ -628,15 +707,15 @@ h3{
                         
                         .title{
                             padding-right: 1em;
-                            margin-bottom: 1em;
+                            margin-bottom: 4.5em;
 
                             &::after{
                                 content: "";
                                 position: absolute;
                                 right: 1em;
                                 width: 2px;
-                                top: 1.8em;
-                                height: 4.5em;
+                                top: 1em;
+                                height: 4em;
                                 background-color: #fff;
                             }
 
@@ -644,16 +723,27 @@ h3{
                                 text-transform: uppercase;
                                 font-weight: 700;
                                 margin: .2em 0;
-                                font-size: 2em;
+                                font-size: 2.3em;
+                                font-family: 'Nexa bold';
 
                                 span{
                                     font-weight: 300;
+                                    font-family: 'Nexa light';
                                 }
                                 
                             }
-                        
-
+                            p{
+                                font-family: 'Nexa light';
+                            }
                         }//end title
+
+
+                        .grid{
+                            display: grid;
+                            gap: 1em;
+                            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                            margin-bottom: 1.5em;
+                        }
 
                         textarea{
                             padding: .5em;
@@ -666,6 +756,13 @@ h3{
                         textarea{
                             margin: 1em 0;
                             text-align: right;
+                        }
+
+                        .btn-outline{
+                            padding: .7em 2.8em;
+                            text-transform: uppercase;
+                            font-size: .9em;
+                            letter-spacing: .2em;
                         }
 
                     }//end send-message
@@ -682,7 +779,7 @@ h3{
         .banner{
             // padding: 20em;
             width: 100%;
-            height: 73vh;
+            height: 70vh;
             background: url(../img/bgs/main-hero-banner.jpg);
             background-position: center;
             background-repeat: no-repeat;
@@ -701,8 +798,9 @@ h3{
             .best-selection,
             .secure-payments{
                 color: #fff;
-
+                
                 h3{
+                    font-family: 'Nexa Bold';
                     font-size: 1.4em;
                     margin-top: 0;
                     margin-bottom: 1em;
@@ -715,6 +813,15 @@ h3{
                     }
                 }
             }//end group
+
+            .best-price{
+                h3{
+                    span{
+                        display: block;
+                        margin-left: 3em;
+                    }
+                }
+            }
         }// services
     }//end ain-hero-banner
 
@@ -723,7 +830,8 @@ h3{
         .title{
             font-size: 2.3rem;
             font-weight: 700;
-            background: $gradient;
+            background: -webkit-linear-gradient(left,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 35%);
+            background: linear-gradient(to right,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 35%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -773,6 +881,7 @@ h3{
             }
 
             h2{
+                display: flex;
                 margin-top: 1%;
                 margin-left: 5%;
                 position: absolute;
@@ -799,7 +908,7 @@ h3{
 
         .wrapper{
             display: grid;
-            grid-template-columns: auto 300px;
+            grid-template-columns: auto 350px;
 
             @media (max-width: 768px){
                 grid-template-columns: auto;
@@ -812,6 +921,7 @@ h3{
                 h3{
                     font-weight: bold;
                     margin: 3px 0;
+                    text-transform: uppercase;
 
                     &::before{
                         content: "";
@@ -827,24 +937,31 @@ h3{
 
             .price{
                 background-color: $purple;
-                min-width: 300px;
+                min-width: 100%;
                 color: #fff;
-                padding: .5em;
+                padding: 1em 2em;
                 display: flex;
 
 
                 .info{
                     width: 50%;
                     height: 100%;
+                    font-family: 'Nexa Light';
                     
-                    span{
-                        margin: 0 auto;
-                        font-size: 13px;
-    
-                        &:nth-child(2){
-                            font-size: 3.4em;
-                        }
-                    }//end span
+                    .comming{
+                        font-size: .75em;
+                        line-height: 1.3em;
+                        text-transform: uppercase;
+                        display: block;
+                    }//end comming
+
+                    .numb{
+                        font-size: 4.3em;
+                    }//end numb
+
+                    .currency{
+                        font-size: .8em;
+                    }//end currency
                 }// end info
 
 
@@ -856,6 +973,11 @@ h3{
                     margin: 1.6em auto;
                 }// end btn-outline
             }//end price
+
+            -webkit-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+            -moz-box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+            box-shadow: 0px 4px 10px -3px rgba(117,117,117,1);
+
         }//end wrapper
     }//end featured-tours
 
@@ -886,9 +1008,9 @@ h3{
 
             .image{
                 // width: 120%;
-                height: 90%;
+                height: 100%;
                 position: relative;
-                right: -25px;
+                right: -2em;
 
                 img{
                     height: 100%;
@@ -904,29 +1026,31 @@ h3{
                     top: -2em;
                     width: 4em;
                     height: 100%;
-
-                    
-                    
                 }
                 
             }//end image
-            
+
             .content{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 position: relative;
-                left: -3em;
+                left: -2em;
                 // max-width: 500px;
-                height: 100%;
-                padding: 7em 2em 7em 7em;
-                background: rgb(221,219,219);
-                background: linear-gradient(90deg, rgba(221,219,219,1) 65%, rgba(255,255,255,1) 100%);
+                height: 110%;
+                padding: 7em 4em 7em 7em;
+                background-image: url(../img/HOME/Recurso_12.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
                 clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
-                -webkit-box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
-                -moz-box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
-                box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
+                line-height: 1.6em;
+                text-align: center;
 
                 span{
                     color: $purple;
                 }
+
             }//end content
 
             @media (max-width:910px) {
@@ -937,6 +1061,11 @@ h3{
                 .content{
                     left: 0;
                     padding: 7em 2em 7em 2em;
+                    background: rgb(231,229,228);
+                    background: -moz-linear-gradient(left,  rgba(231,229,228,1) 49%, rgba(255,255,255,1) 100%);
+                    background: -webkit-linear-gradient(left,  rgba(231,229,228,1) 49%,rgba(255,255,255,1) 100%);
+                    background: linear-gradient(to right,  rgba(231,229,228,1) 49%,rgba(255,255,255,1) 100%);
+                    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e5e4', endColorstr='#ffffff',GradientType=1 );
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
                 }
             }
@@ -945,15 +1074,20 @@ h3{
 
     .promotions{
         padding: 4em;
+        background: $background;
+        margin: 3em 0;
 
         .title{
             font-size: 2.3rem;
             font-weight: 700;
-            background: $gradient;
+            background: -webkit-linear-gradient(left,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 32%);
+            background: linear-gradient(to right,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 32%);
             -webkit-background-clip: text;
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
+            margin-top: 0;
+            
 
             &::before{
                 content: "";
@@ -1000,9 +1134,12 @@ h3{
                     flex-wrap: nowrap;
 
                     .btn-outline{
-                        border: 1px solid $purple;
-                        color: $purple;
+                        border: 1px solid $btnOrange;
+                        color: $btnOrange;
                         transition: .3s ease all;
+                        padding: .5em 1em;
+                        width: 100%;
+                        margin: .3em;
     
                         &:hover{
                             background: $gradient;
@@ -1018,7 +1155,7 @@ h3{
     .clients-review{
         padding: 2em 1em;
         margin: 1em 0;
-
+        background: $background;
 
         .header{
             position: relative;
@@ -1027,7 +1164,8 @@ h3{
             h2{
                 font-size: 2.3rem;
                 font-weight: 700;
-                background: $gradient;
+                background: -webkit-linear-gradient(left,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 35%);
+                background: linear-gradient(to right,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 35%);
                 -webkit-background-clip: text;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -1037,7 +1175,7 @@ h3{
                 
             
                 span{
-                    font-weight: 400;
+                    font-family: 'Nexa Light';
                 }
             }
 
@@ -1108,9 +1246,10 @@ h3{
 
     .booking{
         // padding: 2em;
-        background-color: #676364;
+        background-color: $background;
         position: relative;
         min-height: 80vh;
+        margin-top: 3em;
         
         .collage{
             background: tomato;
@@ -1134,16 +1273,18 @@ h3{
         }//end collage
 
         .book-now{
-            max-width: 600px;
-            padding: 1em;
-            color: #fff !important;
+            max-width: 650px;
+            padding: 4.5em 2em;
+            color:#fff !important;
             background-color: $gradientBackground;
             background: $gradient;
             margin: 0 auto calc(15%) auto;
+            -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
             clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
             text-align: center;
             position: relative;
             z-index: 10;
+            top: -30px;
 
             h2{
                 font-size: 3rem;
@@ -1154,9 +1295,12 @@ h3{
                 margin: 1.3em auto;
             }
         }//end book-now
+        
     }//end booking
 
     .tours{
+        background-color: #d9d9d9;
+
         .our-tours{
             padding: 1em;
             background-image: url(../img/Tours/Recurso_5.png);
@@ -1169,6 +1313,7 @@ h3{
                 align-items: center;
                 justify-content: center;
                 margin-bottom: 3em;
+                padding-top: 2.5em;
 
                 h2{
                     color: $purple;
@@ -1176,6 +1321,7 @@ h3{
                     font-size: 40px;
                     margin: 0;
                     text-align: right;
+                    font-size: 3em;
 
                     span{
                         letter-spacing: .7em;
@@ -1191,7 +1337,7 @@ h3{
 
                 .decoration{
                     display: inline-block;
-                    padding: .4em 1em;
+                    padding: .6em 1em;
                     background-color: #676364;
                     width: 13em;
                     color: #fff;
@@ -1199,6 +1345,7 @@ h3{
                     text-transform: capitalize;
                     position: relative;
                     margin-left: 2em;
+                    font-family: 'Nexa bold';
 
                     &::before{
                         content: "";
@@ -1320,14 +1467,16 @@ h3{
                     
     
                     .decription{
-                        padding: 3em;
+                        padding: 1em 3em 3em 3em;
                         color: #fff;
-                        font-size: .8em;
+                        font-size: .9em;
                         text-align: center;
                     }//end description
     
                     .btn-outline{
+                        padding: .5em 2.8em;
                         margin: 1.6em auto 0 auto;
+                        font-size: 1em;
                     }
                 }//end tour-card
     
@@ -1343,13 +1492,18 @@ h3{
                 color: #ffffff;
                 padding: 1em;
                 font-size: 2.5em;
-                width: 7em;
                 text-align: center;
+                max-width: 8.4em;
                 margin: 0 auto;
                 position: relative;
                 top: -1.5em;
+                text-transform: uppercase;
+                font-size: 2.7em;
+                font-family: 'Nexa bold';
     
                 span{
+                    text-transform: capitalize;
+                    font-family: 'Nexa light';
                     font-weight: 300;
                 }
             }
@@ -1372,9 +1526,10 @@ h3{
                         h2{
                             color: $purple;
                             text-transform: capitalize;
+                            font-size: 3em;
                             
                             i{
-                                margin-right: 1em;
+                                margin-right: .2em;
                             }
                         }
     
@@ -1464,6 +1619,7 @@ h3{
     
     
                     .btn-outline{
+                        padding: .6em 2.2em;
                         border-radius: 0;
                         border: 1px solid $lightpurple;
                         color: $lightpurple;
@@ -1482,6 +1638,9 @@ h3{
                         li{
                             margin-left: 3em;
                             font-size: 10px;
+                            font-family: 'Nexa light';
+                            line-height: 1.4em;
+
                             &:first-child{
                                 color: red;
                             }
@@ -1513,6 +1672,9 @@ h3{
                         width: 11em;
                         font-weight: 300;
                         color: $lightpurple;
+                        font-family: 'Nexa light';
+                        margin-left: 5%;
+
                     }
                     
                     .wrapper{
@@ -1553,10 +1715,24 @@ h3{
 
 .footer{
     background-color: $purple;
-    padding: 3em 13%;
+    padding: 3em 5%;
     color: #fff !important;
     position: relative;
     z-index: 100;
+    font-family: 'Nexa light';
+
+    h2{
+        font-size: 2.5em;
+        font-weight: bolder;
+        font-family: 'Nexa Bold';
+    }
+
+    h3{
+        font-size: 2em;
+        font-weight: bolder;
+        font-family: 'Nexa Bold';
+        margin-bottom: 0;
+    }
     
     .wrapper{
         width: 100%;
@@ -1643,11 +1819,114 @@ h3{
     
 }//end footer
 
+.footer2{
+    background-color: $purple;
+    padding: 3em 5%;
+    color: #fff !important;
+    position: relative;
+    z-index: 100;
+
+    h2{
+        font-size: 2.5em;
+        font-weight: bolder;
+        font-family: 'Nexa Bold';
+        margin-top: 1em;
+        margin-bottom: .5em;
+
+    }
+
+    h3{
+        font-size: 2em;
+        font-weight: bolder;
+        font-family: 'Nexa Bold';
+        margin-bottom: 0;
+    }
+    
+    .wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+        gap: 2em;
+
+        .info{
+            margin-bottom: 3em;
+        }//end info
+
+        .policy{
+
+            a{
+                color: #fff;
+                text-decoration: underline;
+            }
+        }//end policy
+
+        .contact-us{
+            ul{
+                
+                li{
+                    display: flex;
+                    margin-bottom: 1em;
+                    
+                    i{
+                        margin-right: 1em;
+                        flex-shrink: 0;
+                        display: blo;
+                    }
+                }//end li
+            }//end ul
+        }//end contact-us
+
+        .news-offers{
+            form{
+                display: flex;
+                .btn{
+                    margin: 0 .3em;
+                    position: relative;
+                    border-radius: 17px;
+                    padding-top: .2em;
+                    padding-bottom: .2em;
+
+                    i{
+                        color: #fff;
+                    }
+
+                }//btn
+            }//end form
+        }// news-offers
+
+        .social-networks{
+            .box{
+                display: inline-block;
+                padding: 1.1em;
+                border-radius: 13px;
+                background-color: #fff;
+                margin: 1em .1em;
+                position: relative;
+                transition: ease .3s all;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+                
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 1.5em;
+                    color: $purple; 
+                }
+            }//end box
+        }// end social-network
+    }//end wrapper
+
+    
+}//end footer2
+
 .networks{
     position: sticky;
     bottom: 0;
-    right: 1em;
-    background-color: mediumseagreen;
+    right: 0;
     display: flex;
     flex-direction: column;
     z-index: 100;
@@ -1659,8 +1938,8 @@ h3{
             // clip-path: circle(40% at 50% 50%);
             border-radius: 50%;
             position: absolute;
-            bottom: 1em;
-            right: 1em;
+            bottom: 0;
+            right: 0;
             transition: .4s all ease;
             color: #fff;
             -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);

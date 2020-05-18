@@ -28,7 +28,7 @@
 
 html,
 body {
-  background-color: #ececec;
+  background-color: #fff;
   min-height: 100vh;
   margin: 0 auto;
   width: 100%;
@@ -116,6 +116,7 @@ h3 {
   font-weight: 400;
   -webkit-transition: ease background-color .3s;
   transition: ease background-color .3s;
+  font-family: 'Nexa Light';
 }
 
 .btn:hover {
@@ -135,6 +136,7 @@ h3 {
   background-color: transparent;
   -webkit-transition: .3s background-color ease;
   transition: .3s background-color ease;
+  font-family: 'Calibri Light';
 }
 
 .btn-outline:hover {
@@ -189,10 +191,11 @@ h3 {
 .nav .menu .options ul li a {
   color: #70706e;
   position: relative;
+  font-weight: bold;
 }
 
 .nav .menu .options ul li a:hover {
-  color: #ce1d47;
+  color: #ddaec0;
 }
 
 .nav .menu .options ul li a.active {
@@ -280,6 +283,9 @@ h3 {
   font-size: 4rem;
   position: relative;
   text-shadow: 0px 2px 1px #a8a8a8;
+  margin-bottom: .8em;
+  margin-top: 0;
+  font-family: 'Nexa bold';
 }
 
 .main .hero-banner h2::before {
@@ -291,10 +297,17 @@ h3 {
   background-color: #ce1d47;
   bottom: 0;
   left: .4em;
+  bottom: -.15em;
+}
+
+.main .hero-banner p {
+  font-size: 1.3em;
+  font-family: 'Nexa light';
 }
 
 .main .news {
-  padding: 1em 2em;
+  margin: -1em auto;
+  padding: 4em 2em;
   position: relative;
   background-image: url(../img/Blog/Recurso_2.png);
   background-repeat: no-repeat;
@@ -305,13 +318,28 @@ h3 {
 .main .news h2 {
   color: #ffffff;
   font-size: 2.3em;
+  font-family: 'Nexa Bold';
+  position: relative;
+  margin-left: .5em;
+  margin-top: 0;
+}
+
+.main .news h2::before {
+  content: "";
+  width: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -.5em;
 }
 
 .main .news h2::after {
   content: "";
   display: inline-block;
-  width: 70%;
-  margin: .3em 1em;
+  position: absolute;
+  width: 90%;
+  margin: .45em 1em .3em;
   height: 1px;
   background-color: #fff;
 }
@@ -323,6 +351,7 @@ h3 {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin: 0 auto;
   gap: 2em;
+  margin-bottom: 15em;
 }
 
 .main .news .wrapper .news-card {
@@ -350,6 +379,8 @@ h3 {
   position: relative;
   top: -1rem;
   background-color: #ce1d47;
+  -webkit-box-shadow: 5px 4px 10px -3px #757575;
+  box-shadow: 5px 4px 10px -3px #757575;
 }
 
 .main .news .wrapper .news-card .card-content::after {
@@ -361,7 +392,7 @@ h3 {
   position: absolute;
   z-index: 0;
   top: 0;
-  left: .4em;
+  left: .2em;
   border-radius: 10px;
 }
 
@@ -394,16 +425,21 @@ h3 {
 
 .main .blog-entries {
   padding: 3em 1em;
+  margin-top: 3em;
+  position: relative;
 }
 
 .main .blog-entries h2:nth-child(1) {
-  font-size: 2.8em;
-  font-family: 'Nexa bold';
-  background-color: #ececec;
-  display: inline-block;
-  padding: 0 1em;
   position: absolute;
-  top: 20px;
+  font-size: 2.5em;
+  font-family: 'Nexa bold';
+  background-color: #ffffff;
+  color: #ce1d47;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 0 1.6em;
+  position: absolute;
+  top: -.6em;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -420,13 +456,19 @@ h3 {
 
 .main .blog-entries .container .image {
   width: 100%;
-  margin-bottom: 2em;
+  margin-top: 2em;
+  margin-bottom: 1em;
 }
 
 .main .blog-entries .container .image img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.main .blog-entries .container .content {
+  position: relative;
+  padding-bottom: 3em;
 }
 
 .main .blog-entries .container .content .date {
@@ -443,11 +485,22 @@ h3 {
   display: inline-block;
   margin-bottom: 1em;
   margin-left: 1.5em;
+  color: #3e4450;
 }
 
 .main .blog-entries .container .content h3 {
   margin-bottom: .5em;
   font-weight: bold;
+  color: #3e4450;
+}
+
+.main .blog-entries .container .content .back {
+  display: block;
+  position: absolute;
+  margin-left: auto;
+  color: #ce1d47;
+  bottom: 0;
+  right: 0;
 }
 
 .main .contactus {
@@ -481,14 +534,14 @@ h3 {
 
 .main .contactus .wrapper .banner-1 .content h2 {
   position: relative;
-  font-size: 4rem;
+  font-size: 5.2rem;
   text-shadow: 0px 2px 1px #a8a8a8;
-  margin-bottom: 1em;
+  margin-bottom: .2em;
 }
 
 .main .contactus .wrapper .banner-1 .content h2::after {
   content: "";
-  width: 5em;
+  width: 2em;
   height: 2px;
   background-color: #fff;
   position: absolute;
@@ -500,6 +553,7 @@ h3 {
 
 .main .contactus .wrapper .banner-1 .content p {
   font-size: 1.4em;
+  font-family: 'Nexa light';
 }
 
 .main .contactus .wrapper .banner-2 {
@@ -540,23 +594,50 @@ h3 {
   margin: 0;
   font-weight: 700;
   font-size: 2em;
+  margin-bottom: .3em;
+  font-family: 'Nexa bold';
+  position: relative;
 }
 
-.main .contactus .wrapper .banner-2 .content .title h3 span {
+.main .contactus .wrapper .banner-2 .content .title h3::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 3px;
+  background-color: #ce1d47;
+  top: 0;
+  left: -.5em;
+  bottom: -.8em;
+}
+
+.main .contactus .wrapper .banner-2 .content .title span {
   font-weight: 300;
+  font-family: 'Nexa light';
+  color: #868686;
 }
 
 .main .contactus .wrapper .banner-2 .content .data {
-  margin-top: 3em;
+  margin-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .main .contactus .wrapper .banner-2 .content .data p {
   font-weight: 300;
+  margin-bottom: 2em;
+  margin-left: .6em;
+  font-family: 'Nexa light';
 }
 
 .main .contactus .wrapper .banner-2 .content .data p i {
   margin-right: 1em;
-  font-size: 1em;
+  font-size: 1.7em;
+  color: #c6c6c6;
 }
 
 .main .contactus .wrapper .banner-3 {
@@ -597,21 +678,26 @@ h3 {
   color: #ce1d47;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: .6em;
-  font-size: 2em;
+  margin-bottom: .2em;
+  margin-top: -2em;
+  font-size: 2.3em;
+  font-family: 'Nexa bold';
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info h3 span {
   font-weight: 300;
+  font-family: 'Nexa light';
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info p {
   font-weight: 300;
+  font-family: 'Nexa light';
+  margin-bottom: 1em;
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i {
   margin: .4em;
-  font-size: 2em;
+  font-size: 3em;
   color: #ce1d47;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
@@ -641,7 +727,7 @@ h3 {
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title {
   padding-right: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 4.5em;
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title::after {
@@ -649,8 +735,8 @@ h3 {
   position: absolute;
   right: 1em;
   width: 2px;
-  top: 1.8em;
-  height: 4.5em;
+  top: 1em;
+  height: 4em;
   background-color: #fff;
 }
 
@@ -658,11 +744,26 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   margin: .2em 0;
-  font-size: 2em;
+  font-size: 2.3em;
+  font-family: 'Nexa bold';
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title h3 span {
   font-weight: 300;
+  font-family: 'Nexa light';
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .title p {
+  font-family: 'Nexa light';
+}
+
+.main .contactus .wrapper .banner-3 .grid .send-message .grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-bottom: 1.5em;
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message textarea {
@@ -677,6 +778,13 @@ h3 {
   text-align: right;
 }
 
+.main .contactus .wrapper .banner-3 .grid .send-message .btn-outline {
+  padding: .7em 2.8em;
+  text-transform: uppercase;
+  font-size: .9em;
+  letter-spacing: .2em;
+}
+
 .main .main-hero-banner {
   width: 100%;
   height: 100%;
@@ -684,7 +792,7 @@ h3 {
 
 .main .main-hero-banner .banner {
   width: 100%;
-  height: 73vh;
+  height: 70vh;
   background: url(../img/bgs/main-hero-banner.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -714,6 +822,7 @@ h3 {
 .main .main-hero-banner .services .best-price h3,
 .main .main-hero-banner .services .best-selection h3,
 .main .main-hero-banner .services .secure-payments h3 {
+  font-family: 'Nexa Bold';
   font-size: 1.4em;
   margin-top: 0;
   margin-bottom: 1em;
@@ -729,6 +838,11 @@ h3 {
   margin-right: .3em;
 }
 
+.main .main-hero-banner .services .best-price h3 span {
+  display: block;
+  margin-left: 3em;
+}
+
 .main .featured-tours {
   position: relative;
 }
@@ -736,7 +850,8 @@ h3 {
 .main .featured-tours .title {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(35%, #f18b43));
+  background: linear-gradient(to right, #d52553 0%, #f18b43 35%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -783,6 +898,9 @@ h3 {
 }
 
 .main .featured-tours .flyer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 1%;
   margin-left: 5%;
   position: absolute;
@@ -807,8 +925,10 @@ h3 {
 .main .featured-tours .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 300px;
-      grid-template-columns: auto 300px;
+  -ms-grid-columns: auto 350px;
+      grid-template-columns: auto 350px;
+  -webkit-box-shadow: 0px 4px 10px -3px #757575;
+  box-shadow: 0px 4px 10px -3px #757575;
 }
 
 @media (max-width: 768px) {
@@ -826,6 +946,7 @@ h3 {
 .main .featured-tours .wrapper .description h3 {
   font-weight: bold;
   margin: 3px 0;
+  text-transform: uppercase;
 }
 
 .main .featured-tours .wrapper .description h3::before {
@@ -839,9 +960,9 @@ h3 {
 
 .main .featured-tours .wrapper .price {
   background-color: #ce1d47;
-  min-width: 300px;
+  min-width: 100%;
   color: #fff;
-  padding: .5em;
+  padding: 1em 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -850,15 +971,22 @@ h3 {
 .main .featured-tours .wrapper .price .info {
   width: 50%;
   height: 100%;
+  font-family: 'Nexa Light';
 }
 
-.main .featured-tours .wrapper .price .info span {
-  margin: 0 auto;
-  font-size: 13px;
+.main .featured-tours .wrapper .price .info .comming {
+  font-size: .75em;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  display: block;
 }
 
-.main .featured-tours .wrapper .price .info span:nth-child(2) {
-  font-size: 3.4em;
+.main .featured-tours .wrapper .price .info .numb {
+  font-size: 4.3em;
+}
+
+.main .featured-tours .wrapper .price .info .currency {
+  font-size: .8em;
 }
 
 .main .featured-tours .wrapper .price .btn-outline {
@@ -899,9 +1027,9 @@ h3 {
 }
 
 .main .we-mark .wrapper .image {
-  height: 90%;
+  height: 100%;
   position: relative;
-  right: -25px;
+  right: -2em;
 }
 
 .main .we-mark .wrapper .image img {
@@ -922,17 +1050,27 @@ h3 {
 }
 
 .main .we-mark .wrapper .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
-  left: -3em;
-  height: 100%;
-  padding: 7em 2em 7em 7em;
-  background: #dddbdb;
-  background: -webkit-gradient(linear, left top, right top, color-stop(65%, #dddbdb), to(white));
-  background: linear-gradient(90deg, #dddbdb 65%, white 100%);
+  left: -2em;
+  height: 110%;
+  padding: 7em 4em 7em 7em;
+  background-image: url(../img/HOME/Recurso_12.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   -webkit-clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
           clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
-  -webkit-box-shadow: 0px 0px 7px 2px #b0a9b0;
-  box-shadow: 0px 0px 7px 2px #b0a9b0;
+  line-height: 1.6em;
+  text-align: center;
 }
 
 .main .we-mark .wrapper .content span {
@@ -946,6 +1084,10 @@ h3 {
   .main .we-mark .wrapper .content {
     left: 0;
     padding: 7em 2em 7em 2em;
+    background: #e7e5e4;
+    background: -webkit-gradient(linear, left top, right top, color-stop(49%, #e7e5e4), to(white));
+    background: linear-gradient(to right, #e7e5e4 49%, white 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e5e4', endColorstr='#ffffff',GradientType=1 );
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
@@ -953,16 +1095,20 @@ h3 {
 
 .main .promotions {
   padding: 4em;
+  background: #ededed;
+  margin: 3em 0;
 }
 
 .main .promotions .title {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(32%, #f18b43));
+  background: linear-gradient(to right, #d52553 0%, #f18b43 32%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .main .promotions .title::before {
@@ -1018,20 +1164,24 @@ h3 {
 }
 
 .main .promotions .wrapper .promo-card .buttons .btn-outline {
-  border: 1px solid #ce1d47;
-  color: #ce1d47;
+  border: 1px solid #f18b43;
+  color: #f18b43;
   -webkit-transition: .3s ease all;
   transition: .3s ease all;
+  padding: .5em 1em;
+  width: 100%;
+  margin: .3em;
 }
 
 .main .promotions .wrapper .promo-card .buttons .btn-outline:hover {
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  background: -webkit-linear-gradient(317deg, #d52553 31%, #df4f46 65%);
   color: #fff;
 }
 
 .main .clients-review {
   padding: 2em 1em;
   margin: 1em 0;
+  background: #ededed;
 }
 
 .main .clients-review .header {
@@ -1042,7 +1192,8 @@ h3 {
 .main .clients-review .header h2 {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(35%, #f18b43));
+  background: linear-gradient(to right, #d52553 0%, #f18b43 35%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1052,7 +1203,7 @@ h3 {
 }
 
 .main .clients-review .header h2 span {
-  font-weight: 400;
+  font-family: 'Nexa Light';
 }
 
 .main .clients-review .header p {
@@ -1128,9 +1279,10 @@ h3 {
 }
 
 .main .booking {
-  background-color: #676364;
+  background-color: #ededed;
   position: relative;
   min-height: 80vh;
+  margin-top: 3em;
 }
 
 .main .booking .collage {
@@ -1157,17 +1309,18 @@ h3 {
 }
 
 .main .booking .book-now {
-  max-width: 600px;
-  padding: 1em;
+  max-width: 650px;
+  padding: 4.5em 2em;
   color: #fff !important;
   background-color: #d52553;
-  background: -webkit-linear-gradient(135deg, #d52553 0%, #df4f46 50%);
+  background: -webkit-linear-gradient(317deg, #d52553 31%, #df4f46 65%);
   margin: 0 auto calc(15%) auto;
   -webkit-clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
-          clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
+  clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0% 100%);
   text-align: center;
   position: relative;
   z-index: 10;
+  top: -30px;
 }
 
 .main .booking .book-now h2 {
@@ -1177,6 +1330,10 @@ h3 {
 
 .main .booking .book-now .btn-outline {
   margin: 1.3em auto;
+}
+
+.main .tours {
+  background-color: #d9d9d9;
 }
 
 .main .tours .our-tours {
@@ -1198,6 +1355,7 @@ h3 {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 3em;
+  padding-top: 2.5em;
 }
 
 .main .tours .our-tours .title h2 {
@@ -1206,6 +1364,7 @@ h3 {
   font-size: 40px;
   margin: 0;
   text-align: right;
+  font-size: 3em;
 }
 
 .main .tours .our-tours .title h2 span {
@@ -1221,7 +1380,7 @@ h3 {
 
 .main .tours .our-tours .title .decoration {
   display: inline-block;
-  padding: .4em 1em;
+  padding: .6em 1em;
   background-color: #676364;
   width: 13em;
   color: #fff;
@@ -1229,6 +1388,7 @@ h3 {
   text-transform: capitalize;
   position: relative;
   margin-left: 2em;
+  font-family: 'Nexa bold';
 }
 
 .main .tours .our-tours .title .decoration::before {
@@ -1357,14 +1517,16 @@ h3 {
 }
 
 .main .tours .our-tours .wrapper .tour-card .decription {
-  padding: 3em;
+  padding: 1em 3em 3em 3em;
   color: #fff;
-  font-size: .8em;
+  font-size: .9em;
   text-align: center;
 }
 
 .main .tours .our-tours .wrapper .tour-card .btn-outline {
+  padding: .5em 2.8em;
   margin: 1.6em auto 0 auto;
+  font-size: 1em;
 }
 
 .main .tours .tours-info {
@@ -1377,14 +1539,19 @@ h3 {
   color: #ffffff;
   padding: 1em;
   font-size: 2.5em;
-  width: 7em;
   text-align: center;
+  max-width: 8.4em;
   margin: 0 auto;
   position: relative;
   top: -1.5em;
+  text-transform: uppercase;
+  font-size: 2.7em;
+  font-family: 'Nexa bold';
 }
 
 .main .tours .tours-info .custom-title span {
+  text-transform: capitalize;
+  font-family: 'Nexa light';
   font-weight: 300;
 }
 
@@ -1410,10 +1577,11 @@ h3 {
 .main .tours .tours-info .container .city .data h2 {
   color: #ce1d47;
   text-transform: capitalize;
+  font-size: 3em;
 }
 
 .main .tours .tours-info .container .city .data h2 i {
-  margin-right: 1em;
+  margin-right: .2em;
 }
 
 .main .tours .tours-info .container .city .data .info-container {
@@ -1504,6 +1672,7 @@ h3 {
 }
 
 .main .tours .tours-info .container .middle .btn-outline {
+  padding: .6em 2.2em;
   border-radius: 0;
   border: 1px solid #c82d57;
   color: #c82d57;
@@ -1523,6 +1692,8 @@ h3 {
 .main .tours .tours-info .container .middle ul li {
   margin-left: 3em;
   font-size: 10px;
+  font-family: 'Nexa light';
+  line-height: 1.4em;
 }
 
 .main .tours .tours-info .container .middle ul li:first-child {
@@ -1551,6 +1722,8 @@ h3 {
   width: 11em;
   font-weight: 300;
   color: #c82d57;
+  font-family: 'Nexa light';
+  margin-left: 5%;
 }
 
 .main .tours .tours-info .container .stops .wrapper {
@@ -1588,10 +1761,24 @@ h3 {
 
 .footer {
   background-color: #ce1d47;
-  padding: 3em 13%;
+  padding: 3em 5%;
   color: #fff !important;
   position: relative;
   z-index: 100;
+  font-family: 'Nexa light';
+}
+
+.footer h2 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-family: 'Nexa Bold';
+}
+
+.footer h3 {
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: 'Nexa Bold';
+  margin-bottom: 0;
 }
 
 .footer .wrapper {
@@ -1668,12 +1855,110 @@ h3 {
   color: #ce1d47;
 }
 
+.footer2 {
+  background-color: #ce1d47;
+  padding: 3em 5%;
+  color: #fff !important;
+  position: relative;
+  z-index: 100;
+}
+
+.footer2 h2 {
+  font-size: 2.5em;
+  font-weight: bolder;
+  font-family: 'Nexa Bold';
+  margin-top: 1em;
+  margin-bottom: .5em;
+}
+
+.footer2 h3 {
+  font-size: 2em;
+  font-weight: bolder;
+  font-family: 'Nexa Bold';
+  margin-bottom: 0;
+}
+
+.footer2 .wrapper {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2em;
+}
+
+.footer2 .wrapper .info {
+  margin-bottom: 3em;
+}
+
+.footer2 .wrapper .policy a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer2 .wrapper .contact-us ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.footer2 .wrapper .contact-us ul li i {
+  margin-right: 1em;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: blo;
+}
+
+.footer2 .wrapper .news-offers form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer2 .wrapper .news-offers form .btn {
+  margin: 0 .3em;
+  position: relative;
+  border-radius: 17px;
+  padding-top: .2em;
+  padding-bottom: .2em;
+}
+
+.footer2 .wrapper .news-offers form .btn i {
+  color: #fff;
+}
+
+.footer2 .wrapper .social-networks .box {
+  display: inline-block;
+  padding: 1.1em;
+  border-radius: 13px;
+  background-color: #fff;
+  margin: 1em .1em;
+  position: relative;
+  -webkit-transition: ease .3s all;
+  transition: ease .3s all;
+}
+
+.footer2 .wrapper .social-networks .box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer2 .wrapper .social-networks .box i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.5em;
+  color: #ce1d47;
+}
+
 .networks {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  right: 1em;
-  background-color: mediumseagreen;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1690,8 +1975,8 @@ h3 {
   background-color: #ce1d47;
   border-radius: 50%;
   position: absolute;
-  bottom: 1em;
-  right: 1em;
+  bottom: 0;
+  right: 0;
   -webkit-transition: .4s all ease;
   transition: .4s all ease;
   color: #fff;

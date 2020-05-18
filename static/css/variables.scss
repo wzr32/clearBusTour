@@ -1,4 +1,4 @@
-$background: #ececec;
+$background: #ededed;
 $text: #70706e;
 $title: #3e4450;
 
@@ -6,15 +6,19 @@ $lightpurple: #c82d57;
 $purple: #ce1d47;
 $orange: #f08237;
 $lightRose: #ddaec0;
+$btnOrange: #f18b43;
 
 $messengerBlue: #3b76ba;
 $whatsappGreen: #5cb149;
 $cancel: #ec6454;
 
 $gradientBackground: rgb(213,37,83);
-$gradient: -webkit-linear-gradient(135deg, rgba(213,37,83,1) 0%, rgba(223,79,70,1) 50%);
+$gradient: -webkit-linear-gradient(317deg, #d52553 31%, #df4f46 65%)
 
 
-// -webkit-box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
-// -moz-box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
-// box-shadow: 0px 0px 7px 2px rgba(176,169,176,1);
+
+// background: rgb(213,37,83);
+// background: -moz-linear-gradient(left,  rgba(213,37,83,1) 0%, rgba(241,139,67,1) 100%);
+// background: -webkit-linear-gradient(left,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 100%);
+// background: linear-gradient(to right,  rgba(213,37,83,1) 0%,rgba(241,139,67,1) 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d52553', endColorstr='#f18b43',GradientType=1 );
