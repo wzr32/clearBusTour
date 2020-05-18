@@ -959,7 +959,7 @@ h3{
 
         .wrapper{
             display: grid;
-            grid-template-columns: auto 350px;
+            grid-template-columns: auto 400px;
 
             @media (max-width: 768px){
                 grid-template-columns: auto;
@@ -993,7 +993,6 @@ h3{
                 padding: 1em 2em;
                 display: flex;
 
-
                 .info{
                     width: 50%;
                     height: 100%;
@@ -1015,11 +1014,10 @@ h3{
                     }//end currency
                 }// end info
 
-
-
                 .btn-outline{
                     // width: 50%;
                     // height: 100%;
+                    padding: .5em 2em;
                     font-size: 1em;
                     margin: 1.6em auto;
                 }// end btn-outline
@@ -1034,6 +1032,7 @@ h3{
 
     .we-mark{
         margin: 0 auto;
+        margin-top: 7em;
 
         h2{
             position: relative;
@@ -1047,6 +1046,7 @@ h3{
                 height: 4px;
                 background-color: $purple;
                 margin: 0 auto;
+
             }
 
         }
@@ -1074,8 +1074,9 @@ h3{
                     background: url(../img/HOME/Recurso_11.png);
                     background-repeat: no-repeat ;
                     position: absolute;
-                    top: -2em;
-                    width: 4em;
+                    top: -2.7em;
+                    left: 4.5em;
+                    width: 5em;
                     height: 100%;
                 }
                 
@@ -1087,14 +1088,13 @@ h3{
                 align-items: center;
                 position: relative;
                 left: 0;
-                // max-width: 500px;
                 width: 100%;
                 height: 108%;
                 padding: 7em 4em 7em 7em;
                 background-image: url(../img/HOME/Recurso_12.png);
-                background-position: center;
+                background-position: top left;
                 background-repeat: no-repeat;
-                clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+                background-size: 110% 102%;            
                 line-height: 1.6em;
                 text-align: center;
 

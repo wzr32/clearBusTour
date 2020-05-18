@@ -978,8 +978,8 @@ h3 {
 .main .featured-tours .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 350px;
-      grid-template-columns: auto 350px;
+  -ms-grid-columns: auto 400px;
+      grid-template-columns: auto 400px;
   -webkit-box-shadow: 0px 4px 10px -3px #757575;
   box-shadow: 0px 4px 10px -3px #757575;
 }
@@ -1043,12 +1043,14 @@ h3 {
 }
 
 .main .featured-tours .wrapper .price .btn-outline {
+  padding: .5em 2em;
   font-size: 1em;
   margin: 1.6em auto;
 }
 
 .main .we-mark {
   margin: 0 auto;
+  margin-top: 7em;
 }
 
 .main .we-mark h2 {
@@ -1097,8 +1099,9 @@ h3 {
   background: url(../img/HOME/Recurso_11.png);
   background-repeat: no-repeat;
   position: absolute;
-  top: -2em;
-  width: 4em;
+  top: -2.7em;
+  left: 4.5em;
+  width: 5em;
   height: 100%;
 }
 
@@ -1118,10 +1121,9 @@ h3 {
   height: 108%;
   padding: 7em 4em 7em 7em;
   background-image: url(../img/HOME/Recurso_12.png);
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
-  -webkit-clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(7% 0, 100% 0, 100% 100%, 0 100%);
+  background-size: 110% 102%;
   line-height: 1.6em;
   text-align: center;
 }
