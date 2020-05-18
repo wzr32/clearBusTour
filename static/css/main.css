@@ -1560,8 +1560,7 @@ h3 {
 .main .tours .tours-info .container {
   background-color: #fff;
   position: relative;
-  background-position: center;
-  background-size: 80%;
+  background: -webkit-linear-gradient();
 }
 
 .main .tours .tours-info .container .city {
@@ -1582,6 +1581,7 @@ h3 {
   color: #ce1d47;
   text-transform: capitalize;
   font-size: 3em;
+  margin-top: 0;
 }
 
 .main .tours .tours-info .container .city .data h2 i {
@@ -1636,7 +1636,8 @@ h3 {
 
 .main .tours .tours-info .container .city .video {
   position: relative;
-  padding: 2em 0;
+  padding: 0;
+  top: -.7em;
 }
 
 .main .tours .tours-info .container .city .video .container {
@@ -1719,7 +1720,8 @@ h3 {
 .main .tours .tours-info .container .stops {
   padding: 1em;
   position: relative;
-  margin-bottom: 3em;
+  margin-bottom: 4em;
+  bottom: -2.5em;
 }
 
 .main .tours .tours-info .container .stops h2 {
@@ -1729,6 +1731,7 @@ h3 {
   color: #c82d57;
   font-family: 'Nexa light';
   margin-left: 5%;
+  margin-top: 0;
 }
 
 .main .tours .tours-info .container .stops .wrapper {

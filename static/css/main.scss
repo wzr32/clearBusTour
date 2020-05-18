@@ -1513,8 +1513,7 @@ h3{
             .container{
                 background-color: #fff;
                 position: relative;
-                background-position: center;
-                background-size: 80%;
+                background: -webkit-linear-gradient() ;
     
                 .city{
                     display: grid;
@@ -1531,7 +1530,7 @@ h3{
                             color: $purple;
                             text-transform: capitalize;
                             font-size: 3em;
-                            
+                            margin-top: 0;
                             i{
                                 margin-right: .2em;
                             }
@@ -1583,8 +1582,9 @@ h3{
     
                     .video{
                         position: relative;
-                        padding: 2em 0;
-    
+                        padding:0;
+                        top: -.7em;
+
                         .container{
                             background-color: $lightpurple;
                             height: 80%;
@@ -1669,7 +1669,8 @@ h3{
                 .stops{
                     padding: 1em;
                     position: relative;
-                    margin-bottom: 3em;
+                    margin-bottom: 4em;
+                    bottom: -2.5em;
                     
 
                     h2{
@@ -1679,7 +1680,7 @@ h3{
                         color: $lightpurple;
                         font-family: 'Nexa light';
                         margin-left: 5%;
-
+                        margin-top: 0;
                     }
                     
                     .wrapper{
