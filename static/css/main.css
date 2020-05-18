@@ -195,6 +195,10 @@ h3 {
   color: #ce1d47;
 }
 
+.nav .menu .options ul li a.active {
+  color: #ce1d47;
+}
+
 @media (max-width: 780px) {
   .nav .menu {
     display: -ms-grid;
