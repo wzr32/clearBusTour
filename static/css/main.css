@@ -770,6 +770,9 @@ h3 {
   font-weight: 300;
   font-family: 'Nexa light';
   margin-bottom: 1em;
+  mix-blend-mode: lighten;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i {
@@ -780,6 +783,9 @@ h3 {
   transition: .3s all ease;
   display: inline-block;
   position: relative;
+  mix-blend-mode: lighten;
+  -webkit-filter: invert(1);
+          filter: invert(1);
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i:hover {
