@@ -479,6 +479,12 @@ h3 {
   z-index: 10;
 }
 
+@media (max-width: 500px) {
+  .main .blog-entries h2 {
+    font-size: 8vw;
+  }
+}
+
 .main .blog-entries .container {
   padding: 2em;
   border: 2px solid #ce1d47;
@@ -535,12 +541,24 @@ h3 {
   padding-left: .5em;
 }
 
+@media (max-width: 500px) {
+  .main .blog-entries .container .content .date {
+    margin: 0 auto;
+  }
+}
+
 .main .blog-entries .container .content h2 {
   display: inline-block;
   margin-bottom: 1em;
   margin-left: 1.5em;
   color: #3e4450;
   font-size: 2em;
+}
+
+@media (max-width: 500px) {
+  .main .blog-entries .container .content h2 {
+    margin: 1em auto;
+  }
 }
 
 .main .blog-entries .container .content h3 {
