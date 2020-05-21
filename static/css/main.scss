@@ -153,6 +153,10 @@ h3{
     z-index: 100;
     background-color: #fff;
 
+    @media (max-width: 780px) {
+        padding: 0 2em;
+    }
+
     .menu{
         text-transform: uppercase;
         display: grid;
@@ -742,7 +746,7 @@ h3{
                                 font-weight: 300;
                                 font-family: 'Nexa light';
                                 margin-bottom: 1em;
-                                mix-blend-mode: lighten;
+                                mix-blend-mode: darken;
                                 
                             }
 
@@ -940,6 +944,8 @@ h3{
             padding: 1em 3em;
             position: relative;
 
+
+
             &:nth-child(2){
                 background-image: url(../img/HOME/Recurso_7.png);
                 background-position: center;
@@ -981,10 +987,18 @@ h3{
             
             
                 @media (max-width:768px) {
-                    font-size: 3.5rem;
+                    font-size: 13vw;
+                    margin-left: 0;
                 }
 
             }
+
+            @media (max-width:768px) {
+                padding: 1em;
+
+            }
+
+
 
 
         }//end flayer
@@ -1233,6 +1247,15 @@ h3{
 
             }//end promo-card
         }//end wrapper
+
+        @media (max-width: 768px) {
+            font-size: 8vw;
+            padding: 4em 1em;
+
+            .wrapper{
+                grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+            }
+        }
     }//end promotions
 
     .clients-review{
@@ -1276,8 +1299,12 @@ h3{
                 bottom: 0;
             }//end before
 
-
-        }//edn header
+            @media (max-width: 768px){
+                h2{
+                    font-size: 8vw;
+                }
+            }
+        }//end header
         .carousel{
             position: relative;
 
@@ -1323,6 +1350,11 @@ h3{
                         }
                     }//end description__footer
                 }//end description
+
+                @media (max-width: 500px){
+                    display: flex;
+                    flex-direction: column;
+                }
             }//end container
         }//end carousel
     }// end clients-review
@@ -1335,7 +1367,6 @@ h3{
         margin-top: 3em;
         
         .collage{
-            background: tomato;
             position: absolute;
             display: grid;
             width: 100%;
