@@ -633,6 +633,10 @@ h3{
                 background-position: center;
                 z-index: 20;
                 margin: -22em 0;
+
+                @media (max-width:865px){
+                    margin: -28.5em 0;
+                }
                 
                 .content{
                     display: inline-block;
@@ -649,6 +653,12 @@ h3{
 
                     @media (max-width: 863px){
                         width: 85%;
+                    }
+
+                    @media (max-width: 400px) {
+                        width: 100%;
+                        padding: 1em;
+                        margin-left: 0;
                     }
 
                     .title{
@@ -702,6 +712,18 @@ h3{
                                 color: #c6c6c6;
                             }//end i 
                         }//end p
+
+                        span{
+                            display: inline-block;
+                            width: 75%;
+                        }
+
+                        @media (max-width: 400px) {
+                            span{
+                                margin-top: .7em;
+                            }
+                        }
+                        
                     }//end data
 
                 }//end content
@@ -727,7 +749,11 @@ h3{
                     grid-template-rows: auto;
 
                     @media (max-width: 863px){
-                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                    }
+
+                    @media (max-width: 863px){
+                        grid-template-columns: auto;
                     }
 
                     .phone{
@@ -735,9 +761,17 @@ h3{
                         position: relative;
                         padding: 0 1em 5em 1em ;
 
+                        @media (max-width:865px){
+                            padding: 0 1em .5em 1em;
+                        }
+
                         .info{
                             text-align: center;
                             padding-left: 16%;
+
+                            @media (max-width:450px){
+                                padding-left: 0;
+                            }
                             
                             h3{
                                 color: $purple;
@@ -756,6 +790,12 @@ h3{
 
                                 @media (max-width: 863px){
                                     margin-top: 2em;
+                                }
+
+                                @media (max-width: 380px){
+                                    margin-top: 3em;
+                                    font-size: 1.8;
+                                    mix-blend-mode: multiply;
                                 }
                             }
 
@@ -782,9 +822,19 @@ h3{
                                 }
 
                                 @media (max-width: 540px){
+                                    padding: 5px;
+                                }
+
+                                @media (max-width: 380px){
                                     font-size: 2em;
+                                    padding: 3px;
                                 }
                             }// end i
+
+                            @media (max-width: 665px){
+                                position: relative;
+                                top: 10%;
+                            }
 
                         }//end info
 
@@ -792,7 +842,19 @@ h3{
                             position: relative;
                             width: 90%;
                             object-fit: contain;
+
+                            @media (max-width: 665px){
+                                width: 50%;
+                                margin-top: 12%;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, 0%);
+                            }
                         }
+
+                        // @media (max-width: 400px) {
+                        //     padding: 0 1em 1em 1em ;
+                        // }
                     }//end phone
 
                     .send-message{

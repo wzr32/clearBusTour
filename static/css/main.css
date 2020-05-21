@@ -654,6 +654,12 @@ h3 {
   margin: -22em 0;
 }
 
+@media (max-width: 865px) {
+  .main .contactus .wrapper .banner-2 {
+    margin: -28.5em 0;
+  }
+}
+
 .main .contactus .wrapper .banner-2 .content {
   display: inline-block;
   width: 60%;
@@ -680,6 +686,14 @@ h3 {
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-2 .content {
     width: 85%;
+  }
+}
+
+@media (max-width: 400px) {
+  .main .contactus .wrapper .banner-2 .content {
+    width: 100%;
+    padding: 1em;
+    margin-left: 0;
   }
 }
 
@@ -734,6 +748,17 @@ h3 {
   color: #c6c6c6;
 }
 
+.main .contactus .wrapper .banner-2 .content .data span {
+  display: inline-block;
+  width: 75%;
+}
+
+@media (max-width: 400px) {
+  .main .contactus .wrapper .banner-2 .content .data span {
+    margin-top: .7em;
+  }
+}
+
 .main .contactus .wrapper .banner-3 {
   height: calc(70em + 100%);
   width: 100%;
@@ -759,8 +784,15 @@ h3 {
 
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-3 .grid {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-3 .grid {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
   }
 }
 
@@ -770,9 +802,21 @@ h3 {
   padding: 0 1em 5em 1em;
 }
 
+@media (max-width: 865px) {
+  .main .contactus .wrapper .banner-3 .grid .phone {
+    padding: 0 1em .5em 1em;
+  }
+}
+
 .main .contactus .wrapper .banner-3 .grid .phone .info {
   text-align: center;
   padding-left: 16%;
+}
+
+@media (max-width: 450px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info {
+    padding-left: 0;
+  }
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info h3 {
@@ -793,6 +837,14 @@ h3 {
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-3 .grid .phone .info h3 {
     margin-top: 2em;
+  }
+}
+
+@media (max-width: 380px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info h3 {
+    margin-top: 3em;
+    font-size: 1.8;
+    mix-blend-mode: multiply;
   }
 }
 
@@ -822,7 +874,21 @@ h3 {
 
 @media (max-width: 540px) {
   .main .contactus .wrapper .banner-3 .grid .phone .info i {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 380px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info i {
     font-size: 2em;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 665px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info {
+    position: relative;
+    top: 10%;
   }
 }
 
@@ -831,6 +897,17 @@ h3 {
   width: 90%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+@media (max-width: 665px) {
+  .main .contactus .wrapper .banner-3 .grid .phone img {
+    width: 50%;
+    margin-top: 12%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+  }
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message {
