@@ -249,6 +249,10 @@ h3{
 
 .main{
 
+    @media (max-width: 450px) {
+        overflow: hidden;
+    }
+
     .hero-banner{
         width: 100%;
         height: 70vh;
@@ -1659,14 +1663,10 @@ h3{
     
                 .city{
                     display: grid;
-                    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+                    grid-template-columns: repeat(auto-fit, minmax(430px, auto));
                     margin-left: auto;
                     position: relative;
                     // top: -3em;
-
-                    @media (max-width: 615px){
-                        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-                    }
     
                     .data{
                         max-width: 550px;
@@ -1747,6 +1747,11 @@ h3{
                         padding:0;
                         top: -.7em;
 
+                        @media (max-width: 874px) {
+                            grid-row: 1;
+                            height: 30em;
+                        }
+
                         .container{
                             background-color: $lightpurple;
                             height: 80%;
@@ -1758,13 +1763,12 @@ h3{
                                 height: 100%;
                                 bottom: 10px;
                                 left: 10px;
-
-
                             }
 
                         }//end container
     
                         .video-description{
+                            background-color: #ffffff;
                             padding: .5em 1em;
                             font-weight: 300;
                             color: $purple;
@@ -1776,8 +1780,19 @@ h3{
                         }// end video-description
                     
                     }//end video
+
+                    @media (max-width: 450px) {
+                        grid-template-columns: auto;
+                        
+                        .data {
+                            h2{
+                                margin-top: 1em;
+                            }
+                        }
+                        
+                    }
                 
-                }//city 
+                }//end city 
             
                 .middle{
                     display: flex;
