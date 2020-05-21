@@ -584,7 +584,7 @@ h3 {
 
 .main .contactus .wrapper .banner-1 .content h2 {
   position: relative;
-  font-size: 5.2rem;
+  font-size: 6em;
   text-shadow: 0px 2px 1px #a8a8a8;
   margin-bottom: .2em;
 }
@@ -599,6 +599,12 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-1 .content h2 {
+    font-size: 13vw;
+  }
 }
 
 .main .contactus .wrapper .banner-1 .content p {
@@ -639,6 +645,12 @@ h3 {
   margin-left: auto;
   position: relative;
   top: -2.5em;
+}
+
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-2 .content {
+    width: 85%;
+  }
 }
 
 .main .contactus .wrapper .banner-2 .content .title h3 {
@@ -709,10 +721,17 @@ h3 {
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   -ms-grid-rows: auto;
       grid-template-rows: auto;
+}
+
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-3 .grid {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone {
@@ -741,6 +760,12 @@ h3 {
   font-family: 'Nexa light';
 }
 
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info h3 {
+    margin-top: 2em;
+  }
+}
+
 .main .contactus .wrapper .banner-3 .grid .phone .info p {
   font-weight: 300;
   font-family: 'Nexa light';
@@ -753,11 +778,20 @@ h3 {
   color: #ce1d47;
   -webkit-transition: .3s all ease;
   transition: .3s all ease;
+  display: inline-block;
+  position: relative;
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .main .contactus .wrapper .banner-3 .grid .phone .info i {
+    font-size: 2em;
+  }
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone img {
@@ -816,6 +850,13 @@ h3 {
   -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-bottom: 1.5em;
+}
+
+@media (max-width: 863px) {
+  .main .contactus .wrapper .banner-3 .grid .send-message .grid {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message textarea {
@@ -1414,6 +1455,27 @@ h3 {
   padding-top: 2.5em;
 }
 
+@media (max-width: 350px) {
+  .main .tours .our-tours .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .tours .our-tours .title .decoration {
+    margin: 1.5em 0;
+  }
+}
+
+@media (max-width: 515px) {
+  .main .tours .our-tours .title .location {
+    text-align: center;
+  }
+}
+
 .main .tours .our-tours .title h2 {
   color: #ce1d47;
   text-transform: uppercase;
@@ -1626,6 +1688,13 @@ h3 {
   position: relative;
 }
 
+@media (max-width: 615px) {
+  .main .tours .tours-info .container .city {
+    -ms-grid-columns: (minmax(200px, auto))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  }
+}
+
 .main .tours .tours-info .container .city .data {
   max-width: 550px;
   padding: 2em 2em 2em 3em;
@@ -1644,6 +1713,12 @@ h3 {
 
 .main .tours .tours-info .container .city .data .info-container {
   max-width: 48%;
+}
+
+@media (max-width: 615px) {
+  .main .tours .tours-info .container .city .data .info-container {
+    max-width: 100%;
+  }
 }
 
 .main .tours .tours-info .container .city .data .info-container .title h3 {
@@ -1686,6 +1761,27 @@ h3 {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   text-align: center;
+}
+
+@media (max-width: 460px) {
+  .main .tours .tours-info .container .city .data .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .tours .tours-info .container .city .data .icons .icon {
+    margin: .5em 0;
+  }
 }
 
 .main .tours .tours-info .container .city .video {
@@ -1794,6 +1890,13 @@ h3 {
   -ms-grid-columns: (minmax(30vw, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
   gap: 1em;
+}
+
+@media (max-width: 500px) {
+  .main .tours .tours-info .container .stops .wrapper {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }
 
 .main .tours .tours-info .container .stops .wrapper .sites-card {
