@@ -951,17 +951,19 @@ h3{
         .banner{
             // padding: 20em;
             width: 100%;
-            height: 70vh;
+            height: calc(100vh - 13.5em);
             background: url(../img/bgs/main-hero-banner.jpg);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
         }//end banner
 
         .services{
             padding: 1em 2.3em;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: .5em;
             justify-content: center;
             background-color: $purple;
 
@@ -970,6 +972,7 @@ h3{
             .best-selection,
             .secure-payments{
                 color: #fff;
+                padding: .5em;
                 
                 h3{
                     font-family: 'Nexa Bold';
@@ -1025,7 +1028,7 @@ h3{
         position: relative;
         .flyer{
             width: 100%;
-            height: 100vh;
+            height: calc(100vh - 6.5em);
             padding: 1em 3em;
             position: relative;
 
@@ -1123,6 +1126,7 @@ h3{
                 color: #fff;
                 padding: 1em 2em;
                 display: flex;
+                flex-wrap: wrap;
 
                 .info{
                     width: 50%;
@@ -1164,6 +1168,7 @@ h3{
     .we-mark{
         margin: 0 auto;
         margin-top: 7em;
+        height: 80vh;
 
         h2{
             position: relative;
@@ -1195,8 +1200,9 @@ h3{
                 right: 0;
 
                 img{
-                    height: 100%;
-                    object-fit: contain;
+                    // height: 100%;
+                    width:  120%;
+                    object-fit: cover;
                 }
 
                 &::before{
@@ -1209,6 +1215,19 @@ h3{
                     left: 4.5em;
                     width: 5em;
                     height: 100%;
+                }
+
+                @media (max-width: 1360px){
+                    height: 100%;
+                    position: relative;
+                    right: 0;
+                    display: flex;
+
+                    img{
+                        height: 100%;
+                        width:  120%;
+                        object-fit: cover;
+                    }
                 }
                 
             }//end image
@@ -1223,7 +1242,7 @@ h3{
                 height: 108%;
                 padding: 7em 4em 7em 7em;
                 background-image: url(../img/HOME/Recurso_12.png);
-                background-position: top left;
+                background-position: left;
                 background-repeat: no-repeat;
                 background-size: 110% 102%;            
                 line-height: 1.6em;
