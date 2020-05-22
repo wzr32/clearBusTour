@@ -72,14 +72,18 @@ h3{
 }
 
 .custom-wrapper{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 230px ));
-    justify-content: center;
-    gap: 1em;
-    margin: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 
     .sites-card{
+        width: 250px;
         background-color: $purple;
+        margin: 1em 0;
+
+        @media (max-width: 532px) {
+            width: 100%;
+        }
 
         .image{
             width: 100%;
@@ -88,6 +92,8 @@ h3{
                 object-fit: contain;
             }
         }//end image
+
+
     }//end sites-card
     .description{
         
@@ -588,11 +594,12 @@ h3{
                 z-index: 10;
 
                 .content{
-                    width: 50%;
+                    width: 100%;
                     margin: 0 auto;
                     margin-top: 11%;
 
                     h2{
+                        text-align: center;
                         position: relative;
                         font-size: 6em;
                         text-shadow:  0px 2px 1px rgba(168,168,168,1);
@@ -1571,14 +1578,33 @@ h3{
             }//end title
     
             .wrapper{
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: .1em;
+                // display: grid;
+                // grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                // gap: .1em;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                
                 margin-bottom: 8em;
+
+                @media (max-width: 350px) {
+                    grid-template-columns: auto;
+                }
     
     
                 .tour-card{
+                    width: 30%;
                     background-color: $lightpurple;
+
+                    @media (max-width: 915px) {
+                       width: 40%;
+                       margin: .5em 0;
+                    }
+
+                    @media (max-width: 768px) {
+                        width: 100%;
+                        margin: .5em 0;
+                     }
 
                     &:nth-of-type(1){
 
@@ -1928,8 +1954,8 @@ h3{
                         grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
                         gap: 1em;
                         
-                        @media (max-width: 500px) {
-                            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        @media (max-width: 532px) {
+                            grid-template-columns: auto;
                         }
 
                         .sites-card{
