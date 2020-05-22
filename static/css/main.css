@@ -88,6 +88,12 @@ h3 {
   margin: 1em 0;
 }
 
+@media (min-width: 1450px) {
+  .custom-wrapper .sites-card {
+    width: 18%;
+  }
+}
+
 @media (max-width: 532px) {
   .custom-wrapper .sites-card {
     width: 100%;
@@ -1553,7 +1559,7 @@ h3 {
 .main .booking {
   background-color: #ededed;
   position: relative;
-  min-height: 80vh;
+  min-height: 90vh;
   margin-top: 3em;
 }
 
@@ -2337,14 +2343,15 @@ h3 {
   position: -webkit-sticky;
   position: sticky;
   bottom: 0;
-  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   z-index: 100;
 }
 
@@ -2354,8 +2361,8 @@ h3 {
   background-color: #ce1d47;
   border-radius: 50%;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1em;
+  right: -em;
   -webkit-transition: .4s all ease;
   transition: .4s all ease;
   color: #fff;
