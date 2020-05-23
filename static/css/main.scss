@@ -35,6 +35,9 @@ body{
     width: 100%;
     font-family: 'Myriad', sans-serif;
     color: $text;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 1;
 }
 
 a{
@@ -956,11 +959,27 @@ h3{
             // padding: 20em;
             width: 100%;
             height: calc(100vh - 13.5em);
-            background: url(../img/bgs/main-hero-banner.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
+            position: relative;
 
+            #videoBg{
+                position: absolute;    
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);   
+                z-index: -100;
+                width: 100%;
+            }//end videoBg
+
+            @media (max-width: 768px){
+                background-image: url(../img/bgs/main-bg.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+
+                #videoBg{
+                    display: none;
+                }
+            }
         }//end banner
 
         .services{
@@ -1005,6 +1024,8 @@ h3{
     }//end ain-hero-banner
 
     .featured-tours{
+        position: relative;
+        z-index: 20;
 
         .title{
             font-size: 2.3rem;
@@ -1015,6 +1036,9 @@ h3{
             background-clip: text;
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
+            margin: 0;
+            background-color: #ffffff;
+            padding: 1.7em 0;
             padding-left: 3em;
 
             &::before{
@@ -1024,7 +1048,6 @@ h3{
                 display: inline-block;
                 margin-right: .3em;
                 background-color: $purple;
-                
             }
 
         }//end title
@@ -2236,7 +2259,7 @@ h3{
             border-radius: 50%;
             position: absolute;
             bottom: -1em;
-            right: -em;
+            right: -1em;
             transition: .4s all ease;
             color: #fff;
             -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);

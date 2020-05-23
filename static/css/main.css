@@ -34,6 +34,9 @@ body {
   width: 100%;
   font-family: 'Myriad', sans-serif;
   color: #70706e;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -1011,10 +1014,29 @@ h3 {
 .main .main-hero-banner .banner {
   width: 100%;
   height: calc(100vh - 13.5em);
-  background: url(../img/bgs/main-hero-banner.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
+}
+
+.main .main-hero-banner .banner #videoBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  z-index: -100;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main .main-hero-banner .banner {
+    background-image: url(../img/bgs/main-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .main .main-hero-banner .banner #videoBg {
+    display: none;
+  }
 }
 
 .main .main-hero-banner .services {
@@ -1065,6 +1087,8 @@ h3 {
 
 .main .featured-tours {
   position: relative;
+  z-index: 20;
+  position: relative;
 }
 
 .main .featured-tours .title {
@@ -1076,6 +1100,9 @@ h3 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-transform: uppercase;
+  margin: 0;
+  background-color: #ffffff;
+  padding: 1.7em 0;
   padding-left: 3em;
 }
 
@@ -2362,7 +2389,7 @@ h3 {
   border-radius: 50%;
   position: absolute;
   bottom: -1em;
-  right: -em;
+  right: -1em;
   -webkit-transition: .4s all ease;
   transition: .4s all ease;
   color: #fff;
