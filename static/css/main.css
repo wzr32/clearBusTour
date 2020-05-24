@@ -1,21 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 @font-face {
-  font-family: 'Myriad';
+  font-family: "Myriad";
   src: url("../fonts/MYRIADPRO-REGULAR.OTF");
 }
 
 @font-face {
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   src: url("../fonts/Nexa Bold.otf");
 }
 
 @font-face {
-  font-family: 'Nexa Light';
+  font-family: "Nexa Light";
   src: url("../fonts/Nexa Light.otf");
 }
 
 @font-face {
-  font-family: 'Calibri Light';
+  font-family: "Calibri Light";
   src: url("../fonts/calibril-thin.ttf");
 }
 
@@ -23,7 +23,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   margin: 0 auto;
   width: 100%;
-  font-family: 'Myriad', sans-serif;
+  font-family: "Myriad", sans-serif;
   color: #70706e;
   overflow-x: hidden;
   position: relative;
@@ -51,7 +51,7 @@ input {
   border: none;
   background-color: #fff;
   height: 3em;
-  padding: 0 .7em;
+  padding: 0 0.7em;
   width: 100%;
 }
 
@@ -65,11 +65,11 @@ h6 {
 }
 
 h2 {
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
 }
 
 h3 {
-  font-family: 'Nexa Light';
+  font-family: "Nexa Light";
 }
 
 .custom-wrapper {
@@ -78,11 +78,11 @@ h3 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .custom-wrapper .sites-card {
@@ -110,7 +110,7 @@ h3 {
 .custom-wrapper .sites-card .image img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .custom-wrapper .description {
@@ -124,7 +124,7 @@ h3 {
 }
 
 .btn {
-  padding: .8em;
+  padding: 0.8em;
   background-color: #f08237;
   color: #fff;
   border: none;
@@ -132,9 +132,9 @@ h3 {
   display: block;
   font-size: 1.2rem;
   font-weight: 400;
-  -webkit-transition: ease background-color .3s;
-  transition: ease background-color .3s;
-  font-family: 'Nexa Light';
+  -webkit-transition: ease background-color 0.3s;
+  transition: ease background-color 0.3s;
+  font-family: "Nexa Light";
 }
 
 .btn:hover {
@@ -143,7 +143,7 @@ h3 {
 }
 
 .btn-outline {
-  padding: .3em 1em;
+  padding: 0.3em 1em;
   display: inline-block;
   border: none;
   border-radius: 10px;
@@ -152,9 +152,9 @@ h3 {
   font-size: 1.2rem;
   font-weight: 300;
   background-color: transparent;
-  -webkit-transition: .3s background-color ease;
-  transition: .3s background-color ease;
-  font-family: 'Calibri Light';
+  -webkit-transition: 0.3s background-color ease;
+  transition: 0.3s background-color ease;
+  font-family: "Calibri Light";
 }
 
 .btn-outline:hover {
@@ -183,14 +183,14 @@ h3 {
   text-transform: uppercase;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[2];
-      grid-template-columns: repeat(2, auto);
+  -ms-grid-columns: (auto) [2];
+  grid-template-columns: repeat(2, auto);
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .nav .menu .logo {
@@ -204,7 +204,7 @@ h3 {
 .nav .menu .logo img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .nav .menu .options ul li {
@@ -227,15 +227,15 @@ h3 {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     -ms-grid-rows: auto;
-        grid-template-rows: auto;
+    grid-template-rows: auto;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
   }
   .nav .menu .logo {
@@ -245,11 +245,11 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   .nav .menu .logo i {
     display: inline-block;
@@ -261,8 +261,8 @@ h3 {
   }
   .nav .menu .options {
     display: none;
-    -webkit-transition: .3s all ease;
-    transition: .3s all ease;
+    -webkit-transition: 0.3s all ease;
+    transition: 0.3s all ease;
   }
   .nav .menu .options ul li {
     display: block;
@@ -291,15 +291,15 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   color: #fff;
   text-align: center;
 }
@@ -309,9 +309,9 @@ h3 {
   font-size: 4rem;
   position: relative;
   text-shadow: 0px 2px 1px #a8a8a8;
-  margin-bottom: .8em;
+  margin-bottom: 0.8em;
   margin-top: 0;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
 }
 
 .main .hero-banner h2::before {
@@ -322,13 +322,13 @@ h3 {
   height: 4px;
   background-color: #ce1d47;
   bottom: 0;
-  left: .4em;
-  bottom: -.15em;
+  left: 0.4em;
+  bottom: -0.15em;
 }
 
 .main .hero-banner p {
   font-size: 1.3em;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 .main .news {
@@ -344,9 +344,9 @@ h3 {
 .main .news h2 {
   color: #ffffff;
   font-size: 2.3em;
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   position: relative;
-  margin-left: .5em;
+  margin-left: 0.5em;
   margin-top: 0;
 }
 
@@ -357,7 +357,7 @@ h3 {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: -.5em;
+  left: -0.5em;
 }
 
 .main .news h2::after {
@@ -365,7 +365,7 @@ h3 {
   display: inline-block;
   position: absolute;
   width: 90%;
-  margin: .45em 1em .3em;
+  margin: 0.45em 1em 0.3em;
   height: 1px;
   background-color: #fff;
 }
@@ -373,8 +373,8 @@ h3 {
 .main .news .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin: 0 auto;
   gap: 2em;
   margin-bottom: 15em;
@@ -392,7 +392,7 @@ h3 {
 .main .news .wrapper .news-card .card-img img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -418,7 +418,7 @@ h3 {
   position: absolute;
   z-index: 0;
   top: 0;
-  left: .2em;
+  left: 0.2em;
   border-radius: 10px;
 }
 
@@ -432,7 +432,7 @@ h3 {
 
 .main .news .wrapper .news-card .card-content .more,
 .main .news .wrapper .news-card .card-content .content {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-bottom: 1em;
 }
 
@@ -444,13 +444,13 @@ h3 {
 
 .main .news .wrapper .news-card .card-content .date {
   color: #c72c56;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
   border-radius: 5px;
   margin-left: 1em;
-  padding: .6em 1.4em;
+  padding: 0.6em 1.4em;
   padding-left: 2.5em;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   background-color: #ddaec0;
   position: relative;
 }
@@ -467,8 +467,8 @@ h3 {
   position: absolute;
   left: 0;
   top: -2px;
-  margin-left: .5em;
-  padding-left: .5em;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 .main .news .wrapper .news-card .card-content .date i {
@@ -488,17 +488,17 @@ h3 {
 .main .blog-entries h2:nth-child(1) {
   position: absolute;
   font-size: 2.5em;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
   background-color: #ffffff;
   color: #ce1d47;
   text-transform: uppercase;
   display: inline-block;
   padding: 0 1.6em;
   position: absolute;
-  top: -.6em;
+  top: -0.6em;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 10;
 }
 
@@ -525,7 +525,7 @@ h3 {
 .main .blog-entries .container .image img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main .blog-entries .container .content {
@@ -535,13 +535,13 @@ h3 {
 
 .main .blog-entries .container .content .date {
   color: #c72c56;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 300;
   border-radius: 10px;
   margin-left: 1em;
-  padding: .9em 1.3em .9em 4em;
+  padding: 0.9em 1.3em 0.9em 4em;
   margin-bottom: 1em;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   background-color: #ddaec0;
   position: relative;
   top: -5px;
@@ -560,8 +560,8 @@ h3 {
   position: absolute;
   left: 1em;
   top: -2px;
-  margin-left: .5em;
-  padding-left: .5em;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 @media (max-width: 500px) {
@@ -585,8 +585,8 @@ h3 {
 }
 
 .main .blog-entries .container .content h3 {
-  margin-bottom: .5em;
-  font-family: 'Nexa bold';
+  margin-bottom: 0.5em;
+  font-family: "Nexa bold";
   color: #3e4450;
   font-size: 1.4em;
 }
@@ -634,7 +634,7 @@ h3 {
   position: relative;
   font-size: 6em;
   text-shadow: 0px 2px 1px #a8a8a8;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 
 .main .contactus .wrapper .banner-1 .content h2::after {
@@ -646,7 +646,7 @@ h3 {
   bottom: 0;
   left: 50%;
   -webkit-transform: translate(-50%);
-          transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 @media (max-width: 863px) {
@@ -657,7 +657,7 @@ h3 {
 
 .main .contactus .wrapper .banner-1 .content p {
   font-size: 1.4em;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 .main .contactus .wrapper .banner-2 {
@@ -686,15 +686,15 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding: 10%;
   margin-left: auto;
   position: relative;
@@ -720,8 +720,8 @@ h3 {
   margin: 0;
   font-weight: 700;
   font-size: 2em;
-  margin-bottom: .3em;
-  font-family: 'Nexa bold';
+  margin-bottom: 0.3em;
+  font-family: "Nexa bold";
   position: relative;
 }
 
@@ -732,13 +732,13 @@ h3 {
   width: 3px;
   background-color: #ce1d47;
   top: 0;
-  left: -.5em;
-  bottom: -.8em;
+  left: -0.5em;
+  bottom: -0.8em;
 }
 
 .main .contactus .wrapper .banner-2 .content .title span {
   font-weight: 300;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   color: #868686;
 }
 
@@ -749,15 +749,15 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .main .contactus .wrapper .banner-2 .content .data p {
   font-weight: 300;
   margin-bottom: 2em;
-  margin-left: .6em;
-  font-family: 'Nexa light';
+  margin-left: 0.6em;
+  font-family: "Nexa light";
 }
 
 .main .contactus .wrapper .banner-2 .content .data p i {
@@ -773,7 +773,7 @@ h3 {
 
 @media (max-width: 400px) {
   .main .contactus .wrapper .banner-2 .content .data span {
-    margin-top: .7em;
+    margin-top: 0.7em;
   }
 }
 
@@ -794,23 +794,23 @@ h3 {
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-columns: (minmax(400px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-template-rows: auto;
 }
 
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-3 .grid {
-    -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-3 .grid {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
@@ -822,7 +822,7 @@ h3 {
 
 @media (max-width: 865px) {
   .main .contactus .wrapper .banner-3 .grid .phone {
-    padding: 0 1em .5em 1em;
+    padding: 0 1em 0.5em 1em;
   }
 }
 
@@ -841,15 +841,15 @@ h3 {
   color: #ce1d47;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: .2em;
-  margin-top: -.3em;
+  margin-bottom: 0.2em;
+  margin-top: -0.3em;
   font-size: 2.3em;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info h3 span {
   font-weight: 300;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 @media (max-width: 863px) {
@@ -868,17 +868,17 @@ h3 {
 
 .main .contactus .wrapper .banner-3 .grid .phone .info p {
   font-weight: 300;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   margin-bottom: 1em;
   mix-blend-mode: darken;
 }
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i {
-  margin: .4em;
+  margin: 0.4em;
   font-size: 3em;
   color: #ce1d47;
-  -webkit-transition: .3s all ease;
-  transition: .3s all ease;
+  -webkit-transition: 0.3s all ease;
+  transition: 0.3s all ease;
   display: inline-block;
   position: relative;
   mix-blend-mode: multiply;
@@ -886,7 +886,7 @@ h3 {
 
 .main .contactus .wrapper .banner-3 .grid .phone .info i:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -914,7 +914,7 @@ h3 {
   position: relative;
   width: 90%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 @media (max-width: 665px) {
@@ -924,7 +924,7 @@ h3 {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
 }
 
@@ -932,8 +932,8 @@ h3 {
   text-align: right;
   padding: 1em;
   -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+  -ms-grid-row-align: end;
+  align-self: end;
   color: #fff;
   position: relative;
 }
@@ -956,38 +956,38 @@ h3 {
 .main .contactus .wrapper .banner-3 .grid .send-message .title h3 {
   text-transform: uppercase;
   font-weight: 700;
-  margin: .2em 0;
+  margin: 0.2em 0;
   font-size: 2.3em;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title h3 span {
   font-weight: 300;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .title p {
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .grid {
   display: -ms-grid;
   display: grid;
   gap: 1em;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   margin-bottom: 1.5em;
 }
 
 @media (max-width: 863px) {
   .main .contactus .wrapper .banner-3 .grid .send-message .grid {
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(150px, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message textarea {
-  padding: .5em;
+  padding: 0.5em;
   width: 100%;
   border: none;
   resize: none;
@@ -1000,10 +1000,10 @@ h3 {
 }
 
 .main .contactus .wrapper .banner-3 .grid .send-message .btn-outline {
-  padding: .7em 2.8em;
+  padding: 0.7em 2.8em;
   text-transform: uppercase;
-  font-size: .9em;
-  letter-spacing: .2em;
+  font-size: 0.9em;
+  letter-spacing: 0.2em;
 }
 
 .main .main-hero-banner {
@@ -1022,9 +1022,9 @@ h3 {
   top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-55%);
-          transform: translateX(-50%) translateY(-55%);
+  transform: translateX(-50%) translateY(-55%);
   z-index: -100;
-  width: 100%;
+  width: 200%;
 }
 
 @media (max-width: 768px) {
@@ -1043,12 +1043,12 @@ h3 {
   padding: 1em 2.3em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: .5em;
+  -ms-grid-columns: (minmax(250px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 0.5em;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   background-color: #ce1d47;
 }
 
@@ -1057,14 +1057,14 @@ h3 {
 .main .main-hero-banner .services .best-selection,
 .main .main-hero-banner .services .secure-payments {
   color: #fff;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .main .main-hero-banner .services .support h3,
 .main .main-hero-banner .services .best-price h3,
 .main .main-hero-banner .services .best-selection h3,
 .main .main-hero-banner .services .secure-payments h3 {
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   font-size: 1.4em;
   margin-top: 0;
   margin-bottom: 1em;
@@ -1076,8 +1076,8 @@ h3 {
 .main .main-hero-banner .services .secure-payments h3 img {
   position: relative;
   width: 1em;
-  top: .2em;
-  margin-right: .3em;
+  top: 0.2em;
+  margin-right: 0.3em;
 }
 
 .main .main-hero-banner .services .best-price h3 span {
@@ -1095,7 +1095,13 @@ h3 {
 .main .featured-tours .title {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(35%, #f18b43));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#d52553),
+    color-stop(35%, #f18b43)
+  );
   background: linear-gradient(to right, #d52553 0%, #f18b43 35%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1108,10 +1114,10 @@ h3 {
 
 .main .featured-tours .title::before {
   content: "";
-  width: .1em;
-  height: .75em;
+  width: 0.1em;
+  height: 0.75em;
   display: inline-block;
-  margin-right: .3em;
+  margin-right: 0.3em;
   background-color: #ce1d47;
 }
 
@@ -1160,7 +1166,7 @@ h3 {
 }
 
 .main .featured-tours .flyer h2 i {
-  margin: 0 .1em;
+  margin: 0 0.1em;
 }
 
 @media (max-width: 768px) {
@@ -1180,7 +1186,7 @@ h3 {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 400px;
-      grid-template-columns: auto 400px;
+  grid-template-columns: auto 400px;
   -webkit-box-shadow: 0px 4px 10px -3px #757575;
   box-shadow: 0px 4px 10px -3px #757575;
 }
@@ -1188,7 +1194,7 @@ h3 {
 @media (max-width: 768px) {
   .main .featured-tours .wrapper {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
@@ -1205,10 +1211,10 @@ h3 {
 
 .main .featured-tours .wrapper .description h3::before {
   content: "";
-  width: .1em;
-  height: .85em;
+  width: 0.1em;
+  height: 0.85em;
   display: inline-block;
-  margin-right: .3em;
+  margin-right: 0.3em;
   background-color: #ce1d47;
 }
 
@@ -1221,17 +1227,17 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .main .featured-tours .wrapper .price .info {
   width: 50%;
   height: 100%;
-  font-family: 'Nexa Light';
+  font-family: "Nexa Light";
 }
 
 .main .featured-tours .wrapper .price .info .comming {
-  font-size: .75em;
+  font-size: 0.75em;
   line-height: 1.3em;
   text-transform: uppercase;
   display: block;
@@ -1242,11 +1248,11 @@ h3 {
 }
 
 .main .featured-tours .wrapper .price .info .currency {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .main .featured-tours .wrapper .price .btn-outline {
-  padding: .5em 2em;
+  padding: 0.5em 2em;
   font-size: 1em;
   margin: 1.6em auto;
 }
@@ -1275,14 +1281,14 @@ h3 {
 .main .we-mark .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -ms-grid-columns: (minmax(250px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
+  -ms-flex-pack: stretch;
+  justify-content: stretch;
 }
 
 .main .we-mark .wrapper .image {
@@ -1294,7 +1300,7 @@ h3 {
 .main .we-mark .wrapper .image img {
   width: 120%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .main .we-mark .wrapper .image::before {
@@ -1322,7 +1328,7 @@ h3 {
     height: 100%;
     width: 120%;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -1331,11 +1337,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   left: 0;
   width: 100%;
@@ -1361,11 +1367,17 @@ h3 {
     left: 0;
     padding: 7em 2em 7em 2em;
     background: #e7e5e4;
-    background: -webkit-gradient(linear, left top, right top, color-stop(49%, #e7e5e4), to(white));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(49%, #e7e5e4),
+      to(white)
+    );
     background: linear-gradient(to right, #e7e5e4 49%, white 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e7e5e4', endColorstr='#ffffff',GradientType=1 );
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 }
 
@@ -1378,7 +1390,13 @@ h3 {
 .main .promotions .title {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(32%, #f18b43));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#d52553),
+    color-stop(32%, #f18b43)
+  );
   background: linear-gradient(to right, #d52553 0%, #f18b43 32%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1389,10 +1407,10 @@ h3 {
 
 .main .promotions .title::before {
   content: "";
-  width: .1em;
-  height: .75em;
+  width: 0.1em;
+  height: 0.75em;
   display: inline-block;
-  margin-right: .3em;
+  margin-right: 0.3em;
   background-color: #ce1d47;
 }
 
@@ -1400,8 +1418,8 @@ h3 {
   display: -ms-grid;
   display: grid;
   gap: 3em;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   margin: 0 auto;
 }
 
@@ -1421,7 +1439,7 @@ h3 {
 .main .promotions .wrapper .promo-card .image img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main .promotions .wrapper .promo-card .buttons {
@@ -1430,23 +1448,23 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 
 .main .promotions .wrapper .promo-card .buttons .btn-outline {
   border: 1px solid #f18b43;
   color: #f18b43;
-  -webkit-transition: .3s ease all;
-  transition: .3s ease all;
-  padding: .5em 1em;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  padding: 0.5em 1em;
   width: 100%;
-  margin: .3em;
+  margin: 0.3em;
 }
 
 .main .promotions .wrapper .promo-card .buttons .btn-outline:hover {
@@ -1460,8 +1478,8 @@ h3 {
     padding: 4em 1em;
   }
   .main .promotions .wrapper {
-    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    -ms-grid-columns: (minmax(200px, 1fr)) [auto-fit];
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
 
@@ -1479,7 +1497,13 @@ h3 {
 .main .clients-review .header h2 {
   font-size: 2.3rem;
   font-weight: 700;
-  background: -webkit-gradient(linear, left top, right top, from(#d52553), color-stop(35%, #f18b43));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#d52553),
+    color-stop(35%, #f18b43)
+  );
   background: linear-gradient(to right, #d52553 0%, #f18b43 35%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -1490,7 +1514,7 @@ h3 {
 }
 
 .main .clients-review .header h2 span {
-  font-family: 'Nexa Light';
+  font-family: "Nexa Light";
 }
 
 .main .clients-review .header p {
@@ -1524,8 +1548,8 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 0 auto;
 }
 
@@ -1540,17 +1564,17 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 .main .clients-review .carousel .container .carousel__photo img {
   width: 100%;
-  margin: .1em;
+  margin: 0.1em;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main .clients-review .carousel .container .carousel__description {
@@ -1558,16 +1582,33 @@ h3 {
   padding: 1em;
 }
 
-.main .clients-review .carousel .container .carousel__description .description__footer {
+.main
+  .clients-review
+  .carousel
+  .container
+  .carousel__description
+  .description__footer {
   text-align: right;
 }
 
-.main .clients-review .carousel .container .carousel__description .description__footer p {
+.main
+  .clients-review
+  .carousel
+  .container
+  .carousel__description
+  .description__footer
+  p {
   text-transform: capitalize;
   font-weight: 700;
 }
 
-.main .clients-review .carousel .container .carousel__description .description__footer span {
+.main
+  .clients-review
+  .carousel
+  .container
+  .carousel__description
+  .description__footer
+  span {
   font-weight: 300;
 }
 
@@ -1578,8 +1619,8 @@ h3 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -1597,8 +1638,8 @@ h3 {
   width: 100%;
   height: calc(100vh);
   overflow: hidden;
-  -ms-grid-columns: (minmax(17em, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
+  -ms-grid-columns: (minmax(17em, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(17em, 1fr));
   top: 0;
   left: 0;
   right: 0;
@@ -1610,7 +1651,7 @@ h3 {
   width: 100%;
   height: 13em;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .main .booking .book-now {
@@ -1630,7 +1671,7 @@ h3 {
 
 .main .booking .book-now h2 {
   font-size: 3rem;
-  margin: .3em 0;
+  margin: 0.3em 0;
 }
 
 .main .booking .book-now .btn-outline {
@@ -1654,11 +1695,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 3em;
   padding-top: 2.5em;
 }
@@ -1670,8 +1711,8 @@ h3 {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .main .tours .our-tours .title .decoration {
     margin: 1.5em 0;
@@ -1694,7 +1735,7 @@ h3 {
 }
 
 .main .tours .our-tours .title h2 span {
-  letter-spacing: .7em;
+  letter-spacing: 0.7em;
   font-weight: 300;
   display: block;
   font-size: 22px;
@@ -1706,7 +1747,7 @@ h3 {
 
 .main .tours .our-tours .title .decoration {
   display: inline-block;
-  padding: .6em 1em;
+  padding: 0.6em 1em;
   background-color: #676364;
   width: 13em;
   color: #fff;
@@ -1714,7 +1755,7 @@ h3 {
   text-transform: capitalize;
   position: relative;
   margin-left: 2em;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
 }
 
 .main .tours .our-tours .title .decoration::before {
@@ -1733,18 +1774,18 @@ h3 {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   margin-bottom: 8em;
 }
 
 @media (max-width: 350px) {
   .main .tours .our-tours .wrapper {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
@@ -1756,14 +1797,14 @@ h3 {
 @media (max-width: 915px) {
   .main .tours .our-tours .wrapper .tour-card {
     width: 40%;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 }
 
 @media (max-width: 768px) {
   .main .tours .our-tours .wrapper .tour-card {
     width: 100%;
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 }
 
@@ -1776,14 +1817,14 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url(../img/Tours/Recurso_1.png);
   background-position: center;
   background-size: cover;
@@ -1793,11 +1834,30 @@ h3 {
   font-weight: 700;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(2) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(1)
+  .title
+  p:nth-child(2) {
   font-size: 2.5em;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(1) .title p:nth-child(3) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(1)
+  .title
+  p:nth-child(1),
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(1)
+  .title
+  p:nth-child(3) {
   font-size: 3em;
 }
 
@@ -1810,14 +1870,14 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url(../img/Tours/Recurso_2.png);
   background-position: center;
   background-size: cover;
@@ -1827,11 +1887,30 @@ h3 {
   font-weight: 700;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(2) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(2)
+  .title
+  p:nth-child(2) {
   font-size: 2.5em;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(2) .title p:nth-child(3) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(2)
+  .title
+  p:nth-child(1),
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(2)
+  .title
+  p:nth-child(3) {
   font-size: 3em;
 }
 
@@ -1844,14 +1923,14 @@ h3 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   background-image: url(../img/Tours/Recurso_3.png);
   background-position: center;
   background-size: cover;
@@ -1861,23 +1940,42 @@ h3 {
   font-weight: 700;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(2) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(3)
+  .title
+  p:nth-child(2) {
   font-size: 2.5em;
 }
 
-.main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(1), .main .tours .our-tours .wrapper .tour-card:nth-of-type(3) .title p:nth-child(3) {
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(3)
+  .title
+  p:nth-child(1),
+.main
+  .tours
+  .our-tours
+  .wrapper
+  .tour-card:nth-of-type(3)
+  .title
+  p:nth-child(3) {
   font-size: 3em;
 }
 
 .main .tours .our-tours .wrapper .tour-card .decription {
   padding: 1em 3em 3em 3em;
   color: #fff;
-  font-size: .9em;
+  font-size: 0.9em;
   text-align: center;
 }
 
 .main .tours .our-tours .wrapper .tour-card .btn-outline {
-  padding: .5em 2.8em;
+  padding: 0.5em 2.8em;
   margin: 1.6em auto 0 auto;
   font-size: 1em;
 }
@@ -1899,12 +1997,12 @@ h3 {
   top: -1.5em;
   text-transform: uppercase;
   font-size: 2.7em;
-  font-family: 'Nexa bold';
+  font-family: "Nexa bold";
 }
 
 .main .tours .tours-info .custom-title span {
   text-transform: capitalize;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   font-weight: 300;
 }
 
@@ -1917,8 +2015,8 @@ h3 {
 .main .tours .tours-info .container .city {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(430px, auto))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(430px, auto));
+  -ms-grid-columns: (minmax(430px, auto)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(430px, auto));
   margin-left: auto;
   position: relative;
 }
@@ -1936,7 +2034,7 @@ h3 {
 }
 
 .main .tours .tours-info .container .city .data h2 i {
-  margin-right: .2em;
+  margin-right: 0.2em;
 }
 
 .main .tours .tours-info .container .city .data .info-container {
@@ -1961,7 +2059,14 @@ h3 {
   position: relative;
 }
 
-.main .tours .tours-info .container .city .data .info-container .descrip::before {
+.main
+  .tours
+  .tours-info
+  .container
+  .city
+  .data
+  .info-container
+  .descrip::before {
   content: "";
   width: 2px;
   display: block;
@@ -1973,21 +2078,21 @@ h3 {
 }
 
 .main .tours .tours-info .container .city .data .icons {
-  padding: 2.3em  1.5em;
+  padding: 2.3em 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .main .tours .tours-info .container .city .data .icons .icon {
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   text-align: center;
 }
 
@@ -1997,25 +2102,25 @@ h3 {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .main .tours .tours-info .container .city .data .icons .icon {
-    margin: .5em 0;
+    margin: 0.5em 0;
   }
 }
 
 .main .tours .tours-info .container .city .video {
   position: relative;
   padding: 0;
-  top: -.7em;
+  top: -0.7em;
 }
 
 @media (max-width: 874px) {
@@ -2042,11 +2147,11 @@ h3 {
 
 .main .tours .tours-info .container .city .video .video-description {
   background-color: #ffffff;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   font-weight: 300;
   color: #ce1d47;
   text-align: center;
-  font-family: 'Nexa Light';
+  font-family: "Nexa Light";
   -webkit-box-shadow: 0px 3px 10px 0px #969696;
   box-shadow: 0px 3px 10px 0px #969696;
 }
@@ -2054,7 +2159,7 @@ h3 {
 @media (max-width: 450px) {
   .main .tours .tours-info .container .city {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
   .main .tours .tours-info .container .city .data h2 {
     margin-top: 1em;
@@ -2066,16 +2171,16 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   padding: 0 1em;
 }
 
 .main .tours .tours-info .container .middle .btn-outline {
-  padding: .6em 2.2em;
+  padding: 0.6em 2.2em;
   border-radius: 0;
   border: 1px solid #c82d57;
   color: #c82d57;
@@ -2095,7 +2200,7 @@ h3 {
 .main .tours .tours-info .container .middle ul li {
   margin-left: 3em;
   font-size: 10px;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   line-height: 1.4em;
 }
 
@@ -2126,7 +2231,7 @@ h3 {
   width: 11em;
   font-weight: 300;
   color: #c82d57;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
   margin-left: 5%;
   margin-top: 0;
 }
@@ -2134,15 +2239,15 @@ h3 {
 .main .tours .tours-info .container .stops .wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30vw, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  -ms-grid-columns: (minmax(30vw, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
   gap: 1em;
 }
 
 @media (max-width: 532px) {
   .main .tours .tours-info .container .stops .wrapper {
     -ms-grid-columns: auto;
-        grid-template-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
@@ -2157,11 +2262,11 @@ h3 {
 .main .tours .tours-info .container .stops .wrapper .sites-card .image img {
   width: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 .main .tours .tours-info .container .stops .wrapper .description {
-  font-family: 'Calibri Light';
+  font-family: "Calibri Light";
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -2177,19 +2282,19 @@ h3 {
   color: #fff !important;
   position: relative;
   z-index: 100;
-  font-family: 'Nexa light';
+  font-family: "Nexa light";
 }
 
 .footer h2 {
   font-size: 2.5em;
   font-weight: bolder;
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
 }
 
 .footer h3 {
   font-size: 2em;
   font-weight: bolder;
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   margin-bottom: 0;
 }
 
@@ -2197,8 +2302,8 @@ h3 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
 }
 
@@ -2229,7 +2334,7 @@ h3 {
 .footer .wrapper .contact-us ul li i {
   margin-right: 1em;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   display: blo;
 }
 
@@ -2237,8 +2342,8 @@ h3 {
   margin: 1.5em 0 1.5em auto;
   position: relative;
   border-radius: 4px;
-  padding-top: .5em;
-  padding-bottom: .5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
 .footer .wrapper .social-networks .box {
@@ -2246,15 +2351,15 @@ h3 {
   padding: 1.1em;
   border-radius: 3px;
   background-color: #fff;
-  margin: 1em .3em;
+  margin: 1em 0.3em;
   position: relative;
-  -webkit-transition: ease .3s all;
-  transition: ease .3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
 }
 
 .footer .wrapper .social-networks .box:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer .wrapper .social-networks .box i {
@@ -2262,7 +2367,7 @@ h3 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.2em;
   color: #ce1d47;
 }
@@ -2278,15 +2383,15 @@ h3 {
 .footer2 h2 {
   font-size: 2.5em;
   font-weight: bolder;
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   margin-top: 1em;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .footer2 h3 {
   font-size: 2em;
   font-weight: bolder;
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   margin-bottom: 0;
 }
 
@@ -2294,8 +2399,8 @@ h3 {
   width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(200px, 1fr)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2em;
 }
 
@@ -2318,7 +2423,7 @@ h3 {
 .footer2 .wrapper .contact-us ul li i {
   margin-right: 1em;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   display: blo;
 }
 
@@ -2329,11 +2434,11 @@ h3 {
 }
 
 .footer2 .wrapper .news-offers form .btn {
-  margin: 0 .3em;
+  margin: 0 0.3em;
   position: relative;
   border-radius: 17px;
-  padding-top: .2em;
-  padding-bottom: .2em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 .footer2 .wrapper .news-offers form .btn i {
@@ -2345,15 +2450,15 @@ h3 {
   padding: 1.1em;
   border-radius: 13px;
   background-color: #fff;
-  margin: 1em .1em;
+  margin: 1em 0.1em;
   position: relative;
-  -webkit-transition: ease .3s all;
-  transition: ease .3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
 }
 
 .footer2 .wrapper .social-networks .box:hover {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer2 .wrapper .social-networks .box i {
@@ -2361,7 +2466,7 @@ h3 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 1.5em;
   color: #ce1d47;
 }
@@ -2374,11 +2479,11 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   z-index: 100;
 }
 
@@ -2390,8 +2495,8 @@ h3 {
   position: absolute;
   bottom: -1em;
   right: -1em;
-  -webkit-transition: .4s all ease;
-  transition: .4s all ease;
+  -webkit-transition: 0.4s all ease;
+  transition: 0.4s all ease;
   color: #fff;
   -webkit-box-shadow: 0px 0px 9px -2px #817e7e;
   box-shadow: 0px 0px 9px -2px #817e7e;
@@ -2403,7 +2508,7 @@ h3 {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   font-size: 2em;
 }
 
@@ -2446,7 +2551,7 @@ h3 {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   border: none;
   background: none;
   cursor: pointer;
