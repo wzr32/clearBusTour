@@ -957,7 +957,7 @@ h3{
         
         .banner{
             // padding: 20em;
-            width: 100%;
+            width: 115%;
             height: calc(100vh - 13.5em);
             position: relative;
 
@@ -965,7 +965,7 @@ h3{
                 position: absolute;    
                 top: 50%;
                 left: 50%;
-                transform: translateX(-50%) translateY(-55%);   
+                transform: translateX(-50%) translateY(-50%);   
                 z-index: -100;
                 width: 100%;
             }//end videoBg
