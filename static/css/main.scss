@@ -957,7 +957,7 @@ h3{
         
         .banner{
             // padding: 20em;
-            width: 115%;
+            width: 100%;
             height: calc(100vh - 13.5em);
             position: relative;
 
@@ -967,19 +967,25 @@ h3{
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);   
                 z-index: -100;
-                width: 100%;
-            }//end videoBg
-
-            @media (max-width: 768px){
-                background-image: url(../img/bgs/main-bg.png);
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-
-                #videoBg{
-                    display: none;
+                width: 140%;
+            
+                @media (max-width: 768px){
+                    width: calc(160%);
                 }
-            }
+    
+                @media (max-width: 520px){
+                    width: calc(200%);
+                }
+    
+                @media (max-width: 420px){
+                    width: calc(300%);
+                }
+    
+                @media (max-width: 285px){
+                    width: calc(400%);
+                }
+            
+            }//end videoBg
         }//end banner
 
         .services{
@@ -2245,8 +2251,9 @@ h3{
 }//end footer2
 
 .networks{
-    position: sticky;
+    position: fixed;
     bottom: 0;
+    right: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -2259,8 +2266,8 @@ h3{
             // clip-path: circle(40% at 50% 50%);
             border-radius: 50%;
             position: absolute;
-            bottom: -1em;
-            right: -1em;
+            bottom: 1em;
+            right: 1em;
             transition: .4s all ease;
             color: #fff;
             -webkit-box-shadow: 0px 0px 9px -2px rgb(129, 126, 126);

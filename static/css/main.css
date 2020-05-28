@@ -1012,7 +1012,7 @@ h3 {
 }
 
 .main .main-hero-banner .banner {
-  width: 115%;
+  width: 100%;
   height: calc(100vh - 13.5em);
   position: relative;
 }
@@ -1024,18 +1024,30 @@ h3 {
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
   z-index: -100;
-  width: 100%;
+  width: 140%;
 }
 
 @media (max-width: 768px) {
-  .main .main-hero-banner .banner {
-    background-image: url(../img/bgs/main-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
   .main .main-hero-banner .banner #videoBg {
-    display: none;
+    width: calc(160%);
+  }
+}
+
+@media (max-width: 520px) {
+  .main .main-hero-banner .banner #videoBg {
+    width: calc(200%);
+  }
+}
+
+@media (max-width: 420px) {
+  .main .main-hero-banner .banner #videoBg {
+    width: calc(300%);
+  }
+}
+
+@media (max-width: 285px) {
+  .main .main-hero-banner .banner #videoBg {
+    width: calc(400%);
   }
 }
 
@@ -2367,9 +2379,9 @@ h3 {
 }
 
 .networks {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2388,8 +2400,8 @@ h3 {
   background-color: #ce1d47;
   border-radius: 50%;
   position: absolute;
-  bottom: -1em;
-  right: -1em;
+  bottom: 1em;
+  right: 1em;
   -webkit-transition: .4s all ease;
   transition: .4s all ease;
   color: #fff;
