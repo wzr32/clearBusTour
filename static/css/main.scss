@@ -970,19 +970,27 @@ h3{
                 width: 140%;
             
                 @media (max-width: 768px){
-                    width: calc(160%);
+                    min-width: 160%;
                 }
     
                 @media (max-width: 520px){
-                    width: calc(200%);
+                    min-width: 200%;
                 }
     
                 @media (max-width: 420px){
-                    width: calc(300%);
+                    min-width: 300%;
                 }
     
+                @media (max-width: 355px){
+                    min-width: 400%;
+                }
+
                 @media (max-width: 285px){
-                    width: calc(400%);
+                    min-width: 450%;
+                }
+
+                @media (max-width: 245px){
+                    min-width: 550%;
                 }
             
             }//end videoBg

@@ -1029,25 +1029,37 @@ h3 {
 
 @media (max-width: 768px) {
   .main .main-hero-banner .banner #videoBg {
-    width: calc(160%);
+    min-width: 160%;
   }
 }
 
 @media (max-width: 520px) {
   .main .main-hero-banner .banner #videoBg {
-    width: calc(200%);
+    min-width: 200%;
   }
 }
 
 @media (max-width: 420px) {
   .main .main-hero-banner .banner #videoBg {
-    width: calc(300%);
+    min-width: 300%;
+  }
+}
+
+@media (max-width: 355px) {
+  .main .main-hero-banner .banner #videoBg {
+    min-width: 400%;
   }
 }
 
 @media (max-width: 285px) {
   .main .main-hero-banner .banner #videoBg {
-    width: calc(400%);
+    min-width: 450%;
+  }
+}
+
+@media (max-width: 245px) {
+  .main .main-hero-banner .banner #videoBg {
+    min-width: 550%;
   }
 }
 
