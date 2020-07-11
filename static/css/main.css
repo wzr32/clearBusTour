@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: 'Myriad', sans-serif;
-  color: #70706e;
+  color: #9c9c9c;
   overflow-x: hidden;
   position: relative;
   z-index: 1;
@@ -53,6 +53,26 @@ input {
   height: 3em;
   padding: 0 .7em;
   width: 100%;
+}
+
+input.disable {
+  background-color: #d1d1d1;
+}
+
+input::-webkit-input-placeholder {
+  color: #9c9c9c !important;
+}
+
+input:-ms-input-placeholder {
+  color: #9c9c9c !important;
+}
+
+input::-ms-input-placeholder {
+  color: #9c9c9c !important;
+}
+
+input::placeholder {
+  color: #9c9c9c !important;
 }
 
 h1,
@@ -213,7 +233,7 @@ h3 {
 }
 
 .nav .menu .options ul li a {
-  color: #70706e;
+  color: #9c9c9c;
   position: relative;
   font-weight: bold;
 }
@@ -2011,7 +2031,7 @@ h3 {
   content: "";
   width: 2px;
   display: block;
-  background-color: #bcbcbb;
+  background-color: #e8e8e8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2153,7 +2173,7 @@ h3 {
   content: "";
   width: 2px;
   display: block;
-  background-color: #bcbcbb;
+  background-color: #e8e8e8;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -2215,6 +2235,497 @@ h3 {
 
 .main .tours .tours-info .container .stops .wrapper .description h3 {
   margin-top: 0;
+}
+
+.reservation {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 2em;
+}
+
+.reservation .tours__card,
+.reservation .tours__card--active {
+  -webkit-box-shadow: 0px 5px 10px 1px #a8a8a8;
+  box-shadow: 0px 5px 10px 1px #a8a8a8;
+  padding: 3.5em;
+  text-align: center;
+  background-color: #ffffff;
+  margin: 1.4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
+  max-width: 22em;
+}
+
+.reservation .tours__card h3,
+.reservation .tours__card--active h3 {
+  font-size: 1.7em;
+  text-transform: capitalize;
+}
+
+.reservation .tours__card .deco,
+.reservation .tours__card--active .deco {
+  width: 3em;
+  border-bottom: 1px solid #9c9c9c;
+  display: inline-block;
+  margin: .4em auto;
+}
+
+.reservation .tours__card:hover,
+.reservation .tours__card--active:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  cursor: pointer;
+}
+
+.reservation .tours__card--active {
+  background-color: #d52b52;
+  color: #fff;
+}
+
+.reservation .tours__card--active .deco {
+  border-bottom: 1px solid #fff;
+}
+
+.reservation .seats {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  max-width: 35em;
+  width: 35em;
+  min-height: 100%;
+}
+
+.reservation .seats .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.reservation .seats .info .group input {
+  width: 80%;
+  background-color: #d1d1d1;
+}
+
+.reservation .seats .selection {
+  position: relative;
+}
+
+.reservation .seats .selection .wrapper {
+  max-width: 243px;
+  margin-left: auto;
+  margin-right: 3.2em;
+  margin-top: 8.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (2.5em)[3];
+      grid-template-columns: repeat(3, 2.5em);
+  background-color: slategrey;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 .1em;
+}
+
+.reservation .seats .selection .wrapper.second {
+  margin-top: 1.8em;
+}
+
+.reservation .seats .selection .wrapper .seat {
+  width: 2.5em;
+  height: 2.5em;
+  margin-bottom: .2em;
+  background-color: #cbd9e3;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.reservation .seats .bus-img {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.reservation .legend .btn-outline-purple {
+  border: 1px solid #ce1d47;
+  width: 10em;
+  color: #ce1d47;
+  display: block;
+  background-color: transparent;
+  padding: .5em 1.3em;
+  text-transform: uppercase;
+  font-family: 'Calibri Light';
+}
+
+.account {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 17em;
+      grid-template-columns: 1fr 17em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account .account__grid {
+  display: inherit;
+  -ms-grid-columns: 350px 1fr;
+      grid-template-columns: 350px 1fr;
+}
+
+.account .account__grid .profile-card {
+  padding: 2em;
+}
+
+.account .account__grid .profile-card .card {
+  background-color: #d52b52;
+  padding: 2.3em;
+  text-align: center;
+  color: #fff;
+}
+
+.account .account__grid .profile-card .card .avatar {
+  max-width: 8em;
+  max-height: 8em;
+  min-width: 3em;
+  min-height: 3em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.account .account__grid .profile-card .card .data h3 {
+  margin-bottom: .3em;
+  text-transform: capitalize;
+}
+
+.account .account__grid .profile-card .card .data .deco {
+  position: relative;
+  display: inline-block;
+  width: 3em;
+  margin: 1em 0;
+  border-bottom: 1px solid #fff;
+}
+
+.account .account__grid .profile-card .card .history {
+  margin: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.account .account__grid .profile-card .card .history .travels {
+  min-width: 50%;
+  border-right: 1px solid #fff;
+}
+
+.account .account__grid .profile-card .card .history .travels span {
+  display: block;
+}
+
+.account .account__grid .profile-card .card .history .travels span:nth-child(1), .account .account__grid .profile-card .card .history .travels span:nth-child(3) {
+  font-size: 13px;
+  font-family: 'Calibri Light';
+}
+
+.account .account__grid .profile-card .card .history .travels span:nth-child(2) {
+  font-size: 50px;
+  font-family: 'Nexa Light';
+}
+
+.account .account__grid .profile-card .card .history .companions span {
+  display: block;
+}
+
+.account .account__grid .profile-card .card .history .companions span:nth-child(1) {
+  font-size: 50px;
+  font-family: 'Nexa Light';
+}
+
+.account .account__grid .profile-card .card .history .companions span:nth-child(2) {
+  font-size: 13px;
+  font-family: 'Calibri Light';
+  padding: 0 .5em;
+}
+
+.account .account__grid .profile-card .card .btn-outline-profile {
+  background-color: transparent;
+  font-family: 'Nexa Light';
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: .6em 1em;
+  color: #fff;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+  font-size: 12px;
+}
+
+.account .account__grid .info-form {
+  padding: 2em;
+}
+
+.account .account__grid .info-form h2 {
+  text-transform: uppercase;
+  color: #000;
+}
+
+.account .account__grid .info-form .form-wrapper .group {
+  display: inline-block;
+}
+
+.account .account__grid .info-form .form-wrapper .group.large {
+  width: 16em;
+}
+
+.account .account__grid .info-form .form-wrapper .group.medium {
+  width: 10em;
+}
+
+.account .account__grid .info-form .form-wrapper .group.small {
+  width: 7em;
+}
+
+.account .account__grid .info-form .form-wrapper .group.extra-small {
+  width: 6em;
+}
+
+.account .account__grid .info-form .form-wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account .account__grid .info-form .form-wrapper .bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.account .account__grid .info-form .form-wrapper label {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 1.4em;
+}
+
+.account .account__grid .info-form .form-wrapper .btn-outline-form {
+  border: 1px solid #9c9c9c;
+  color: #9c9c9c;
+  margin: 1em 0;
+  padding: .5em 1em;
+  background-color: transparent;
+  text-transform: capitalize;
+  -webkit-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+.account .account__grid .info-form .form-wrapper .btn-outline-form:hover {
+  border: none;
+  background-color: #ce1d47;
+  color: #fff;
+  cursor: pointer;
+}
+
+.account .account__container .history {
+  padding: 0 2em;
+}
+
+.account .account__container .history h2 {
+  color: #ce1d47;
+  font-size: 2.8em;
+  text-transform: capitalize;
+  margin: .8em 0 .2em 0;
+}
+
+.account .account__container .history .table {
+  width: 100%;
+  margin-top: 4em;
+}
+
+.account .account__container .history .table thead {
+  text-align: left;
+  color: #000;
+}
+
+.account .account__container .history .table .table__img {
+  width: 6em;
+}
+
+.account .account__container .history .table td {
+  font-size: 15px;
+}
+
+.account .account__container .history .table td:nth-child(2) {
+  color: #000;
+  font-weight: bold;
+}
+
+.account .account__container .history .table .btn-outline-table {
+  width: 100%;
+  padding: .5em 0;
+  border: 1px solid #ce1d47;
+  background-color: transparent;
+  text-decoration: none;
+  color: #ce1d47;
+}
+
+@media screen and (max-width: 768px) {
+  .account .account__container .history .table {
+    display: none;
+  }
+}
+
+.account .account__container .history .r-table {
+  padding: 1em;
+}
+
+.account .account__container .history .r-table .r-table__element .element__img {
+  width: 100%;
+  position: relative;
+}
+
+.account .account__container .history .r-table .r-table__element .element__title {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  margin-top: .4em;
+}
+
+.account .account__container .history .r-table .r-table__element .element__td,
+.account .account__container .history .r-table .r-table__element .element__th {
+  display: block;
+  padding-left: 4em;
+}
+
+@media screen and (max-width: 400px) {
+  .account .account__container .history .r-table .r-table__element .element__td,
+  .account .account__container .history .r-table .r-table__element .element__th {
+    padding-left: 1em;
+  }
+}
+
+.account .account__container .history .r-table .r-table__element .element__th {
+  font-family: 'Nexa Bold';
+  color: #000;
+  margin: .6em 0;
+}
+
+.account .account__container .history .r-table .r-table__element .element__td {
+  padding-left: 7em;
+}
+
+@media screen and (max-width: 400px) {
+  .account .account__container .history .r-table .r-table__element .element__td {
+    padding-left: 1.5em;
+  }
+}
+
+.account .account__container .history .r-table:nth-child(even) {
+  background-color: #ececec;
+}
+
+.account .account__container .history .r-table .btn-outline-table {
+  width: 10em;
+  padding: .5em 0;
+  border: 1px solid #ce1d47;
+  background-color: transparent;
+  text-decoration: none;
+  color: #ce1d47;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: 4em;
+}
+
+@media screen and (max-width: 980px) {
+  .account {
+    -ms-grid-columns: 1fr 0em;
+        grid-template-columns: 1fr 0em;
+  }
+  .account .account__grid {
+    -ms-grid-columns: (minmax(350px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+.account-sidebar {
+  max-width: 18em;
+  min-height: 100vh;
+  position: relative;
+  right: 0;
+  top: 0;
+  z-index: 1000;
+  padding: 2em 2.5em;
+  -webkit-box-shadow: -2px 6px 13px -2px #a8a8a8;
+  box-shadow: -2px 6px 13px -2px #a8a8a8;
+}
+
+.account-sidebar .user-info {
+  margin-bottom: 30px;
+}
+
+.account-sidebar .user-info .avatar {
+  max-width: 8em;
+  max-height: 8em;
+  min-width: 3em;
+  min-height: 3em;
+  border-radius: 50%;
+  border: 2px solid #c82d57;
+}
+
+.account-sidebar .user-info h3 {
+  margin-top: .5em;
+  margin-bottom: .2em;
+  color: #ce1d47;
+  text-transform: capitalize;
+}
+
+.account-sidebar .options {
+  margin: 2em 0;
+}
+
+.account-sidebar .options li {
+  text-transform: capitalize;
+  margin: 1em 0;
+}
+
+.account-sidebar .options .profile a {
+  color: #9c9c9c;
+}
+
+.account-sidebar .options .profile a.active {
+  color: #d52b52;
 }
 
 .footer {
@@ -2501,7 +3012,7 @@ h3 {
 .glide__arrows .glide__arrow--right i,
 .glide__arrows .glide__arrow--left i {
   font-size: 4em;
-  color: #70706e;
+  color: #9c9c9c;
 }
 
 .glide__arrows .glide__arrow--right {

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/css/main.css">
+    <link rel="stylesheet" href="./static/css/glide.core.css">
+    <script src="https://kit.fontawesome.com/f2e1cd452b.js" crossorigin="anonymous"></script>
+    <title>Clear Bus Tour</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="menu">
+                <div class="logo">
+                    <a href="/#">
+                        <img src="./static/img/logos/main_logo.png" alt="Clear Bus Tours" />
+                    </a>
+                    <i class="fas fa-bars" id="btn-menu"></i>
+                </div>
+                <div class="options" id="options-menu">
+                    <ul>
+                        <li> <a href="index.html"> home </a> </li>
+                        <li> <a href="tours.html"> tours </a> </li>
+                        <li> <a href="blog.html"> blog </a> </li>
+                        <li> <a href="contact.html"> contact </a> </li>
+                        <li> <a href="account.html"> my account </a> </li>
+                        <li> <a href="#"> <i class="fas fa-shopping-cart"></i> </a> </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="account">
+        <div class="account__grid">
+            <div class="profile-card">
+                <div class="card">
+                    <img src="./static/img/avatar/dummy-avatar.jpg" alt="avatar" class="avatar">
+                    <div class="data">
+                        <h3>Katherine Yelsi</h3>
+                        <p>yelsi****@gmail.com</p>
+                        <span class="deco"></span>
+                        <p>Age: 18 years</p>
+                        <p>Phone #: 987654321</p>
+                    </div>
+
+                    <div class="history">
+                        <div class="travels">
+                            <span>you've travelled</span>
+                            <span>06</span>
+                            <span>times with us</span>
+                        </div>
+                        <div class="companions">
+                            <span>35</span>
+                            <span>people have accompanied you</span>
+                        </div>
+                    </div>
+                    <button class="btn-outline-profile">you have logged in with facebook</button>
+                </div>
+            </div>
+            <div class="info-form">
+                <h2>account information</h2>
+                <hr />
+                <br />
+                <form action="">
+                    <div class="form-wrapper">
+                        <div class="top">
+                            <div class="group large">
+                                <label for="">first name</label>
+                                <input class="disable" type="text" name="first_name" />
+                            </div>
+                            <div class="group large">
+                                <label for="">last name</label>
+                                <input class="disable" type="text" name="last_name" />
+                            </div>
+                            <div class="group medium">
+                                <label for="">birth date</label>
+                                <input class="disable" type="date" name="date" />
+                            </div>
+                            <div class="group extra-small">
+                                <label for="">age</label>
+                                <input class="disable" type="number" name="age" />
+                            </div>
+                            <div class="group large">
+                                <label for="">phone number</label>
+                                <input class="disable" type="text" name="phone" />
+                            </div>
+                            <div class="group large">
+                                <label for="">email</label>
+                                <input class="disable" type="email" name="email" />
+                            </div>
+                            <div class="group large">
+                                <label for="">address</label>
+                                <input class="disable" type="text" name="address" />
+                            </div>
+                        </div>
+
+                        <div class="bot">
+                            <div class="group small">
+                                <label for="">country</label>
+                                <input class="disable" type="text" name="country" />
+                            </div>
+                            <div class="group small">
+                                <label for="">state</label>
+                                <input class="disable" type="text" name="state" />
+                            </div>
+                            <div class="group small">
+                                <label for="">city</label>
+                                <input class="disable" type="text" name="city" />
+                            </div>
+                            <div class="group small">
+                                <label for="">zip code</label>
+                                <input class="disable" type="number" name="zip" />
+                            </div>
+                        </div>
+
+                        <button class="btn-outline-form">edit information</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <aside class="account-sidebar">
+            <div class="user-info">
+                <img class="avatar" src="./static/img/avatar/dummy-avatar.jpg" alt="avatar" />
+                <h3 class="name">Katherine Yelsi</h3>
+                <span>Welcome back!</span>
+            </div>
+            <ul class="options">
+                <li class="options profile active">
+                    <a class="active" href="account.html">
+                        account info
+                    </a>
+                </li>
+                <li class="options profile">
+                    <a href="account_history.html">
+                        my history
+                    </a>
+                </li>
+            </ul>
+            <ul class="options">
+                <li class="options user">01-760-6734 <br /> (+51) 980-601-886</li>
+                <li class="options user">sign out</li>
+            </ul>
+        </aside>
+    </main>
+</body>
+
+</html>
