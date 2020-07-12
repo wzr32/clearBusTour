@@ -2076,10 +2076,10 @@ h3{
 }//end main
 
 .reservation {
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     padding: 2em;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 4em 1fr;
 
     .tours__card,
     .tours__card--active {
@@ -2094,6 +2094,7 @@ h3{
         flex-direction: column;
         transition: .2s all ease;
         max-width: 22em;
+        grid-row: 1/-1;
 
         h3 {
             font-size: 1.7em;
@@ -2125,6 +2126,9 @@ h3{
     .seats-info {
         display: flex;
         justify-content: space-around;
+        grid-column: 2/3;
+        grid-row: 1/2;
+
         .group {
             input {
                 width: 80%;
@@ -2140,6 +2144,8 @@ h3{
     }//end seats-info
 
     .seats {
+        grid-column: 2/3;
+        grid-row: 2/3;
         flex-wrap: nowrap;
         position: relative;
         max-width: 35em;
@@ -2214,6 +2220,9 @@ h3{
     }//end legend
 
     @media screen and (max-width: 768px){
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
         margin: 1.5em;
 
         .legend {

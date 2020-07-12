@@ -2238,15 +2238,13 @@ h3 {
 }
 
 .reservation {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
   padding: 2em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 4em 1fr;
+      grid-template-rows: 4em 1fr;
 }
 
 .reservation .tours__card,
@@ -2267,6 +2265,7 @@ h3 {
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
   max-width: 22em;
+  grid-row: 1/-1;
 }
 
 .reservation .tours__card h3,
@@ -2305,6 +2304,12 @@ h3 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
 }
 
 .reservation .seats-info .group input {
@@ -2328,6 +2333,12 @@ h3 {
 }
 
 .reservation .seats {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative;
@@ -2413,6 +2424,14 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .reservation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 1.5em;
   }
   .reservation .legend {
