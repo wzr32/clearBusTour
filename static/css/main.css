@@ -2299,16 +2299,7 @@ h3 {
   border-bottom: 1px solid #fff;
 }
 
-.reservation .seats {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  position: relative;
-  max-width: 35em;
-  width: 35em;
-  min-height: 100%;
-}
-
-.reservation .seats .info {
+.reservation .seats-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2316,9 +2307,33 @@ h3 {
       justify-content: space-around;
 }
 
-.reservation .seats .info .group input {
+.reservation .seats-info .group input {
   width: 80%;
   background-color: #d1d1d1;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation .seats-info {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+.reservation .seats {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  position: relative;
+  max-width: 35em;
+  width: 35em;
+  min-height: 100%;
 }
 
 .reservation .seats .selection {
@@ -2370,6 +2385,21 @@ h3 {
   pointer-events: none;
 }
 
+.reservation .seats .bus-img-r {
+  display: none;
+  position: absolute;
+  width: 70%;
+  z-index: 100;
+  pointer-events: none;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation .seats {
+    margin: 1.5em;
+  }
+}
+
 .reservation .legend .btn-outline-purple {
   border: 1px solid #ce1d47;
   width: 10em;
@@ -2379,6 +2409,26 @@ h3 {
   padding: .5em 1.3em;
   text-transform: uppercase;
   font-family: 'Calibri Light';
+}
+
+@media screen and (max-width: 768px) {
+  .reservation {
+    margin: 1.5em;
+  }
+  .reservation .legend {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reservation .legend .btn-outline-purple {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 }
 
 .account {
@@ -2666,6 +2716,12 @@ h3 {
   position: relative;
   margin-left: auto;
   margin-right: 4em;
+}
+
+@media screen and (min-width: 768px) {
+  .account .account__container .history .r-table {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 980px) {

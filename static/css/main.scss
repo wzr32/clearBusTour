@@ -2122,6 +2122,22 @@ h3{
         }//end deco
     }//end tours__card--active
 
+    .seats-info {
+        display: flex;
+        justify-content: space-around;
+        .group {
+            input {
+                width: 80%;
+                background-color: #d1d1d1;
+            }
+        }//end group
+
+        @media screen and (max-width: 768px){
+            order: 1;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+    }//end seats-info
 
     .seats {
         flex-wrap: nowrap;
@@ -2129,17 +2145,6 @@ h3{
         max-width: 35em;
         width: 35em;
         min-height: 100%;
-
-        .info {
-            display: flex;
-            justify-content: space-around;
-            .group {
-                input {
-                    width: 80%;
-                    background-color: #d1d1d1;
-                }
-            }//end group
-        }//end info
         
         .selection {
             position: relative;
@@ -2172,13 +2177,27 @@ h3{
                 }//end seat
             }//end wrapper
         }//end selection
-
+    
         .bus-img{
             position: absolute;
             width: 100%;
             z-index: 100;
             pointer-events: none;
-        }//
+        }//end bus-img
+
+        .bus-img-r {
+            display: none;
+            position: absolute;
+            width: 70%;
+            z-index: 100;
+            pointer-events: none;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 768px){
+            margin: 1.5em;
+        }
+
     }//end seats
 
     .legend{
@@ -2193,6 +2212,22 @@ h3{
             font-family: 'Calibri Light';
         }//end btn-outline-purple
     }//end legend
+
+    @media screen and (max-width: 768px){
+        margin: 1.5em;
+
+        .legend {
+            display: flex;
+            flex-direction: column;
+        
+            .btn-outline-purple {
+                order: 1;
+
+            }//end btn-outline-purple
+            
+        }//end legend
+    }
+
 }//end reservation
 
 
@@ -2473,7 +2508,13 @@ h3{
                     margin-left: auto;
                     margin-right: 4em;
                 }//end btn-outline-table
-            }
+
+                @media screen and (min-width: 768px){
+                    display: none;
+                }
+
+
+            }//end r-table
 
         }//end history
     }//end account__container

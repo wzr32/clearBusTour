@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <script src="https://kit.fontawesome.com/f2e1cd452b.js" crossorigin="anonymous"></script>
     <title>Clear Bus Tour</title>
 </head>
-
 <body>
     <header class="header">
         <nav class="nav">
@@ -51,18 +49,19 @@
                 <span class="time">4 hours</span>
             </div>
         </div>
-        <div class="seats">
-            <div class="info">
-                <div class="group">
-                    <label for="">Departure Time</label>
-                    <input type="text" />
-                </div>
-                <div class="group">
-                    <label for="">Reserved seats</label>
-                    <input type="text" />
-                </div>
+        <div class="seats-info">
+            <div class="group">
+                <label for="">Departure Time</label>
+                <input type="text" />
             </div>
+            <div class="group">
+                <label for="">Reserved seats</label>
+                <input type="text" />
+            </div>
+        </div>
+        <div class="seats">
             <img src="./static/img/bus/bus.png" class="bus-img" alt="">
+            <img src="./static/img/bus/bus-mobile.png" class="bus-img-r" alt="">
             <div class="selection">
                 <div class="wrapper">
                     <span class="seat">1</span>
@@ -105,6 +104,8 @@
             <img src="./static/img/bus/legend.png" alt="seats">
         </div>
     </main>
-</body>
 
+    <script src="./static/js/main.js"></script>
+
+</body>
 </html>
