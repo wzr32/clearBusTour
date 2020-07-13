@@ -2078,7 +2078,7 @@ h3{
 .reservation {
     display: grid;
     padding: 2em;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 25% 50% 25%;
     grid-template-rows: 4em 1fr;
 
     .tours__card,
@@ -2153,36 +2153,50 @@ h3{
         height: 100%;
         
         .selection {
-            position: relative;
+            position: absolute;
+            z-index: 1000;
+            width: 100vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-43%, -43%);
 
             .wrapper {
-                max-width: 243px;
+                width: 50vw;
                 margin-left: auto;
-                margin-right: 3.2em;
-                margin-top: 8.5em;
+                margin-right: 25%;
                 display: grid;
-                grid-template-columns: repeat(3, 2.5em);
-                background-color: slategrey;
-                justify-content: space-evenly;
-                padding: 0 .1em;
+                grid-template-columns: repeat(3, 1fr);
 
                 &.second {
-                    margin-top: 1.8em;
+                    margin-top: 8%;
                 }
 
                 .seat{
-                    max-width: 2.5em;
-                    max-height: 2.5em;
-                    height: 2.5em;
-                    margin-bottom: .2em;
-                    background-color: $avaiableSeat;
+                    margin: 0 auto;
+                    width: 3em;
+                    height: 3em;
+                    margin-bottom: 6%;
+                    background-image: url(../img/bus/seats-avaiable.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
                     display: inline-flex;
                     justify-content: center;
                     align-items: center;
                     color: #fff;
                     cursor: pointer;
+                
+                    &.reserved{
+                        background-image: url(../img/bus/seats-reserved.png);
+                    }
+
+                    &.disabled {
+                        background-image: url(../img/bus/seats-unavaiable.png);
+                    }
                 }//end seat
+
+
             }//end wrapper
+            
         }//end selection
     
         .bus-img{
@@ -2193,7 +2207,9 @@ h3{
 
         .bus-img-r {
             display: none;
+            position: relative;
             width: 100%;
+            min-width: 200px;
             z-index: 100;
             pointer-events: none;
             margin: 0 auto;
@@ -2202,19 +2218,13 @@ h3{
         @media screen and (max-width: 768px){
             margin: 1.5em;
 
-            .selection {
-                .wrapper {
-
-                }//end wrapper
-            }//end selection
-
             .bus-img{
                 display: none;
-            }//end bus-img
+            }
 
             .bus-img-r {
                 display: block;
-            }//end bus-img-r
+            }
         }
 
     }//end seats
@@ -2236,7 +2246,8 @@ h3{
         justify-content: center;
         display: flex;
         flex-wrap: wrap;
-        margin: 1.5em;
+        margin: .5em;
+        padding: 0;
 
         .legend {
             display: flex;

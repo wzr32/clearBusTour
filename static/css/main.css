@@ -2241,8 +2241,8 @@ h3 {
   display: -ms-grid;
   display: grid;
   padding: 2em;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
   -ms-grid-rows: 4em 1fr;
       grid-template-rows: 4em 1fr;
 }
@@ -2347,35 +2347,37 @@ h3 {
 }
 
 .reservation .seats .selection {
-  position: relative;
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-43%, -43%);
+          transform: translate(-43%, -43%);
 }
 
 .reservation .seats .selection .wrapper {
-  max-width: 243px;
+  width: 50vw;
   margin-left: auto;
-  margin-right: 3.2em;
-  margin-top: 8.5em;
+  margin-right: 25%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (2.5em)[3];
-      grid-template-columns: repeat(3, 2.5em);
-  background-color: slategrey;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  padding: 0 .1em;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
 }
 
 .reservation .seats .selection .wrapper.second {
-  margin-top: 1.8em;
+  margin-top: 8%;
 }
 
 .reservation .seats .selection .wrapper .seat {
-  max-width: 2.5em;
-  max-height: 2.5em;
-  height: 2.5em;
-  margin-bottom: .2em;
-  background-color: #cbd9e3;
+  margin: 0 auto;
+  width: 3em;
+  height: 3em;
+  margin-bottom: 6%;
+  background-image: url(../img/bus/seats-avaiable.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -2389,6 +2391,14 @@ h3 {
   cursor: pointer;
 }
 
+.reservation .seats .selection .wrapper .seat.reserved {
+  background-image: url(../img/bus/seats-reserved.png);
+}
+
+.reservation .seats .selection .wrapper .seat.disabled {
+  background-image: url(../img/bus/seats-unavaiable.png);
+}
+
 .reservation .seats .bus-img {
   width: 100%;
   z-index: 100;
@@ -2397,7 +2407,9 @@ h3 {
 
 .reservation .seats .bus-img-r {
   display: none;
+  position: relative;
   width: 100%;
+  min-width: 200px;
   z-index: 100;
   pointer-events: none;
   margin: 0 auto;
@@ -2436,7 +2448,8 @@ h3 {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 1.5em;
+    margin: .5em;
+    padding: 0;
   }
   .reservation .legend {
     display: -webkit-box;
